@@ -8,9 +8,52 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>KC-7 Car Quiz</title>
 </head>
+
 <body>
+
+    <header id="nav-bar">
+
+        <div id="logo-div">
+            <a href="index.html">
+                <img src="assets/images/logo.webp" alt="Car Quiz Logo" id="header-logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul id="menu">
+                <!-- Below List Items are in reverse order to accomadate the CCS Float Right Rule -->
+                <li>
+                    <a href="#" aria-label="Sends you to the Rules Page">Rules</a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Sends you to the Contact Page">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="quiz-section">
+            
+            <div>
+                <h2 id="question-text">Uh oh.. the question was supposed to be here, something went wrong, please try again!</h2>
+            </div>
+
+            <div class="option-buttons">
+                <button aria-label="Option A Button" id="option-a" class="option-btn" value="A">Answer A</button>
+                <button aria-label="Option B Button" id="option-b" class="option-btn" value="B">Answer B</button>
+                <button aria-label="Option C Button" id="option-c" class="option-btn" value="C">Answer C</button>
+                <button aria-label="Option D Button" id="option-d" class="option-btn" value="D">Answer D</button>
+            </div>
+
+            <div class="next-question">
+                <button aria-label="Next Question" id="next-question" ><i class="fas fa-arrow-right"></i></button>
+            </div>
+
+        </section>
+
+    </header>
     
-    <!-- Linkt to JavaScript -->
+    
+    <!-- Link to JavaScript -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>

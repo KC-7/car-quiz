@@ -1,3 +1,28 @@
-body {
-    background: teal;
+/* Remove: margin, padding and border */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
+
+/* Main Structure */
+
+body {
+    background: #008080;
+}
+
+/* Header Menu */
+
+
+/* Button Styling */
+
+
+
+/* Quiz Styling */
+
+hide {
+    display: none;
+  }
+
+  
