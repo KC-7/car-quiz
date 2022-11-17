@@ -16,7 +16,7 @@
 
         <div id="logo-div">
             <a href="index.html">
-                <img src="assets/images/logo-a.png" alt="Car Quiz Logo" id="header-logo">
+                <img src="assets/images/logo-b.png" alt="Car Quiz Logo" id="header-logo">
             </a>
         </div>
 
@@ -36,21 +36,29 @@
 
     <section id="quiz-section">
 
-        <div id="quiz-question-area">
-            <h2 id="quiz-question">
+        <div id="question-div">
+            <h2 id="question">
                 Uh oh.. the question was supposed to be here, something went wrong, please try again!
             </h2>
         </div>
 
         <div id="quiz-options">
-            <button aria-label="Option A Button" id="option-a" class="option-button" value="A">Answer A</button>
-            <button aria-label="Option B Button" id="option-b" class="option-button" value="B">Answer B</button>
-            <button aria-label="Option C Button" id="option-c" class="option-button" value="C">Answer C</button>
-            <button aria-label="Option D Button" id="option-d" class="option-button" value="D">Answer D</button>
+            <div class="option-divs">
+                <button aria-label="Option A Button" id="option-a" class="option-button" value="A">Answer A</button>
+            </div>
+            <div class="option-divs">
+                <button aria-label="Option B Button" id="option-b" class="option-button" value="B">Answer B</button>
+            </div>
+            <div class="option-divs">
+                <button aria-label="Option C Button" id="option-c" class="option-button" value="C">Answer C</button>
+            </div>
+            <div class="option-divs">
+                <button aria-label="Option D Button" id="option-d" class="option-button" value="D">Answer D</button>
+            </div>
         </div>
 
-        <div class="next-question">
-            <button aria-label="Next Question" id="next-question">Next Question <i class="fas fa-arrow-right"></i></button>
+        <div id="next-question-div">
+            <button aria-label="Next Question" id="next-question-button">Next Question <i class="fas fa-arrow-right"></i></button>
         </div>
 
     </section>
