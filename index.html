@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to CSS, note: JS linked at the bottom of the body -->
+    <!-- Link to CSS below, note: JS & Font Awesome Scripts are linked at the bottom of the body -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>KC-7 Car Quiz</title>
 </head>
@@ -15,12 +16,12 @@
 
         <div id="logo-div">
             <a href="index.html">
-                <img src="assets/images/logo.webp" alt="Car Quiz Logo" id="header-logo">
+                <img src="assets/images/logo-a.png" alt="Car Quiz Logo" id="header-logo">
             </a>
         </div>
 
         <nav>
-            <ul id="menu">
+            <ul id="nav-menu">
                 <!-- Below List Items are in reverse order to accomadate the CCS Float Right Rule -->
                 <li>
                     <a href="#" aria-label="Sends you to the Rules Page">Rules</a>
@@ -31,29 +32,36 @@
             </ul>
         </nav>
 
-        <section id="quiz-section">
-            
-            <div>
-                <h2 id="question-text">Uh oh.. the question was supposed to be here, something went wrong, please try again!</h2>
-            </div>
-
-            <div class="option-buttons">
-                <button aria-label="Option A Button" id="option-a" class="option-btn" value="A">Answer A</button>
-                <button aria-label="Option B Button" id="option-b" class="option-btn" value="B">Answer B</button>
-                <button aria-label="Option C Button" id="option-c" class="option-btn" value="C">Answer C</button>
-                <button aria-label="Option D Button" id="option-d" class="option-btn" value="D">Answer D</button>
-            </div>
-
-            <div class="next-question">
-                <button aria-label="Next Question" id="next-question" ><i class="fas fa-arrow-right"></i></button>
-            </div>
-
-        </section>
-
     </header>
-    
-    
+
+    <section id="quiz-section">
+
+        <div id="quiz-question-area">
+            <h2 id="quiz-question">
+                Uh oh.. the question was supposed to be here, something went wrong, please try again!
+            </h2>
+        </div>
+
+        <div id="quiz-options">
+            <button aria-label="Option A Button" id="option-a" class="option-button" value="A">Answer A</button>
+            <button aria-label="Option B Button" id="option-b" class="option-button" value="B">Answer B</button>
+            <button aria-label="Option C Button" id="option-c" class="option-button" value="C">Answer C</button>
+            <button aria-label="Option D Button" id="option-d" class="option-button" value="D">Answer D</button>
+        </div>
+
+        <div class="next-question">
+            <button aria-label="Next Question" id="next-question">Next Question <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+    </section>
+
+
     <!-- Link to JavaScript -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Link to Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/872cb96f02.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
