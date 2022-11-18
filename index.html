@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link for Favicon (browser tab image) -->
+    <link rel="icon" href="favicon.ico">
     <!-- Link to CSS below, note: JS & Font Awesome Scripts are linked at the bottom of the body -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>KC-7 Car Quiz</title>
+    <title>Kieran's Car Quiz</title>
 </head>
 
 <body>
@@ -29,10 +31,10 @@
             <ul id="nav-menu">
                 <!-- Below List Items are in reverse order to accomadate the CCS Float Right Rule -->
                 <li>
-                    <a href="index.html" aria-label="Sends you to the Quiz Page">Contact</a>
+                    <a href="index.html" aria-label="Sends you to the Quiz Page">Contact <i class="fas fa-envelope"></i></a>
                 </li>
                 <li>
-                    <a href="#" aria-label="Sends you to the Rules Page">Rules</a>
+                    <a href="#" aria-label="Sends you to the Rules Page">Rules <i class="fas fa-car"></i></a>
                 </li>
             </ul>
         </nav>
@@ -43,7 +45,7 @@
 
         <div id="question-div">
             <h2 id="question">
-                Uh oh.. a question was supposed to be here. <br>Something went wrong, please try again!
+                Uh oh.. something went wrong.<br>A question was supposed to be here, please try again!
             </h2>
         </div>
 
@@ -63,11 +65,14 @@
         </div>
 
         <div>
+            <div id="start-div">
+                <button aria-label="Start Quiz Button" id="start-button">Engine<br>Start</button>
+            </div>
             <div id="submit-div" class="controls-div">
-                <button aria-label="Next Question" id="submit-button" class="controls-button">Submit Answer <i class="fas fa-check-circle"></i></button>
+                <button aria-label="Submit Button" id="submit-button" class="controls-button">Submit Answer <i class="fas fa-check-circle"></i></button>
             </div>
             <div id="next-question-div" class="controls-div">
-                <button aria-label="Next Question" id="next-question-button" class="controls-button">Next Question <i class="fas fa-arrow-right"></i></button>
+                <button aria-label="Next Question Button" id="next-question-button" class="controls-button">Next Question <i class="fas fa-arrow-right"></i></button>
             </div>
         </div>
 
