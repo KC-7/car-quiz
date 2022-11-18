@@ -93,10 +93,10 @@ function clearScore(element) {
 const questions = [
   {
     question: 'Which car company manufacturered the Countach?',
-    options: [
-      { text:'Fiat', correct: false },
-      { text:'Ferrari', correct: false },
+    options: [      
       { text:'Alfa Romeo', correct: false },
+      { text:'Ferrari', correct: false },
+      { text:'Fiat', correct: false },
       { text:'Lamborghini', correct: true }
     ]
   },
@@ -119,12 +119,30 @@ const questions = [
     ]
   },
   {
-    question: '3 of the 4 options are the same car, which one is not the same?',
+    question: '3 of the 4 cars are the same car excluding cosmetic changes,<br>which option is not the same car as the others?',
     options: [
-      { text:'Toyota GT86', correct: false },
       { text:'Lexus LFA', correct: true },
       { text:'Scion FRS', correct: false },
-      { text:'Subaru BRZ', correct: false }
+      { text:'Subaru BRZ', correct: false },
+      { text:'Toyota GT86', correct: false }
+    ]
+  },
+  {
+    question: 'On average, how many cars are produced globaly on a daily basis?',
+    options: [
+      { text:'15,000', correct: false },
+      { text:'55,000', correct: false },
+      { text:'95,000', correct: false },
+      { text:'165,000', correct: true }
+    ]
+  },
+  {
+    question: 'Which Car Corporation owns the most Car Companies?',
+    options: [
+      { text:'BMW Group', correct: false },
+      { text:'General Motors', correct: false },
+      { text:'Toyota Motor Corp', correct: false },
+      { text:'Volkswagen AG', correct: true }
     ]
   }
   ]
