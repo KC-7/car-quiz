@@ -1,16 +1,16 @@
-const startButton = document.getElementById('start-button')
-const nextButton = document.getElementById('next-question-button')
-const quizQuestion = document.getElementById('question-div')
-const questionElement = document.getElementById('question')
-const optionButtons = document.getElementById('quiz-options')
+const startButton = document.getElementById('start-button') // This is the Start Button
+const nextButton = document.getElementById('next-question-button') // This is the Next Question Button
+const quizQuestion = document.getElementById('question-div') // This is the Question & Options Area
+const questionElement = document.getElementById('question') // This is the Question
+const optionButtons = document.getElementById('quiz-options') // These are the Options
 
-// The below variables are assigned in the startQuiz function. They are used to randomize the order of the questions. 
+// The below variables are assigned later in the startQuiz function. They are used to randomize the order of the questions. 
 let shuffleQuestions, currentQuestionIndex
 
 //Event Listeners
-startButton.addEventListener('click', startQuiz)
+startButton.addEventListener('click', startQuiz) // Initiates the Start Quiz Function when the Star Button is Clicked
 
-nextButton.addEventListener('click', () => {
+nextButton.addEventListener('click', () => { // When the next button is clicked, the next question is displayed and one is added to the current question index
   currentQuestionIndex++
   nextQuestion()
 })
@@ -27,31 +27,31 @@ function startQuiz() {
   nextQuestion() // Initiates the nextQuestion Function
 }
 
-/**
- * Activates when the startQuiz or XXXX Function has been called. 
- */
+// Activates when the startQuiz Function or the nextButton Event Listener has been called. 
 function nextQuestion() {
-  resetOptions()
-  displayQuestion(shuffleQuestions[currentQuestionIndex]) 
+  resetOptions() // Removes unnesecary buttons by calling the resetOptions Function
+  displayQuestion(shuffleQuestions[currentQuestionIndex])  // 
 }
 
+// Activates when the nextQuestion function has been called. 
 function displayQuestion(question) {
-  questionElement.innerHTML = question.question
+  questionElement.innerHTML = question.question // The question area will be populated by the Question in the Q & A Section
   question.options.forEach(option => {
-    const button = document.createElement('button')
-    button.innerText = option.text
-    button.classList.add('option-button')
+    const button = document.createElement('button') // Create a button for each of the possible answers provided in the Q & A Section
+    button.innerText = option.text // Display the option text in the button
+    button.classList.add('option-button') // Add the "Option Button" Class to the buttons
     if (option.correct) {
-      button.dataset.correct = option.correct
+      button.dataset.correct = option.correct // If correct option is selected, apply the "correct" styling to the button.
     }
-    button.addEventListener('click', selectOption)
-    optionButtons.appendChild (button)
+    button.addEventListener('click', selectOption) // If the button is clicked, intiate "Select Option"
+    optionButtons.appendChild (button) 
   })
 }
 
+
 function resetOptions() {
-  nextButton.classList.add('hide')
-  while (optionButtons.firstChild) {
+  nextButton.classList.add('hide') // Hides the next button
+  while (optionButtons.firstChild) { 
     optionButtons.removeChild
     (optionButtons.firstChild)
   }
@@ -66,30 +66,35 @@ function selectOption(e) {
     scoreSelection(button, button.dataset.correct)
   })
   if (shuffleQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove('hide')
+    nextButton.classList.remove('hide') // If their are more questions left to be asked than have currently been asked, it will ask the next one
   } else {
-    startButton.innerText = 'Try Again?'
-    startButton.classList.remove('hide')
+    startButton.innerText = 'Try Again?' // Changes the text on the Start Button
+    startButton.classList.remove('hide') // Displays the Start Button
+    quizQuestion.classList.add('hide') // Hides the Question & Options
+
+    // document.getElementById('next-question-div').classList.add('hide') // BUG - Hides the Next Question Button but doesnt reapply when game is replayed by user...
   }
   nextButton.classList.remove('hide')
 }
 
+// Adds score styling - right or wrong
 function scoreSelection(element, correct) {
   clearScore(element)
   if (correct) {
-    element.classList.add('right')
+    element.classList.add('right') // If correct, the right (green) class will be added
   } else {
-    element.classList.add('wrong')
+    element.classList.add('wrong') // If wrong, the wrong (red) class will be added
   }
 }
 
+// Clears the score styling
 function clearScore(element) {
-  element.classList.remove('right')
-  element.classList.remove('wrong')
+  element.classList.remove('right') // Removes right class & styling
+  element.classList.remove('wrong') // Removes wrong class & styling
 }
 
 
-// List of the Questions & Answers in the Quiz
+// Q&A - List of the Questions & Options / Correct Answers in the Quiz
 const questions = [
   {
     question: 'Which car company manufacturered the Countach?',
