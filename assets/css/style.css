@@ -99,13 +99,15 @@ body {
     font-size: 23px;
 }
 
-
+/*
 .option-divs {
     width: 50%;
     height: 150px;
     float: left;
     text-align: center;
+    padding: 50px 0;
 }
+*/
 
 .option-button {
     height: 60px;
