@@ -99,15 +99,14 @@ body {
     font-size: 23px;
 }
 
-/*
-.option-divs {
-    width: 50%;
-    height: 150px;
-    float: left;
-    text-align: center;
-    padding: 50px 0;
+#quiz-options {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 30px;
 }
-*/
 
 .option-button {
     height: 60px;
@@ -116,7 +115,17 @@ body {
     font-weight: bold;
     font-size: 16px;
     background-color: #f5f5f5;
-    color: #003333;
+    color: #003333;   
+}
+
+.option-button.right {
+    background-color: green;
+    color: #f5f5f5;
+}
+
+.option-button.wrong {
+    background-color: red;
+    color: #f5f5f5;
 }
 
 .controls-div {

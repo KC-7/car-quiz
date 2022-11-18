@@ -1,4 +1,5 @@
 const startButton = document.getElementById('start-button')
+const nextButton = document.getElementById('next-question-button')
 const quizQuestion = document.getElementById('question-div')
 const questionElement = document.getElementById('question')
 const optionButtons = document.getElementById('quiz-options')
@@ -12,7 +13,7 @@ startButton.addEventListener('click', startQuiz)
  * Activates when user clicks start quiz button.
  */
 function startQuiz() {
-  console.log('The quiz has started, please select an answer, good luck!') // Logs message to console
+  console.log('The quiz has started, good luck!') // Logs message to console
   startButton.classList.add('hide') // Hides the Start Button
   quizQuestion.classList.remove('hide') // Shows Quiz Question
   shuffleQuestions = questions.sort(() => Math.random() -.5) // Randomizes the order of the questions array
@@ -20,21 +21,65 @@ function startQuiz() {
   nextQuestion() // Initiates the nextQuestion Function
 }
 
+/**
+ * Activates when the startQuiz or XXXX Function has been called. 
+ */
 function nextQuestion() {
+  resetOptions()
   displayQuestion(shuffleQuestions[currentQuestionIndex]) 
 }
 
 function displayQuestion(question) {
   questionElement.innerHTML = question.question
+  question.options.forEach(option => {
+    const button = document.createElement('button')
+    button.innerText = option.text
+    button.classList.add('option-button')
+    if (option.correct) {
+      button.dataset.correct = option.correct
+    }
+    button.addEventListener('click', selectOption)
+    optionButtons.appendChild (button)
+  })
 }
 
-function selectOption() {
+function resetOptions() {
+  nextButton.classList.add('hide')
+  while (optionButtons.firstChild) {
+    optionButtons.removeChild
+    (optionButtons.firstChild)
+  }
 
 }
 
+function selectOption(e) {
+  const userSelection = e.target
+  const correct = userSelection.dataset.correct
+  scoreSelection(document.body, correct)
+  Array.from(optionButtons.children).forEach(button => {
+    scoreSelection(button, button.dataset.correct)
+  })
+}
+
+function scoreSelection(element, correct) {
+  clearScore(element)
+  if (correct) {
+    element.classList.add('right')
+  } else {
+    element.classList.add('wrong')
+  }
+}
+
+function clearScore(element) {
+  element.classList.remove('right')
+  element.classList.remove('wrong')
+}
+
+
+// List of the Questions & Answers in the Quiz
 const questions = [
   {
-    question: 'Which manufacturer made the Countach',
+    question: 'Which manufacturer made the Countach?',
     options: [
       { text:'Fiat', correct: false },
       { text:'Ferrari', correct: false },
@@ -43,7 +88,7 @@ const questions = [
     ]
   },
   {
-    question: 'Which manufacturer made the i8',
+    question: 'Which manufacturer made the i8?',
     options: [
       { text:'Audi', correct: false },
       { text:'BMW', correct: true },
