@@ -128,13 +128,6 @@ body {
     color: #f5f5f5;
 }
 
-.controls-div {
-    width: 50%;
-    height: 150px;
-    text-align: center;
-    float: left;
-}
-
 #start-div {
     width: 100%;
     height: 150px;
@@ -158,7 +151,7 @@ body {
     font-size: 22px;
 }
 
-.controls-button {
+#next-question-button {
     height: 75px;
     width: 225px;
     border-radius: 37.5px;
@@ -169,7 +162,7 @@ body {
     border: 4px solid #f8e108;
 }
 
-.controls-button:hover {
+#next-question-button:hover {
     background-color: #f8e108;
     border: 4px solid #aaaaa0;
 }
