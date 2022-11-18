@@ -35,7 +35,6 @@ body {
 
 #header-logo {
     float: left;
-    width: 200px;
     height: 100px;
     padding-left: 30px;
 }
@@ -50,7 +49,7 @@ body {
 #nav-menu {
     font-size: 28px;
     vertical-align: middle;
-    color: #f8e108;
+    color: #003333;
     line-height: 100px;
 }
 
@@ -66,7 +65,7 @@ body {
 }
 
 #nav-menu a:hover {
-    border: 2px solid #003333;
+    border: 2px solid #f8e108;
     border-radius: 25px;
     padding: 5px;
     font-weight: bold;
@@ -102,14 +101,10 @@ body {
 #quiz-options {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 50px;
+    gap: 75px;
     justify-content: center;
     align-items: center;
     padding: 60px;
-}
-
-#next-question-div {
-    text-align: center;
 }
 
 .option-button {
@@ -139,20 +134,26 @@ body {
 }
 
 #start-button {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     background-color: #000000;
     color: #f8e108;
     border: 4px solid #000000;
+    /* The following vertically centers the button */
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
 #start-button:hover {
     background-color: #f8e108;
     color: #000000;
-    font-size: 22px;
+    font-size: 33px;
 }
 
 #next-question-button {
@@ -164,6 +165,9 @@ body {
     background-color: #aaaaa0;
     color: #000000;
     border: 4px solid #f8e108;
+    position: fixed;
+    left: 400px;
+    bottom: 60px;
 }
 
 #next-question-button:hover {
