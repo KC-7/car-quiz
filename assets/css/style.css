@@ -65,10 +65,11 @@ hide {
     color: inherit;
 }
 
-#menu a:hover {
+#nav-menu a:hover {
     border: 2px solid #003333;
-    border-radius: 20%;
+    border-radius: 25px;
     padding: 5px;
+    font-weight: bold;
 }
 
 
@@ -114,13 +115,14 @@ hide {
     color: #003333;
 }
 
-#next-question-div {
-    width: 100%;
+.controls-div {
+    width: 50%;
     height: 150px;
     text-align: center;
+    float: left;
 }
 
-#next-question-button {
+.controls-button {
     height: 75px;
     width: 225px;
     border-radius: 37.5px;
@@ -129,6 +131,10 @@ hide {
     background-color: #f8e108;
     color: #000000;
     border: 4px solid #aaaaa0;
+}
+
+.option-button:hover, #submit-button:hover, #next-question-button:hover {
+    font-size: larger;
 }
 
 #contact-heading {
