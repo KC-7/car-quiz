@@ -1,14 +1,14 @@
 const startButton = document.getElementById('start-button') // This is the Start Button
-const nextButton = document.getElementById('next-question-button') // This is the Next Question Button
 const quizQuestion = document.getElementById('question-div') // This is the Question & Options Area
 const questionElement = document.getElementById('question') // This is the Question
-const optionButtons = document.getElementById('quiz-options') // These are the Options
+const optionButtons = document.getElementById('quiz-options') // These are the Option Buttons
+const nextButton = document.getElementById('next-question-button') // This is the Next Question Button
 
-// The below variables are assigned later in the startQuiz function. They are used to randomize the order of the questions. 
+// The below variables are utilised in the startQuiz and nextButton Functions to randomize the order of the questions
 let shuffleQuestions, currentQuestionIndex
 
 //Event Listeners
-startButton.addEventListener('click', startQuiz) // Initiates the Start Quiz Function when the Star Button is Clicked
+startButton.addEventListener('click', startQuiz) // Initiates the Start Quiz Function when the Start Button is clicked
 
 nextButton.addEventListener('click', () => { // When the next button is clicked, the next question is displayed and one is added to the current question index
   currentQuestionIndex++
@@ -16,14 +16,14 @@ nextButton.addEventListener('click', () => { // When the next button is clicked,
 })
 
 /**
- * Activates when user clicks start quiz button.
+ * The startQuiz Function activates when user clicks start quiz button.
  */
 function startQuiz() {
   console.log('The quiz has started, good luck!') // Logs message to console
   startButton.classList.add('hide') // Hides the Start Button
   quizQuestion.classList.remove('hide') // Shows Quiz Question
-  shuffleQuestions = questions.sort(() => Math.random() -.5) // Randomizes the order of the questions array
-  currentQuestionIndex = 0 // We are starting the list of questions from 0
+  shuffleQuestions = questions.sort(() => Math.random() - .5) // Randomizes the order of the questions array
+  currentQuestionIndex = 0 // Starts with the number of questions asked at 0
   nextQuestion() // Initiates the nextQuestion Function
 }
 
@@ -31,7 +31,7 @@ function startQuiz() {
 function nextQuestion() {
   console.log('The computer is shuffling the questions.') // Logs message to console
   resetOptions() // Removes unnesecary buttons by calling the resetOptions Function
-  displayQuestion(shuffleQuestions[currentQuestionIndex])  // 
+  displayQuestion(shuffleQuestions[currentQuestionIndex]) // Calls the Display Question Function and Shuffles the remaining questions
 }
 
 // Activates when the nextQuestion function has been called. 
@@ -46,16 +46,15 @@ function displayQuestion(question) {
       button.dataset.correct = option.correct // If correct option is selected, apply the "correct" styling to the button.
     }
     button.addEventListener('click', selectOption) // If the button is clicked, intiate "Select Option"
-    optionButtons.appendChild (button) 
+    optionButtons.appendChild(button)
   })
 }
 
 
 function resetOptions() {
   nextButton.classList.add('hide') // Hides the next button
-  while (optionButtons.firstChild) { 
-    optionButtons.removeChild
-    (optionButtons.firstChild)
+  while (optionButtons.firstChild) {
+    optionButtons.removeChild(optionButtons.firstChild)
   }
 
 }
@@ -101,61 +100,126 @@ function clearScore(element) {
 
 
 // Q&A - List of the Questions & Options / Correct Answers in the Quiz
-const questions = [
-  {
+const questions = [{
     question: 'Which car company manufacturered the Countach?',
-    options: [      
-      { text:'Alfa Romeo', correct: false },
-      { text:'Ferrari', correct: false },
-      { text:'Fiat', correct: false },
-      { text:'Lamborghini', correct: true }
+    options: [{
+        text: 'Alfa Romeo',
+        correct: false
+      },
+      {
+        text: 'Ferrari',
+        correct: false
+      },
+      {
+        text: 'Fiat',
+        correct: false
+      },
+      {
+        text: 'Lamborghini',
+        correct: true
+      }
     ]
   },
   {
     question: 'Which car company manufacturered the i8?',
-    options: [
-      { text:'Audi', correct: false },
-      { text:'BMW', correct: true },
-      { text:'Jaguar', correct: false },
-      { text:'Lexus', correct: false }
+    options: [{
+        text: 'Audi',
+        correct: false
+      },
+      {
+        text: 'BMW',
+        correct: true
+      },
+      {
+        text: 'Jaguar',
+        correct: false
+      },
+      {
+        text: 'Lexus',
+        correct: false
+      }
     ]
   },
   {
     question: 'When was the first speeding ticket issued?',
-    options: [
-      { text:'1902', correct: true },
-      { text:'1926', correct: false },
-      { text:'1943', correct: false },
-      { text:'1961', correct: false }
+    options: [{
+        text: '1902',
+        correct: true
+      },
+      {
+        text: '1926',
+        correct: false
+      },
+      {
+        text: '1943',
+        correct: false
+      },
+      {
+        text: '1961',
+        correct: false
+      }
     ]
   },
   {
     question: '3 of the 4 cars are the same car excluding cosmetic changes, which option is not the same car as the others?',
-    options: [
-      { text:'Lexus LFA', correct: true },
-      { text:'Scion FRS', correct: false },
-      { text:'Subaru BRZ', correct: false },
-      { text:'Toyota GT86', correct: false }
+    options: [{
+        text: 'Lexus LFA',
+        correct: true
+      },
+      {
+        text: 'Scion FRS',
+        correct: false
+      },
+      {
+        text: 'Subaru BRZ',
+        correct: false
+      },
+      {
+        text: 'Toyota GT86',
+        correct: false
+      }
     ]
   },
   {
     question: 'On average, how many cars are produced globaly on a daily basis?',
-    options: [
-      { text:'15,000', correct: false },
-      { text:'55,000', correct: false },
-      { text:'95,000', correct: false },
-      { text:'165,000', correct: true }
+    options: [{
+        text: '15,000',
+        correct: false
+      },
+      {
+        text: '55,000',
+        correct: false
+      },
+      {
+        text: '95,000',
+        correct: false
+      },
+      {
+        text: '165,000',
+        correct: true
+      }
     ]
   },
   {
     question: 'Which Car Corporation owns the most Car Companies?',
-    options: [
-      { text:'BMW Group', correct: false },
-      { text:'General Motors', correct: false },
-      { text:'Toyota Motor Corp', correct: false },
-      { text:'Volkswagen AG', correct: true }
+    options: [{
+        text: 'BMW Group',
+        correct: false
+      },
+      {
+        text: 'General Motors',
+        correct: false
+      },
+      {
+        text: 'Toyota Motor Corp',
+        correct: false
+      },
+      {
+        text: 'Volkswagen AG',
+        correct: true
+      }
     ]
   }
-  ]
+]
 
-  console.log('The page has loaded and the quiz is ready, press start!')
+console.log('The page has loaded and the quiz is ready, press start!')
