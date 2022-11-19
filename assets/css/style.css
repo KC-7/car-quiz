@@ -11,6 +11,7 @@
 body {
     background: #008080;
     font-family: Arial, Helvetica, sans-serif;
+    top: 100px;
 }
 
 .hide {
@@ -216,6 +217,10 @@ body {
         width: 750px;
     }
 
+    #question-div {
+        font-size: 28px;
+    }
+
 }
 
 /* When the screen is less than 850px wide */
@@ -299,5 +304,9 @@ body {
     #contact-section {
         width: 270px;
         padding: 3px;
+    }
+
+    #question-div {
+        font-size: 22px;
     }
 }

@@ -29,12 +29,14 @@ function startQuiz() {
 
 // Activates when the startQuiz Function or the nextButton Event Listener has been called. 
 function nextQuestion() {
+  console.log('The computer is shuffling the questions.') // Logs message to console
   resetOptions() // Removes unnesecary buttons by calling the resetOptions Function
   displayQuestion(shuffleQuestions[currentQuestionIndex])  // 
 }
 
 // Activates when the nextQuestion function has been called. 
 function displayQuestion(question) {
+  console.log('The question and options have been displayed, please choose wisely.') // Logs message to console
   questionElement.innerHTML = question.question // The question area will be populated by the Question in the Q & A Section
   question.options.forEach(option => {
     const button = document.createElement('button') // Create a button for each of the possible answers provided in the Q & A Section
@@ -59,6 +61,7 @@ function resetOptions() {
 }
 
 function selectOption(e) {
+  console.log('You have made a selection.') // Logs message to console
   const userSelection = e.target
   const correct = userSelection.dataset.correct
   scoreSelection(document.body, correct)
@@ -66,12 +69,14 @@ function selectOption(e) {
     scoreSelection(button, button.dataset.correct)
   })
   if (shuffleQuestions.length > currentQuestionIndex + 1) {
+    console.log('There are still more questions left, click next.') // Logs message to console
     nextButton.classList.remove('hide') // If their are more questions left to be asked than have currently been asked, it will ask the next one
   } else {
+    console.log('Well done, you have made it to the end of the quiz! Try again?') // Logs message to console
     startButton.innerText = 'Try Again?' // Changes the text on the Start Button
     startButton.classList.remove('hide') // Displays the Start Button
     quizQuestion.classList.add('hide') // Hides the Question & Options
-
+    nextButton
     // document.getElementById('next-question-div').classList.add('hide') // BUG - Hides the Next Question Button but doesnt reapply when game is replayed by user...
   }
   nextButton.classList.remove('hide')
@@ -81,6 +86,7 @@ function selectOption(e) {
 function scoreSelection(element, correct) {
   clearScore(element)
   if (correct) {
+    console.log('Your score has been displayed.') // Logs message to console
     element.classList.add('right') // If correct, the right (green) class will be added
   } else {
     element.classList.add('wrong') // If wrong, the wrong (red) class will be added
@@ -152,4 +158,4 @@ const questions = [
   }
   ]
 
-  console.log('The page has loaded and the quiz is ready to start!')
+  console.log('The page has loaded and the quiz is ready, press start!')
