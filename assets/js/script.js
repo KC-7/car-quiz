@@ -50,47 +50,55 @@ function displayQuestion(question) {
   })
 }
 
-
+// Activated when user clicks next
 function resetOptions() {
-  // clearScore(document.body) - not needed?
+  clearScore(document.getElementById('nav-bar')) // Removes the right or wrong styling from the Nav Bar
   nextButton.classList.add('hide') // Hides the next button
   while (optionButtons.firstChild) {
     optionButtons.removeChild(optionButtons.firstChild)
   }
-
 }
 
 function selectOption(e) {
   console.log('You have made a selection.') // Logs message to console
   const userSelection = e.target // The User Selection is the target element (i.e. the button the user clicks on)
-  const correct = userSelection.dataset.correct 
-  scoreSelection(document.body, correct)
+  const correct = userSelection.dataset.correct  // Correct is when the User Selection is Right
+  scoreSelection(document.getElementById('nav-bar'), correct) // Adds the right or wrong styling to the nav bar using the Score Selection Function 
+  scoreAlert(correct) // Creates a Pop Up Alert to let the user know if they were correct using the Score Alert Function 
   Array.from(optionButtons.children).forEach(button => {
-    scoreSelection(button, button.dataset.correct)
+    scoreSelection(button, button.dataset.correct) // Adds the right or wrong styling to the Options Buttons using the Score Selection Function
   })
   if (shuffleQuestions.length > currentQuestionIndex + 1) { // If there are more questions left to be asked than have currently been asked, it will ask the next one
     console.log('There are still more questions left, click next.') // Logs message to console
+    nextButton.classList.remove('hide') // Displays the Next Question button
   } else {
     console.log('Well done, you have made it to the end of the quiz! Try again?') // Logs message to console
     startButton.innerText = 'Try Again?' // Changes the text on the Start Button
     startButton.classList.remove('hide') // Displays the Start Button
     quizQuestion.classList.add('hide') // Hides the Question & Options
-    nextButton.classList.remove('hide') // Hide the Next Button
     alert('Well done, you made it to the end of the quiz!'); // Provides a window alert for user 
-
-    // document.getElementById('next-question-div').classList.add('hide') // BUG - Hides the Next Question Button but doesnt reapply when game is replayed by user...
   }
-  nextButton.classList.remove('hide')
+  
 }
 
 // Adds score styling - right or wrong
-function scoreSelection(element, correct) {
+function scoreSelection(element, correct) { // It needs the element and to know if it is correct
   clearScore(element)
   if (correct) {
-    console.log('Your score has been displayed.') // Logs message to console
     element.classList.add('right') // If correct, the right (green) class will be added
   } else {
     element.classList.add('wrong') // If wrong, the wrong (red) class will be added
+  }
+}
+
+// Score Pop Up Alert - right or wrong
+function scoreAlert(correct) { // It needs the element and to know if it is correct
+  if (correct) {
+    console.log('Well done, you got it right!') // Logs message to console
+    alert('Well done, you got it right!') // Creates a pop up alert in the browser
+  } else {
+    console.log('Oh no, you got it wrong, better luck next time!') // Logs message to console
+    alert('Oh no, you got it wrong, better luck next time!') // Creates a pop up alert in the browser
   }
 }
 
@@ -141,13 +149,7 @@ const questions = [{
         correct: false
       }
     ]
-  }
-]
-
-console.log('The page has loaded and the quiz is ready, press start!')
-
-/**
- * ,
+  },
   {
     question: 'When was the first speeding ticket issued?',
     options: [{
@@ -228,4 +230,10 @@ console.log('The page has loaded and the quiz is ready, press start!')
       }
     ]
   }
+]
+
+console.log('The page has loaded and the quiz is ready, press start!')
+
+/**
+ * 
  */

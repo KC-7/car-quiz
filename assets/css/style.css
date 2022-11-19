@@ -29,6 +29,14 @@ body {
     z-index: +10;
 }
 
+#nav-bar.right {
+    background-color: green;
+}
+
+#nav-bar.wrong {
+    background-color: red;
+}
+
 .header-grid {
     width: 33%;
     float: left;
@@ -37,7 +45,8 @@ body {
 #header-logo {
     float: left;
     height: 100px;
-    padding-left: 30px;
+    margin-left: 30px;
+    border-radius: 25px;
 }
 
 #header-text-div {
