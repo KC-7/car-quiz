@@ -71,25 +71,40 @@ function selectOption(e) {
   if (shuffleQuestions.length > currentQuestionIndex + 1) { // If there are more questions left to be asked than have currently been asked, it will ask the next one
     console.log('There are still more questions left, click next.') // Logs message to console
     nextButton.classList.remove('hide') // Displays the Next Question button
-  } else {
+  } else { // No more questions left
     console.log('Well done, you have made it to the end of the quiz! Try again?') // Logs message to console
     startButton.innerText = 'Try Again?' // Changes the text on the Start Button
     startButton.classList.remove('hide') // Displays the Start Button
-    quizQuestion.classList.add('hide') // Hides the Question & Options
+    startButton.focus()
+    // quizQuestion.classList.add('hide') // Hides the Question & Options
     alert('Well done, you made it to the end of the quiz!'); // Provides a window alert for user 
   }
-  
 }
 
 // Adds score styling - right or wrong
 function scoreSelection(element, correct) { // It needs the element and to know if it is correct
   clearScore(element)
+  //////////////////////////////////////////////////////////////// removeLogo()
   if (correct) {
     element.classList.add('right') // If correct, the right (green) class will be added
   } else {
     element.classList.add('wrong') // If wrong, the wrong (red) class will be added
   }
 }
+
+// Clears the score styling
+function clearScore(element) {
+  element.classList.remove('right') // Removes right class & styling
+  element.classList.remove('wrong') // Removes wrong class & styling
+}
+
+/**
+ * // Removes Logo from header when displaying stylingfor right or wrong
+    function removeLogo() {
+        // document.getElementById('header-logo').classList.add('hide') // The logo will be removed by adding the hide class
+        // $('document.getElementById("header-logo")') .attr("src","/assets/images/android-chrome-192x192.png");
+    }
+ */
 
 // Score Pop Up Alert - right or wrong
 function scoreAlert(correct) { // It needs the element and to know if it is correct
@@ -101,13 +116,6 @@ function scoreAlert(correct) { // It needs the element and to know if it is corr
     alert('Oh no, you got it wrong, better luck next time!') // Creates a pop up alert in the browser
   }
 }
-
-// Clears the score styling
-function clearScore(element) {
-  element.classList.remove('right') // Removes right class & styling
-  element.classList.remove('wrong') // Removes wrong class & styling
-}
-
 
 // Q&A - List of the Questions & Options / Correct Answers in the Quiz
 const questions = [{
