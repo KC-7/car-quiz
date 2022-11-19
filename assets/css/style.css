@@ -14,6 +14,15 @@ body {
     top: 100px;
 }
 
+body.right {
+    background-color: darkgreen;
+
+}
+
+body.wrong {
+    background-color: darkred;
+}
+
 .hide {
     display: none;
 }
@@ -29,6 +38,7 @@ body {
     z-index: +10;
 }
 
+/*
 #nav-bar.right {
     background-color: green;
     
@@ -37,7 +47,7 @@ body {
 #nav-bar.wrong {
     background-color: red;
 }
-
+*/
 .header-grid {
     width: 33%;
     float: left;
@@ -45,9 +55,10 @@ body {
 
 #header-logo {
     float: left;
-    height: 100px;
+    height: 80px;
     margin-left: 30px;
     border-radius: 25px;
+    padding: 10px 0;
 }
 
 #header-text-div {
@@ -166,6 +177,18 @@ body {
     font-size: 33px;
 }
 
+#start-button.try-again {
+    opacity: 75%;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+#next-question-div {
+    width: 100%;
+    text-align: center;
+}
+
 #next-question-button {
     height: 100px;
     width: 250px;
@@ -175,9 +198,6 @@ body {
     background-color: #aaaaa0;
     color: #000000;
     border: 4px solid #f8e108;
-    position: fixed;
-    left: 400px;
-    bottom: 60px;
 }
 
 #next-question-button:hover {

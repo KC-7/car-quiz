@@ -21,6 +21,7 @@ nextButton.addEventListener('click', () => { // When the next button is clicked,
 function startQuiz() {
   console.log('The quiz has started, good luck!') // Logs message to console
   startButton.classList.add('hide') // Hides the Start Button
+  document.getElementById('start-div').classList.add('hide') // Hides the Start Button Div
   quizQuestion.classList.remove('hide') // Shows Quiz Question
   shuffleQuestions = questions.sort(() => Math.random() - .5) // Randomizes the order of the questions array
   currentQuestionIndex = 0 // Starts with the number of questions asked at 0
@@ -52,7 +53,7 @@ function displayQuestion(question) {
 
 // Activated when user clicks next
 function resetOptions() {
-  clearScore(document.getElementById('nav-bar')) // Removes the right or wrong styling from the Nav Bar
+  clearScore(document.body) // Removes the right or wrong styling from the Body using the Clear Score Function
   nextButton.classList.add('hide') // Hides the next button
   while (optionButtons.firstChild) {
     optionButtons.removeChild(optionButtons.firstChild)
@@ -62,8 +63,8 @@ function resetOptions() {
 function selectOption(e) {
   console.log('You have made a selection.') // Logs message to console
   const userSelection = e.target // The User Selection is the target element (i.e. the button the user clicks on)
-  const correct = userSelection.dataset.correct  // Correct is when the User Selection is Right
-  scoreSelection(document.getElementById('nav-bar'), correct) // Adds the right or wrong styling to the nav bar using the Score Selection Function 
+  const correct = userSelection.dataset.correct // Correct is when the User Selection is Right
+  scoreSelection(document.body, correct) // Adds the right or wrong styling to the body using the Score Selection Function 
   scoreAlert(correct) // Creates a Pop Up Alert to let the user know if they were correct using the Score Alert Function 
   Array.from(optionButtons.children).forEach(button => {
     scoreSelection(button, button.dataset.correct) // Adds the right or wrong styling to the Options Buttons using the Score Selection Function
@@ -75,7 +76,8 @@ function selectOption(e) {
     console.log('Well done, you have made it to the end of the quiz! Try again?') // Logs message to console
     startButton.innerText = 'Try Again?' // Changes the text on the Start Button
     startButton.classList.remove('hide') // Displays the Start Button
-    startButton.focus()
+    startButton.classList.add('try-again') // Adds the Try Again Styling Class to the Button
+    document.getElementById('start-div').classList.remove('hide') // Displays the Start Button Div
     // quizQuestion.classList.add('hide') // Hides the Question & Options
     alert('Well done, you made it to the end of the quiz!'); // Provides a window alert for user 
   }
@@ -84,7 +86,6 @@ function selectOption(e) {
 // Adds score styling - right or wrong
 function scoreSelection(element, correct) { // It needs the element and to know if it is correct
   clearScore(element)
-  //////////////////////////////////////////////////////////////// removeLogo()
   if (correct) {
     element.classList.add('right') // If correct, the right (green) class will be added
   } else {
