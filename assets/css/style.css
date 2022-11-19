@@ -53,11 +53,16 @@ body.wrong {
     float: left;
 }
 
+#header-logo-alt,
 #header-logo {
     float: left;
     height: 80px;
     margin-left: 30px;
     padding: 10px 0;
+}
+
+#header-logo-alt {
+    display: none;
 }
 
 #header-text-div {
@@ -101,11 +106,7 @@ body.wrong {
     opacity: 0.9;
     height: 600px;
     width: 1000px;
-    padding: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
     border-radius: 30px;
     border: 1px solid #000000;
     box-shadow: 0 0 5px 2px;
@@ -316,13 +317,16 @@ body.wrong {
         padding: 0 15px;
     }
 
-    #nav-menu a:hover {
-        padding: 3px;
+    #header-logo {
+        display: none;
     }
 
-    #header-logo {
-        height: 50px;
-        padding: 25px 0;
+    #header-logo-alt {
+        float: left;
+        height: 80px;
+        margin-left: 30px;
+        padding: 10px 0;
+        display: block;
     }
 
     #quiz-section,

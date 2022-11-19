@@ -100,7 +100,7 @@ function clearScore(element) {
 }
 
 /**
- * // Removes Logo from header when displaying stylingfor right or wrong
+ * // Removes Logo from header when displaying styling for right or wrong
     function removeLogo() {
         // document.getElementById('header-logo').classList.add('hide') // The logo will be removed by adding the hide class
         // $('document.getElementById("header-logo")') .attr("src","/assets/images/android-chrome-192x192.png");
