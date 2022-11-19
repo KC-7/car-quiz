@@ -124,7 +124,7 @@ const questions = [
     ]
   },
   {
-    question: '3 of the 4 cars are the same car excluding cosmetic changes,<br>which option is not the same car as the others?',
+    question: '3 of the 4 cars are the same car excluding cosmetic changes, which option is not the same car as the others?',
     options: [
       { text:'Lexus LFA', correct: true },
       { text:'Scion FRS', correct: false },
