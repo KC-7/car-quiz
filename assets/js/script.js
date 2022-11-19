@@ -43,7 +43,7 @@ function displayQuestion(question) {
     button.innerText = option.text // Display the option text in the button
     button.classList.add('option-button') // Add the "Option Button" Class to the buttons
     if (option.correct) {
-      button.dataset.correct = option.correct // If correct option is selected, apply the "correct" styling to the button.
+      button.dataset.correct = option.correct
     }
     button.addEventListener('click', selectOption) // If the button is clicked, intiate "Select Option"
     optionButtons.appendChild(button)
@@ -52,6 +52,7 @@ function displayQuestion(question) {
 
 
 function resetOptions() {
+  // clearScore(document.body) - not needed?
   nextButton.classList.add('hide') // Hides the next button
   while (optionButtons.firstChild) {
     optionButtons.removeChild(optionButtons.firstChild)
@@ -61,21 +62,22 @@ function resetOptions() {
 
 function selectOption(e) {
   console.log('You have made a selection.') // Logs message to console
-  const userSelection = e.target
-  const correct = userSelection.dataset.correct
+  const userSelection = e.target // The User Selection is the target element (i.e. the button the user clicks on)
+  const correct = userSelection.dataset.correct 
   scoreSelection(document.body, correct)
   Array.from(optionButtons.children).forEach(button => {
     scoreSelection(button, button.dataset.correct)
   })
-  if (shuffleQuestions.length > currentQuestionIndex + 1) {
+  if (shuffleQuestions.length > currentQuestionIndex + 1) { // If there are more questions left to be asked than have currently been asked, it will ask the next one
     console.log('There are still more questions left, click next.') // Logs message to console
-    nextButton.classList.remove('hide') // If their are more questions left to be asked than have currently been asked, it will ask the next one
   } else {
     console.log('Well done, you have made it to the end of the quiz! Try again?') // Logs message to console
     startButton.innerText = 'Try Again?' // Changes the text on the Start Button
     startButton.classList.remove('hide') // Displays the Start Button
     quizQuestion.classList.add('hide') // Hides the Question & Options
-    nextButton
+    nextButton.classList.remove('hide') // Hide the Next Button
+    alert('Well done, you made it to the end of the quiz!'); // Provides a window alert for user 
+
     // document.getElementById('next-question-div').classList.add('hide') // BUG - Hides the Next Question Button but doesnt reapply when game is replayed by user...
   }
   nextButton.classList.remove('hide')
@@ -139,7 +141,13 @@ const questions = [{
         correct: false
       }
     ]
-  },
+  }
+]
+
+console.log('The page has loaded and the quiz is ready, press start!')
+
+/**
+ * ,
   {
     question: 'When was the first speeding ticket issued?',
     options: [{
@@ -220,6 +228,4 @@ const questions = [{
       }
     ]
   }
-]
-
-console.log('The page has loaded and the quiz is ready, press start!')
+ */
