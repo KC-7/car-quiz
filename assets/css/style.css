@@ -107,6 +107,7 @@ body.wrong {
     height: 600px;
     width: 1000px;
     margin: auto;
+    margin-top: 100px;
     border-radius: 30px;
     border: 1px solid #000000;
     box-shadow: 0 0 5px 2px;
@@ -180,9 +181,9 @@ body.wrong {
 
 #start-button.try-again {
     opacity: 75%;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
 }
 
 #next-question-div {
