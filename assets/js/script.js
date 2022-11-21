@@ -24,6 +24,7 @@ function startQuiz() {
   startButton.classList.add('hide') // Hides the Start Button
   document.getElementById('start-div').classList.add('hide') // Hides the Start Button Div
   quizQuestion.classList.remove('hide') // Shows Quiz Question
+  document.getElementById("total-questions").innerText = questions.length // Displays the total number of questions in the quiz
   shuffleQuestions = questions.sort(() => Math.random() - .5) // Randomizes the order of the questions array
   currentQuestionIndex = 0 // Starts with the number of questions asked at 0
   nextQuestion() // Initiates the nextQuestion Function
@@ -63,6 +64,7 @@ function resetOptions() {
 
 function selectOption(e) {
   console.log('You have made a selection.') // Logs message to console
+  document.getElementsByClassName('option-buttons').disabled = true; ///////////////////////////////// NOT WORKING
   const userSelection = e.target // The User Selection is the target element (i.e. the button the user clicks on)
   const correct = userSelection.dataset.correct // Correct is when the User Selection is Right
   scoreSelection(document.body, correct) // Adds the right or wrong styling to the body using the Score Selection Function 
@@ -134,6 +136,8 @@ function questionCounter() {
   let questionsAsked = parseInt(document.getElementById("questions-asked").innerText);
   document.getElementById("questions-asked").innerText = ++questionsAsked;
 }
+
+
 
 
 // Q&A - List of the Questions & Options / Correct Answers in the Quiz
