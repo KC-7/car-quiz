@@ -4,6 +4,7 @@ const questionElement = document.getElementById('question') // This is the Quest
 const optionButtons = document.getElementById('quiz-options') // These are the Option Buttons
 const nextButton = document.getElementById('next-question-button') // This is the Next Question Button
 
+
 // The below variables are utilised in the startQuiz and nextButton Functions to randomize the order of the questions
 let shuffleQuestions, currentQuestionIndex
 
@@ -109,14 +110,31 @@ function clearScore(element) {
 
 // Score Pop Up Alert - right or wrong
 function scoreAlert(correct) { // It needs the element and to know if it is correct
+  questionCounter()
   if (correct) {
     console.log('Well done, you got it right!') // Logs message to console
     alert('Well done, you got it right!') // Creates a pop up alert in the browser
+    addScore() // Add to Score
   } else {
     console.log('Oh no, you got it wrong, better luck next time!') // Logs message to console
     alert('Oh no, you got it wrong, better luck next time!') // Creates a pop up alert in the browser
   }
 }
+
+// Add one to the user score
+function addScore() {
+  console.log('Updating Score')
+  let correctAnswers = parseInt(document.getElementById("correct-answers").innerText);
+  document.getElementById("correct-answers").innerText = ++correctAnswers;
+}
+
+// Update Questions Asked Counter
+function questionCounter() {
+  console.log('Updating Questions Asked')
+  let questionsAsked = parseInt(document.getElementById("questions-asked").innerText);
+  document.getElementById("questions-asked").innerText = ++questionsAsked;
+}
+
 
 // Q&A - List of the Questions & Options / Correct Answers in the Quiz
 const questions = [{
