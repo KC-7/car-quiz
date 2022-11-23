@@ -24,7 +24,7 @@ body.wrong {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 /* Header Menu */
@@ -91,14 +91,6 @@ body.wrong {
     font-weight: bold;
     list-style: none;
 }
-
-#score-bar.hide {
-    display: none;
-}
-
-
-
-
 
 /* Quiz & Contact Page Styling */
 

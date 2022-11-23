@@ -34,6 +34,10 @@ function startQuiz() {
   document.getElementById('total-questions').innerText = questions.length // Displays the total number of questions in the quiz
   shuffleQuestions = questions.sort(() => Math.random() - .5) // Randomizes the order of the questions array
   currentQuestionIndex = 0 // Starts with the number of questions asked at 0
+
+  document.getElementById("correct-answers").innerText = '0' // Resets counter to 0 when starting / restarting game
+  document.getElementById("questions-asked").innerText = '0' // Resets counter to 0 when starting / restarting game
+  
   nextQuestion() // Initiates the nextQuestion Function
   enableBtns() //////////////////////////////////////////////////
 }
@@ -100,7 +104,8 @@ function selectOption(e) {
 /////////////////////////////////////////////////////////////////////
 
 function disableBtns() {
-  optionButton.disabled = true;
+  for (i=0; i < optionButton.length; i++) {optionButton.item(i).disabled = true}
+  optionButton[0].disabled = true;
   // optionButtons.disabled = true;
   // document.getElementsByClassName('option-button').disabled = true;
   // document.getElementById('option-a').disabled = true;
@@ -131,14 +136,6 @@ function clearScore(element) {
   element.classList.remove('right') // Removes right class & styling
   element.classList.remove('wrong') // Removes wrong class & styling
 }
-
-/**
- * // Removes Logo from header when displaying styling for right or wrong
-    function removeLogo() {
-        // document.getElementById('header-logo').classList.add('hide') // The logo will be removed by adding the hide class
-        // $('document.getElementById("header-logo")') .attr("src","/assets/images/android-chrome-192x192.png");
-    }
- */
 
 // Score Pop Up Alert - right or wrong
 function scoreAlert(correct) { // It needs the element and to know if it is correct
