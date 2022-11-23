@@ -15,12 +15,12 @@ body {
 }
 
 body.right {
-    background-color: darkgreen;
+    background-color: #006400;
 
 }
 
 body.wrong {
-    background-color: darkred;
+    background-color: #8b0000;
 }
 
 .hide {
@@ -38,16 +38,6 @@ body.wrong {
     z-index: +1;
 }
 
-/*
-#nav-bar.right {
-    background-color: green;
-    
-}
-
-#nav-bar.wrong {
-    background-color: red;
-}
-*/
 .header-grid {
     width: 33%;
     float: left;
@@ -136,12 +126,12 @@ body.wrong {
 }
 
 .option-button.right {
-    background-color: green;
+    background-color: #008000;
     color: #f5f5f5;
 }
 
 .option-button.wrong {
-    background-color: red;
+    background-color: #ff0000;
     color: #f5f5f5;
 }
 
@@ -226,6 +216,38 @@ body.wrong {
     font-size: 28px;
 }
 
+/* Collapsible Window */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #aaaaa0;
+    color: #003333;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #008080;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #aaaaa0;
+    color: #003333;
+    padding: 25px;
+    font-size: medium;
+  }
+
 /* Media Queries for Responsive Layout */
 
 /* When the screen is less than 1364px wide */
@@ -293,7 +315,6 @@ body.wrong {
     #contact-section,
     #start-div {
         width: 390px;
-        padding: 5px;
     }
 
     #quiz-options {
@@ -359,7 +380,6 @@ body.wrong {
     #contact-section,
     #start-div {
         width: 250px;
-        padding: 3px;
     }
 
     #question {
