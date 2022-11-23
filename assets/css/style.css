@@ -98,7 +98,7 @@ body.wrong {
 #contact-section {
     background-color: #003333;
     opacity: 0.9;
-    height: 600px;
+    height: 100%;
     width: 1000px;
     margin: auto;
     margin-top: 100px;
@@ -106,11 +106,12 @@ body.wrong {
     border-radius: 30px;
     border: 1px solid #000000;
     box-shadow: 0 0 5px 2px;
+    padding: 30px 0;
 }
 
-#question-div {
+#question {
     text-align: center;
-    padding-top: 20px;
+    padding: 30px 15px 30px 15px;
     color: #f5f5f5;
     font-size: 35px;
 }
@@ -121,7 +122,7 @@ body.wrong {
     gap: 75px;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 30px 15px;
 }
 
 .option-button {
@@ -144,11 +145,19 @@ body.wrong {
     color: #f5f5f5;
 }
 
+
 #start-div {
     width: 100%;
-    height: 600px;
-    /* ------------- position: relative; -------------- */
+    height: 300px;
+    position: relative;
 }
+
+#start-div.retry {
+    width: 100%;
+    height: 200px;
+    padding: 0;
+}
+
 
 #start-button {
     width: 200px;
@@ -159,6 +168,7 @@ body.wrong {
     background-color: #000000;
     color: #f8e108;
     border: 4px solid #000000;
+    align-items: center;
     /* The following vertically centers the button */
     margin: 0;
     position: absolute;
@@ -175,15 +185,16 @@ body.wrong {
 }
 
 #start-button.try-again {
-    opacity: 75%;
-    width: 400px;
-    height: 400px;
+    opacity: 80%;
+    height: 100px;
+    width: 250px;
     border-radius: 50px;
 }
 
 #next-question-div {
     width: 100%;
     text-align: center;
+    padding: 30px 0 30px 0;
 }
 
 #next-question-button {
@@ -247,7 +258,7 @@ body.wrong {
         width: 750px;
     }
 
-    #question-div {
+    #question {
         font-size: 28px;
     }
 
@@ -259,7 +270,7 @@ body.wrong {
     #quiz-section,
     #contact-section,
     #start-div {
-        height: 600px;
+
         width: 600px;
         padding: 15px;
     }
@@ -281,7 +292,6 @@ body.wrong {
     #quiz-section,
     #contact-section,
     #start-div {
-        height: 800px;
         width: 390px;
         padding: 5px;
     }
@@ -293,6 +303,7 @@ body.wrong {
         padding: 60px;
     }
 
+    #start-button.try-again,
     .option-button,
     #next-question-button {
         height: 60px;
@@ -301,9 +312,20 @@ body.wrong {
         font-size: 15px;
     }
 
+    #start-div.retry {
+        height: 100px;
+    }
+
     .option-button:hover,
     #next-question-button:hover {
         font-size: 20px;
+    }
+
+    #question,
+    #quiz-options,
+    #next-question-div {
+        padding: 15px 0;
+        gap: 30px;
     }
 
 }
@@ -340,8 +362,8 @@ body.wrong {
         padding: 3px;
     }
 
-    #question-div {
-        font-size: 22px;
+    #question {
+        font-size: 24px;
     }
 
     #score-bar {

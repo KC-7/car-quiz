@@ -18,9 +18,11 @@ nextButton.addEventListener('click', () => { // When the next button is clicked,
   enableBtns()
 })
 
-optionButtons.addEventListener('click', () => {
+/**
+ * optionButtons.addEventListener('click', () => {
   disableBtns()
 })
+ */
 
 /**
  * The startQuiz Function activates when user clicks start quiz button.
@@ -68,7 +70,8 @@ function displayQuestion(question) {
 
 // Activated when user clicks next
 function resetOptions() {
-  clearScore(document.body) // Removes the right or wrong styling from the Body using the Clear Score Function
+  clearScore(document.body) // Removes the right or wrong styling f
+  document.getElementById('next-question-div').classList.add('hide') // Removes the Next Question Div
   nextButton.classList.add('hide') // Hides the next button
   while (optionButtons.firstChild) { 
     optionButtons.removeChild(optionButtons.firstChild) // Remove previous question options
@@ -77,7 +80,7 @@ function resetOptions() {
 
 function selectOption(e) {
   console.log('You have made a selection.') // Logs message to console
-  // disableBtns() ///////////////////////////////// NOT WORKING
+  disableBtns() ///
   const userSelection = e.target // The User Selection is the target element (i.e. the button the user clicks on)
   const correct = userSelection.dataset.correct // Correct is when the User Selection is Right
   scoreSelection(document.body, correct) // Adds the right or wrong styling to the body using the Score Selection Function 
@@ -88,14 +91,18 @@ function selectOption(e) {
   if (shuffleQuestions.length > currentQuestionIndex + 1) { // If there are more questions left to be asked than have currently been asked, it will ask the next one
     console.log('There are still more questions left, click next.') // Logs message to console
     nextButton.classList.remove('hide') // Displays the Next Question button
+    document.getElementById('next-question-div').classList.remove('hide') // Displays the Next Question Div
   } else { // No more questions left
     console.log('Well done, you have made it to the end of the quiz! Try again?') // Logs message to console
     startButton.innerText = 'Try Again?' // Changes the text on the Start Button
     startButton.classList.remove('hide') // Displays the Start Button
     startButton.classList.add('try-again') // Adds the Try Again Styling Class to the Button
     document.getElementById('start-div').classList.remove('hide') // Displays the Start Button Div
+    document.getElementById('start-div').classList.add('retry') // Adjusts the styling for the Start Button Div
     // quizQuestion.classList.add('hide') // Hides the Question & Options
-    alert('Well done, you made it to the end of the quiz!'); // Provides a window alert for user 
+    var spanText1 = document.getElementById('correct-answers').innerText;
+    var spanText2 = document.getElementById('total-questions').innerText;
+    alert('Well done, you made it to the end of the quiz. You answered ' + spanText1 + ' out of ' + spanText2 + ' questions correctly!'); // Provides a window alert for user 
   }
 }
 
