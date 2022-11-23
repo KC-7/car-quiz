@@ -65,6 +65,14 @@ body.wrong {
     display: none;
 }
 
+#header-logo:hover,
+#header-logo-alt:hover {
+    border: 2px solid #f8e108;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: 8px;
+}
+
 #header-text-div {
     font-size: 28px;
     line-height: 100px;
@@ -72,30 +80,20 @@ body.wrong {
     text-align: center;
 }
 
-#nav-menu {
+#score-bar {
     font-size: 28px;
     vertical-align: middle;
     color: #003333;
     line-height: 100px;
 }
 
-#nav-menu li {
+#score-bar li {
     float: right;
     list-style-type: none;
-    padding: 0 30px;
-}
-
-#nav-menu a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#nav-menu a:hover {
-    border: 2px solid #f8e108;
-    border-radius: 25px;
-    padding: 5px;
+    padding: 0 10px;
     font-weight: bold;
 }
+
 
 
 /* Quiz & Contact Page Styling */
@@ -230,6 +228,10 @@ body.wrong {
         line-height: 50px;
     }
 
+    #score-bar {
+        line-height: 50px;
+    }
+
 }
 
 /* When the screen is less than 1089px wide */
@@ -338,11 +340,17 @@ body.wrong {
     #quiz-section,
     #contact-section,
     #start-div {
-        width: 270px;
+        width: 250px;
         padding: 3px;
     }
 
     #question-div {
         font-size: 22px;
     }
+
+    #score-bar {
+        font-size: 16px;
+    }
 }
+
+/* The site will work correctly on devices with 280px screen width and above */

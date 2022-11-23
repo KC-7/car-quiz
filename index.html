@@ -35,14 +35,13 @@
         </div>
 
         <nav class="header-grid">
-            <ul id="nav-menu">
+            <ul id="score-bar" class="hide">
                 <!-- Below List Items are in reverse order to accomadate the CCS Float Right Rule -->
                 <li>
-                    <a href="index.html" aria-label="Sends you to the Quiz Page">Contact <i
-                            class="fas fa-envelope"></i></a>
+                    Correct: <span id="correct-answers">0</span>
                 </li>
                 <li>
-                    <a href="#" aria-label="Sends you to the Rules Page">Rules <i class="fas fa-car"></i></a>
+                    Question: <span id="questions-asked">0</span>/<span id="total-questions">X</span>
                 </li>
             </ul>
         </nav>
@@ -57,7 +56,7 @@
             </div>
 
             <div id="quiz-options">
-                <button aria-label="Option A Button" id="option-a" class="option-button" value="A">Option A</button>
+                <button aria-label="Option A Button" id="option-a" class="option-button" value="A">Option A </button>
                 <button aria-label="Option B Button" id="option-b" class="option-button" value="B">Option B</button>
                 <button aria-label="Option C Button" id="option-c" class="option-button" value="C">Option C</button>
                 <button aria-label="Option D Button" id="option-d" class="option-button" value="D">Option D</button>

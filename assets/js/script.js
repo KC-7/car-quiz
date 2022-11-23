@@ -1,8 +1,9 @@
 const startButton = document.getElementById('start-button') // This is the Start Button
 const quizQuestion = document.getElementById('question-div') // This is the Question & Options Area
 const questionElement = document.getElementById('question') // This is the Question
-const optionButtons = document.getElementById('quiz-options') // These are the Option Buttons
-const nextButton = document.getElementById('next-question-button') // This is the Next Question Button
+const optionButtons = document.getElementById('quiz-options') // This is the Option Buttons Area
+const optionButton = document.getElementsByClassName('option-button') // These are the individual Option Buttons
+const nextButton = document.getElementById('next-question-button') // This is the Next Question Butto
 
 
 // The below variables are utilised in the startQuiz and nextButton Functions to randomize the order of the questions
@@ -14,6 +15,11 @@ startButton.addEventListener('click', startQuiz) // Initiates the Start Quiz Fun
 nextButton.addEventListener('click', () => { // When the next button is clicked, the next question is displayed and one is added to the current question index
   currentQuestionIndex++
   nextQuestion()
+  enableBtns()
+})
+
+optionButtons.addEventListener('click', () => {
+  disableBtns()
 })
 
 /**
@@ -24,10 +30,12 @@ function startQuiz() {
   startButton.classList.add('hide') // Hides the Start Button
   document.getElementById('start-div').classList.add('hide') // Hides the Start Button Div
   quizQuestion.classList.remove('hide') // Shows Quiz Question
-  document.getElementById("total-questions").innerText = questions.length // Displays the total number of questions in the quiz
+  document.getElementById('score-bar').classList.remove('hide') // Shows the Score Counter
+  document.getElementById('total-questions').innerText = questions.length // Displays the total number of questions in the quiz
   shuffleQuestions = questions.sort(() => Math.random() - .5) // Randomizes the order of the questions array
   currentQuestionIndex = 0 // Starts with the number of questions asked at 0
   nextQuestion() // Initiates the nextQuestion Function
+  enableBtns() //////////////////////////////////////////////////
 }
 
 // Activates when the startQuiz Function or the nextButton Event Listener has been called. 
@@ -41,6 +49,7 @@ function nextQuestion() {
 function displayQuestion(question) {
   console.log('The question and options have been displayed, please choose wisely.') // Logs message to console
   questionElement.innerHTML = question.question // The question area will be populated by the Question in the Q & A Section
+  questionCounter()
   question.options.forEach(option => {
     const button = document.createElement('button') // Create a button for each of the possible answers provided in the Q & A Section
     button.innerText = option.text // Display the option text in the button
@@ -57,14 +66,14 @@ function displayQuestion(question) {
 function resetOptions() {
   clearScore(document.body) // Removes the right or wrong styling from the Body using the Clear Score Function
   nextButton.classList.add('hide') // Hides the next button
-  while (optionButtons.firstChild) {
-    optionButtons.removeChild(optionButtons.firstChild)
+  while (optionButtons.firstChild) { 
+    optionButtons.removeChild(optionButtons.firstChild) // Remove previous question options
   }
 }
 
 function selectOption(e) {
   console.log('You have made a selection.') // Logs message to console
-  document.getElementsByClassName('option-buttons').disabled = true; ///////////////////////////////// NOT WORKING
+  // disableBtns() ///////////////////////////////// NOT WORKING
   const userSelection = e.target // The User Selection is the target element (i.e. the button the user clicks on)
   const correct = userSelection.dataset.correct // Correct is when the User Selection is Right
   scoreSelection(document.body, correct) // Adds the right or wrong styling to the body using the Score Selection Function 
@@ -85,6 +94,27 @@ function selectOption(e) {
     alert('Well done, you made it to the end of the quiz!'); // Provides a window alert for user 
   }
 }
+
+
+
+/////////////////////////////////////////////////////////////////////
+
+function disableBtns() {
+  optionButton.disabled = true;
+  // optionButtons.disabled = true;
+  // document.getElementsByClassName('option-button').disabled = true;
+  // document.getElementById('option-a').disabled = true;
+  console.log('Attempting to disable buttons...')
+}
+
+function enableBtns() {
+  document.getElementsByClassName('option-button').disabled = false;
+  console.log('Attempting to enable buttons...')
+}
+
+
+
+
 
 // Adds score styling - right or wrong
 function scoreSelection(element, correct) { // It needs the element and to know if it is correct
@@ -112,7 +142,6 @@ function clearScore(element) {
 
 // Score Pop Up Alert - right or wrong
 function scoreAlert(correct) { // It needs the element and to know if it is correct
-  questionCounter()
   if (correct) {
     console.log('Well done, you got it right!') // Logs message to console
     alert('Well done, you got it right!') // Creates a pop up alert in the browser
