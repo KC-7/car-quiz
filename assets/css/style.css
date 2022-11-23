@@ -82,17 +82,21 @@ body.wrong {
 
 #score-bar {
     font-size: 28px;
-    vertical-align: middle;
+    padding-right: 15px;
     color: #003333;
-    line-height: 100px;
+    line-height: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    float: right;
+    font-weight: bold;
+    list-style: none;
 }
 
-#score-bar li {
-    float: right;
-    list-style-type: none;
-    padding: 0 10px;
-    font-weight: bold;
+#score-bar.hide {
+    display: none;
 }
+
+
 
 
 
