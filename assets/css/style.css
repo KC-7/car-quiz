@@ -248,6 +248,31 @@ body.wrong {
     font-size: medium;
   }
 
+/* Footer */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    font-size: xx-large;
+    background-color: plum;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+footer a {
+    color: rebeccapurple;
+}
+
+footer div:hover {
+    transform: scale(1.25); /* Increases the size when hovering */
+}
+
 /* Media Queries for Responsive Layout */
 
 /* When the screen is less than 1364px wide */
