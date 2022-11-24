@@ -109,11 +109,11 @@ function selectOption(e) {
     startButton.classList.add('try-again'); // Adds the Try Again Styling Class to the Button
     document.getElementById('start-div').classList.remove('hide'); // Displays the Start Button Div
     document.getElementById('start-div').classList.add('retry'); // Adjusts the styling for the Start Button Div
-    document.getElementById('modal-end').classList.remove('hide') // Displays the End of Quiz Modal Update
+    document.getElementById('modal-end').classList.remove('hide'); // Displays the End of Quiz Modal Update
     // Shows the user how many their score when the quiz is finished:
     var correctAnswers = document.getElementsByClassName('correct-answers')[0].innerText;
     var totalQuestions = document.getElementsByClassName('total-questions')[0].innerText;
-    document.getElementById('end-result').innerHTML = 'You answered ' + correctAnswers + ' out of ' + totalQuestions + ' questions correctly.'
+    document.getElementById('end-result').innerHTML = 'You answered ' + correctAnswers + ' out of ' + totalQuestions + ' questions correctly.';
   }
 }
 
@@ -150,9 +150,9 @@ function clearScore(element) {
 function scoreAlert(correct) { // It needs the element and to know if it is correct
   if (correct) {
     addScore(); // Add to Score
-    document.getElementById('modal-right').classList.remove('hide')
+    document.getElementById('modal-right').classList.remove('hide');
   } else {
-    document.getElementById('modal-wrong').classList.remove('hide')
+    document.getElementById('modal-wrong').classList.remove('hide');
   }
 }
 

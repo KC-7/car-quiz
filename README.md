@@ -11,6 +11,8 @@ https://kc-7.github.io/car-quiz/
 
 - Icons added using <a href="https://fontawesome.com/v5/search?o=r&m=free" target="_blank" rel="noopener" aria-label="Link to Font Awesome | Free V5 Icons (opens in new tab)">Font Awesome | Free V5 Icons</a>.
 
+- QR Code was created for free using https://www.qr-code-generator.com/
+
 
 
 
