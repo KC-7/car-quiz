@@ -69,7 +69,7 @@ body.wrong {
 
 #header-text-div {
     font-size: 28px;
-    line-height: 100px;
+    line-height: 50px;
     color: #003333;
     text-align: center;
 }
@@ -259,6 +259,12 @@ body.wrong {
 
 #qr-div {
     text-align: center;
+    border: 3px solid #f8e108;
+    width: max-content; /* The width of the div is equal to the widest element within it*/
+    padding: 5px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 25px;
 }
 
 #qr-text {
@@ -269,6 +275,7 @@ body.wrong {
 
 #qr-code {
     height: 200px;
+    margin-bottom: 15px;
 }
 
 #jigsaw-logo {
@@ -347,12 +354,8 @@ footer div:hover {
     }
 }
 
-/* When the screen is less than 1364px wide */
-@media screen and (max-width: 1364px) {
-
-    #header-text-div {
-        line-height: 50px;
-    }
+/* When the screen is less than 1350px wide */
+@media screen and (max-width: 1350px) {
 
     #score-bar {
         line-height: 50px;

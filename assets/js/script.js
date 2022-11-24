@@ -15,16 +15,15 @@ startButton.addEventListener('click', startQuiz);
 
 /** Event Listener - When the next button is clicked, the options are enabled, the next question is displayed and one is added to the current question index */
 nextButton.addEventListener('click', () => {
-  currentQuestionIndex++;
-  nextQuestion();
-  enableBtns();
-  window.scrollTo(0, 0); // Scrolls back up to the top of the page
+  currentQuestionIndex++; // Updates the current question index
+  nextQuestion(); // Goes to the next question
+  enableBtns(); // Enables the quiz option buttons
+  questionElement.scrollIntoView(); // Scrolls back up to the top of the question
 });
 
-/** Event Listener - Auto Scroll and Focus on Next Button */
-
+/** Event Listener - Auto Scroll and Focus on Next Button or Start Button */
 optionButtons.addEventListener("click", () => {
-  nextButton.focus();
+  nextButton.focus(); 
   startButton.focus();
 });
 
