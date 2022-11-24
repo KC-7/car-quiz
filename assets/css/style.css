@@ -261,7 +261,7 @@ body.wrong {
 }
 
 .modal-header {
-    font-size: 28px;
+    font-size: 35px;
     padding-bottom: 15px;
     font-weight: bold;
 }
@@ -279,7 +279,7 @@ body.wrong {
 }
 
 .modal-body {
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1.5;
 }
 
@@ -347,8 +347,13 @@ footer div:hover {
         width: 750px;
     }
 
+    .modal-header,
     #question {
         font-size: 28px;
+    }
+    
+    .modal-body {
+        font-size: 25px;
     }
 
 }

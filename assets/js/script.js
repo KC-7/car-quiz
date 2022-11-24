@@ -20,18 +20,6 @@ nextButton.addEventListener('click', () => {
   enableBtns();
 });
 
-/** Event Listener - Initiates the Modal Pop Up 
-
-for (var i = 0 ; i < comment.length; i++) {
-  modalClose[i].addEventListener('click' , closeModal) ; 
-}
-
-function closeModal() {
-  modalContainer.classList.add('hide');
-  console.log('Close Modal Pop Up')
-};  */
-
-
 /** Collapsible Window - Displays the content when the collapsible area is selected by user */
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -68,11 +56,10 @@ function nextQuestion() {
   console.log('The computer is shuffling the questions.'); // Logs message to console
   resetOptions(); // Removes unnesecary buttons by calling the resetOptions Function
   displayQuestion(shuffleQuestions[currentQuestionIndex]); // Calls the Display Question Function and Shuffles the remaining questions
-  
-  removeModal();
+  removeModal(); // Remove Modal Div by calling the function
 }
 
-/** Removes Modal Result before displaying next question */
+/** Removes Modal Div before displaying next question */
 function removeModal() {
   for (i = 0; i < modalContainer.length; i++) {
     modalContainer.item(i).classList.add('hide');
@@ -129,13 +116,8 @@ function selectOption(e) {
     startButton.classList.add('try-again'); // Adds the Try Again Styling Class to the Button
     document.getElementById('start-div').classList.remove('hide'); // Displays the Start Button Div
     document.getElementById('start-div').classList.add('retry'); // Adjusts the styling for the Start Button Div
-
-
-    document.getElementById('modal-end').classList.remove('hide') ////////////////////
-    
-    // quizQuestion.classList.add('hide') // Hides the Question & Options
-
-
+    document.getElementById('modal-end').classList.remove('hide') // Displays the End of Quiz Modal Update
+    // Shows the user how many their score when the quiz is finished:
     var correctAnswers = document.getElementsByClassName('correct-answers')[0].innerText;
     var totalQuestions = document.getElementsByClassName('total-questions')[0].innerText;
     document.getElementById('end-result').innerHTML = 'You answered ' + correctAnswers + ' out of ' + totalQuestions + ' questions correctly!'
