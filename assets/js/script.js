@@ -304,7 +304,7 @@ const questions = [{
     ]
   },
   {
-    question: 'Which option do petrol heads prefer?',
+    question: 'Which option is generally preferred by car enthusiasts?',
     options: [{
         text: 'FWD - Front Wheel Drive',
         correct: false
@@ -316,22 +316,58 @@ const questions = [{
     ]
   },
   {
-    question: 'On average, how many cars are produced globaly on a daily basis?',
+    question: 'The car that holds the Guiness World Record for Highest Mileage has:',
     options: [{
-        text: '15,000',
+        text: '250,000 miles',
         correct: false
       },
       {
-        text: '55,000',
+        text: '500,000 miles',
         correct: false
       },
       {
-        text: '95,000',
+        text: '750,000 miles',
         correct: false
       },
       {
-        text: '165,000',
+        text: '1,500,000 miles',
+        correct: false
+      },
+      {
+        text: '3,000,000 miles',
         correct: true
+      },
+      {
+        text: '4,500,000 miles',
+        correct: false
+      }
+    ]
+  },
+  {
+    question: 'On average, how many individual parts are in a car?',
+    options: [{
+        text: '500+',
+        correct: false
+      },
+      {
+        text: '1,500+',
+        correct: false
+      },
+      {
+        text: '5,000+',
+        correct: false
+      },
+      {
+        text: '15,000+',
+        correct: false
+      },
+      {
+        text: '30,000+',
+        correct: true
+      },
+      {
+        text: '45,000+',
+        correct: false
       }
     ]
   },
@@ -352,6 +388,26 @@ const questions = [{
       {
         text: 'Volkswagen AG',
         correct: true
+      }
+    ]
+  },
+  {
+    question: 'What country is SEAT manufactured in?',
+    options: [{
+        text: 'France',
+        correct: false
+      },
+      {
+        text: 'Germany',
+        correct: false
+      },
+      {
+        text: 'Spain',
+        correct: true
+      },
+      {
+        text: 'United Kingdom',
+        correct: false
       }
     ]
   }
