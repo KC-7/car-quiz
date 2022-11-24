@@ -37,7 +37,6 @@ for (i = 0; i < coll.length; i++) {
 
 /** The startQuiz Function activates when user clicks start quiz button */
 function startQuiz() {
-  console.log('The quiz has started, good luck!'); // Logs message to console
   startButton.classList.add('hide'); // Hides the Start Button
   document.getElementById('start-div').classList.add('hide'); // Hides the Start Button Div
   quizQuestion.classList.remove('hide'); // Shows Quiz Question
@@ -53,7 +52,6 @@ function startQuiz() {
 
 /** Activates when the startQuiz Function or the nextButton Event Listener has been called */
 function nextQuestion() {
-  console.log('The computer is shuffling the questions.'); // Logs message to console
   resetOptions(); // Removes unnesecary buttons by calling the resetOptions Function
   displayQuestion(shuffleQuestions[currentQuestionIndex]); // Calls the Display Question Function and Shuffles the remaining questions
   removeModal(); // Remove Modal Div by calling the function
@@ -65,12 +63,10 @@ function removeModal() {
     modalContainer.item(i).classList.add('hide');
   }
   modalContainer[0].classList.add('hide');
-  console.log('Attempting to remove modal...');
 }
 
 /** Activates when the nextQuestion function has been called */
 function displayQuestion(question) {
-  console.log('The question and options have been displayed, please choose wisely.'); // Logs message to console
   questionElement.innerHTML = question.question; // The question area will be populated by the Question in the Q & A Section
   questionCounter(); // Adds one Question to the Counter using the Question Counter Function
   question.options.forEach(option => {
@@ -96,8 +92,7 @@ function resetOptions() {
 }
 /** Initiates when the user selects an option */
 function selectOption(e) {
-  console.log('You have made a selection.'); // Logs message to console
-  disableBtns(); ///
+  disableBtns(); // Disables the quiz option buttons once selected
   const userSelection = e.target; // The User Selection is the target element (i.e. the button the user clicks on)
   const correct = userSelection.dataset.correct; // Correct is when the User Selection is Right
   scoreSelection(document.body, correct); // Adds the right or wrong styling to the body using the Score Selection Function 
@@ -106,11 +101,9 @@ function selectOption(e) {
     scoreSelection(button, button.dataset.correct); // Adds the right or wrong styling to the Options Buttons using the Score Selection Function
   });
   if (shuffleQuestions.length > currentQuestionIndex + 1) { // If there are more questions left to be asked than have currently been asked, it will ask the next one
-    console.log('There are still more questions left, click next.'); // Logs message to console
     nextButton.classList.remove('hide'); // Displays the Next Question button
     document.getElementById('next-question-div').classList.remove('hide'); // Displays the Next Question Div
   } else { // No more questions left
-    console.log('Well done, you have made it to the end of the quiz! Try again?'); // Logs message to console
     startButton.innerText = 'Try Again?'; // Changes the text on the Start Button
     startButton.classList.remove('hide'); // Displays the Start Button
     startButton.classList.add('try-again'); // Adds the Try Again Styling Class to the Button
@@ -120,8 +113,7 @@ function selectOption(e) {
     // Shows the user how many their score when the quiz is finished:
     var correctAnswers = document.getElementsByClassName('correct-answers')[0].innerText;
     var totalQuestions = document.getElementsByClassName('total-questions')[0].innerText;
-    document.getElementById('end-result').innerHTML = 'You answered ' + correctAnswers + ' out of ' + totalQuestions + ' questions correctly!'
-    alert('Well done, you made it to the end of the quiz. You answered ' + correctAnswers + ' out of ' + totalQuestions + ' questions correctly!'); // Provides a window alert for user 
+    document.getElementById('end-result').innerHTML = 'You answered ' + correctAnswers + ' out of ' + totalQuestions + ' questions correctly.'
   }
 }
 
@@ -131,13 +123,11 @@ function disableBtns() {
     optionButton.item(i).disabled = true;
   }
   optionButton[0].disabled = true;
-  console.log('Attempting to disable buttons...');
 }
 
 /** Enables the quiz option buttons so the user can select an option */
 function enableBtns() {
   document.getElementsByClassName('option-button').disabled = false;
-  console.log('Attempting to enable buttons...');
 }
 
 /** Adds score styling class (right or wrong, green or red) to the body and quiz option buttons */
@@ -156,30 +146,24 @@ function clearScore(element) {
   element.classList.remove('wrong'); // Removes wrong class & styling
 }
 
-/** Score Pop Up Alert - right or wrong */
+/** Score Alert - right or wrong */
 function scoreAlert(correct) { // It needs the element and to know if it is correct
   if (correct) {
-    console.log('Well done, you got it right!'); // Logs message to console
-    alert('Well done, you got it right!'); // Creates a pop up alert in the browser
     addScore(); // Add to Score
     document.getElementById('modal-right').classList.remove('hide')
   } else {
-    console.log('Oh no, you got it wrong, better luck next time!'); // Logs message to console
-    alert('Oh no, you got it wrong, better luck next time!'); // Creates a pop up alert in the browser
     document.getElementById('modal-wrong').classList.remove('hide')
   }
 }
 
 /** Add one to the user score */
 function addScore() {
-  console.log('Updating Score');
   let correctAnswers = parseInt(document.getElementsByClassName("correct-answers")[0].innerText);
   document.getElementsByClassName("correct-answers")[0].innerText = ++correctAnswers;
 }
 
 /** Update Questions Asked Counter */
 function questionCounter() {
-  console.log('Updating Questions Asked');
   let questionsAsked = parseInt(document.getElementsByClassName("questions-asked")[0].innerText);
   document.getElementsByClassName("questions-asked")[0].innerText = ++questionsAsked;
 }
@@ -394,5 +378,3 @@ const questions = [{
     ]
   }
 ];
-
-console.log('The page has loaded and the quiz is ready, press start!');
