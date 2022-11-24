@@ -8,6 +8,10 @@
 
 /* Main Structure */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #008080;
     font-family: Arial, Helvetica, sans-serif;

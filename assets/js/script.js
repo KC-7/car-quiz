@@ -20,6 +20,13 @@ nextButton.addEventListener('click', () => {
   enableBtns();
 });
 
+/** Event Listener - Auto Scroll and Focus on Next Button */
+
+optionButtons.addEventListener("click", () => {
+  nextButton.focus();  // default: {preventScroll:false}
+  console.log('Attempting to Focus')
+});
+
 /** Collapsible Window - Displays the content when the collapsible area is selected by user */
 var coll = document.getElementsByClassName("collapsible");
 var i;
