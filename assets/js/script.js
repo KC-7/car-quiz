@@ -3,7 +3,9 @@ const quizQuestion = document.getElementById('question-div'); // This is the Que
 const questionElement = document.getElementById('question'); // This is the Question
 const optionButtons = document.getElementById('quiz-options'); // This is the Option Buttons Area
 const optionButton = document.getElementsByClassName('option-button'); // These are the individual Option Buttons
-const nextButton = document.getElementById('next-question-button'); // This is the Next Question Butto
+const nextButton = document.getElementById('next-question-button'); // This is the Next Question Button
+const modalClose = document.getElementsByClassName('modal-close'); // This is the Modal Close Button
+const modalContainer = document.getElementsByClassName('modal-container'); // This is the Modal Container
 
 /** The below variables are utilised in the startQuiz and nextButton Functions to randomize the order of the questions */
 let shuffleQuestions, currentQuestionIndex;
@@ -17,6 +19,18 @@ nextButton.addEventListener('click', () => {
   nextQuestion();
   enableBtns();
 });
+
+/** Event Listener - Initiates the Start Quiz Function when the Start Button is clicked 
+
+for (var i = 0 ; i < comment.length; i++) {
+  modalClose[i].addEventListener('click' , closeModal) ; 
+}
+
+function closeModal() {
+  modalContainer.classList.add('hide');
+  console.log('Close Modal Pop Up')
+}; */
+
 
 /** Collapsible Window - Displays the content when the collapsible area is selected by user */
 var coll = document.getElementsByClassName("collapsible");
@@ -147,9 +161,11 @@ function scoreAlert(correct) { // It needs the element and to know if it is corr
     console.log('Well done, you got it right!'); // Logs message to console
     alert('Well done, you got it right!'); // Creates a pop up alert in the browser
     addScore(); // Add to Score
+    /////////////////////////// document.getElementById('modal-right').classList.remove('hide')
   } else {
     console.log('Oh no, you got it wrong, better luck next time!'); // Logs message to console
     alert('Oh no, you got it wrong, better luck next time!'); // Creates a pop up alert in the browser
+    /////////////////////////// document.getElementById('modal-wrong').classList.remove('hide')
   }
 }
 
@@ -245,6 +261,38 @@ const questions = [{
       {
         text: 'Toyota GT86',
         correct: false
+      }
+    ]
+  },
+  {
+    question: 'Which of the following cars has the highest top speed?',
+    options: [{
+        text: 'Bugatti Chiron Super Sport',
+        correct: false
+      },
+      {
+        text: 'Hennessey Venom',
+        correct: false
+      },
+      {
+        text: 'Koenigsegg Jesko Absolut',
+        correct: true
+      },
+      {
+        text: 'Rimac Nevera',
+        correct: false
+      }
+    ]
+  },
+  {
+    question: 'Which option do petrol heads prefer?',
+    options: [{
+        text: 'FWD - Front Wheel Drive',
+        correct: false
+      },
+      {
+        text: 'RWD - Rear Wheel Drive',
+        correct: true
       }
     ]
   },
