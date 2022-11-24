@@ -37,10 +37,10 @@ for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
-      document.getElementById('drop-down').innerText = "Find out more 👇"
+      document.getElementById('drop-down').innerText = "Find out more 👇" // Changes the text back to Find Out More
     } else {
       content.style.display = "block";
-      document.getElementById('drop-down').innerText = "Read Less 👆"
+      document.getElementById('drop-down').innerText = "Read Less 👆" // Changes the text to Read Less to prompt the user to close the window
     }
   });
 }
@@ -116,12 +116,7 @@ function selectOption(e) {
   } else { // No more questions left
     startButton.innerText = 'Try Again?'; // Changes the text on the Start Button
     startButton.classList.remove('hide'); // Displays the Start Button
-    startButton.classList.add('try-again'); // Adds the Try Again Styling Class to the Button
-
-
-    startButton.focus(); // Auto Focus on Try Again Button
-
-    
+    startButton.classList.add('try-again'); // Adds the Try Again Styling Class to the Button   
     document.getElementById('start-div').classList.remove('hide'); // Displays the Start Button Div
     document.getElementById('start-div').classList.add('retry'); // Adjusts the styling for the Start Button Div
     document.getElementById('modal-end').classList.remove('hide'); // Displays the End of Quiz Modal Update
@@ -165,9 +160,13 @@ function clearScore(element) {
 function scoreAlert(correct) { // It needs the element and to know if it is correct
   if (correct) {
     addScore(); // Add to Score
-    document.getElementById('modal-right').classList.remove('hide');
+    document.getElementById('modal-right').classList.remove('hide'); // Displays the modal right div
+    var randRight = rightAnswer[~~(Math.random() * wrongAnswer.length)]; // Assigns variable randRight to a random element from the right array
+    document.getElementById('modal-body-right-text').innerText = randRight; // Replaces the text in modal text area to randRight
   } else {
-    document.getElementById('modal-wrong').classList.remove('hide');
+    document.getElementById('modal-wrong').classList.remove('hide'); // Displays the modal wrong div
+    var randWrong = wrongAnswer[~~(Math.random() * wrongAnswer.length)]; // Assigns variable randWrong to a random element from the wrong array
+    document.getElementById('modal-body-wrong-text').innerText = randWrong; // Replaces the text in modal text area to randWrong
   }
 }
 
@@ -182,6 +181,22 @@ function questionCounter() {
   let questionsAsked = parseInt(document.getElementsByClassName("questions-asked")[0].innerText);
   document.getElementsByClassName("questions-asked")[0].innerText = ++questionsAsked;
 }
+
+const rightAnswer = [
+  'You are doing great, keep it up!',
+  'You are on a roll!',
+  'Nice work, you know your stuff!',
+  'Maybe you should be writing the questions?',
+  'Awesome, great work!'
+]
+
+const wrongAnswer = [
+  'Better luck next time!',
+  'I thought you said you like cars?',
+  'Are you even trying?',
+  'At least you learned something new!',
+  'Dont worry, you will do better next time!'
+]
 
 /** Q&A - List of the Questions & Options / Correct Answers in the Quiz */
 const questions = [{
