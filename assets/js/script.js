@@ -310,29 +310,29 @@ const questions = [{
     ]
   },
   {
-    question: 'On average, how many individual parts are in a car?',
+    question: 'Approximately how many individual parts are in an average car?',
     options: [{
-        text: '500+',
+        text: '500',
         correct: false
       },
       {
-        text: '1,500+',
+        text: '1,500',
         correct: false
       },
       {
-        text: '5,000+',
+        text: '5,000',
         correct: false
       },
       {
-        text: '15,000+',
+        text: '15,000',
         correct: false
       },
       {
-        text: '30,000+',
+        text: '30,000',
         correct: true
       },
       {
-        text: '45,000+',
+        text: '45,000',
         correct: false
       }
     ]
