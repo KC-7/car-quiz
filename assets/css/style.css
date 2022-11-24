@@ -271,6 +271,9 @@ body.wrong {
     padding: 15px;
     float: right;
     opacity: 50%;
+    border: 0;
+    width: 88px;
+    height: 31px;
 }
 
 /* Modal Pop Ups */
