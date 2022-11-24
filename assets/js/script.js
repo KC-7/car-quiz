@@ -18,13 +18,14 @@ nextButton.addEventListener('click', () => {
   currentQuestionIndex++;
   nextQuestion();
   enableBtns();
+  window.scrollTo(0, 0); // Scrolls back up to the top of the page
 });
 
 /** Event Listener - Auto Scroll and Focus on Next Button */
 
 optionButtons.addEventListener("click", () => {
-  nextButton.focus();  // default: {preventScroll:false}
-  console.log('Attempting to Focus')
+  nextButton.focus();
+  startButton.focus();
 });
 
 /** Collapsible Window - Displays the content when the collapsible area is selected by user */
@@ -116,6 +117,11 @@ function selectOption(e) {
     startButton.innerText = 'Try Again?'; // Changes the text on the Start Button
     startButton.classList.remove('hide'); // Displays the Start Button
     startButton.classList.add('try-again'); // Adds the Try Again Styling Class to the Button
+
+
+    startButton.focus(); // Auto Focus on Try Again Button
+
+    
     document.getElementById('start-div').classList.remove('hide'); // Displays the Start Button Div
     document.getElementById('start-div').classList.add('retry'); // Adjusts the styling for the Start Button Div
     document.getElementById('modal-end').classList.remove('hide'); // Displays the End of Quiz Modal Update
