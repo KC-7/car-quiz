@@ -270,6 +270,7 @@ body.wrong {
 #jigsaw-logo {
     padding: 15px;
     float: right;
+    opacity: 50%;
 }
 
 /* Modal Pop Ups */
