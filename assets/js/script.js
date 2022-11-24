@@ -36,8 +36,10 @@ for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
+      document.getElementById('drop-down').innerText = "Find out more 👇"
     } else {
       content.style.display = "block";
+      document.getElementById('drop-down').innerText = "Read Less 👆"
     }
   });
 }
