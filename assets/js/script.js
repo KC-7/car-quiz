@@ -20,7 +20,7 @@ nextButton.addEventListener('click', () => {
   enableBtns();
 });
 
-/** Event Listener - Initiates the Start Quiz Function when the Start Button is clicked 
+/** Event Listener - Initiates the Modal Pop Up 
 
 for (var i = 0 ; i < comment.length; i++) {
   modalClose[i].addEventListener('click' , closeModal) ; 
@@ -29,7 +29,7 @@ for (var i = 0 ; i < comment.length; i++) {
 function closeModal() {
   modalContainer.classList.add('hide');
   console.log('Close Modal Pop Up')
-}; */
+};  */
 
 
 /** Collapsible Window - Displays the content when the collapsible area is selected by user */
@@ -68,7 +68,19 @@ function nextQuestion() {
   console.log('The computer is shuffling the questions.'); // Logs message to console
   resetOptions(); // Removes unnesecary buttons by calling the resetOptions Function
   displayQuestion(shuffleQuestions[currentQuestionIndex]); // Calls the Display Question Function and Shuffles the remaining questions
+  
+  removeModal();
 }
+
+function removeModal() {
+
+  for (i = 0; i < modalContainer.length; i++) {
+    modalContainer.item(i).classList.add('hide');
+  }
+  modalContainer[0].classList.add('hide');
+  console.log('Attempting to remove modal...');
+}
+
 /** Activates when the nextQuestion function has been called */
 function displayQuestion(question) {
   console.log('The question and options have been displayed, please choose wisely.'); // Logs message to console
@@ -117,7 +129,11 @@ function selectOption(e) {
     startButton.classList.add('try-again'); // Adds the Try Again Styling Class to the Button
     document.getElementById('start-div').classList.remove('hide'); // Displays the Start Button Div
     document.getElementById('start-div').classList.add('retry'); // Adjusts the styling for the Start Button Div
+    document.getElementById('modal-header-end').classList.remove('hide') ////////////////////
+    
     // quizQuestion.classList.add('hide') // Hides the Question & Options
+
+
     var spanText1 = document.getElementById('correct-answers').innerText;
     var spanText2 = document.getElementById('total-questions').innerText;
     alert('Well done, you made it to the end of the quiz. You answered ' + spanText1 + ' out of ' + spanText2 + ' questions correctly!'); // Provides a window alert for user 
@@ -161,11 +177,11 @@ function scoreAlert(correct) { // It needs the element and to know if it is corr
     console.log('Well done, you got it right!'); // Logs message to console
     alert('Well done, you got it right!'); // Creates a pop up alert in the browser
     addScore(); // Add to Score
-    /////////////////////////// document.getElementById('modal-right').classList.remove('hide')
+    document.getElementById('modal-right').classList.remove('hide')
   } else {
     console.log('Oh no, you got it wrong, better luck next time!'); // Logs message to console
     alert('Oh no, you got it wrong, better luck next time!'); // Creates a pop up alert in the browser
-    /////////////////////////// document.getElementById('modal-wrong').classList.remove('hide')
+    document.getElementById('modal-wrong').classList.remove('hide')
   }
 }
 
