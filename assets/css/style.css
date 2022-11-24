@@ -177,10 +177,11 @@ body.wrong {
 }
 
 #start-button.try-again {
-    opacity: 80%;
-    height: 100px;
-    width: 250px;
-    border-radius: 50px;
+    border: 4px solid #f8e108;
+}
+
+#start-button.try-again:hover {
+    border: 4px solid #aaaaa0;
 }
 
 #next-question-div {
@@ -419,7 +420,12 @@ footer div:hover {
         padding: 60px;
     }
 
-    #start-button.try-again,
+    #start-button.try-again {
+        height: 150px;
+        width: 150px;
+    }
+
+
     .option-button,
     #next-question-button {
         height: 60px;
@@ -429,7 +435,7 @@ footer div:hover {
     }
 
     #start-div.retry {
-        height: 100px;
+        height: 200px;
     }
 
     .option-button:hover,
@@ -491,4 +497,4 @@ footer div:hover {
     }
 }
 
-/* The site will work correctly on devices with 280px screen width and above */
+/* The site has not been designed to work correctly on devices with a screen width lower than 280px */
