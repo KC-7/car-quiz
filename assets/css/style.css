@@ -266,6 +266,11 @@ body.wrong {
     height: 200px;
 }
 
+#jigsaw-logo {
+    padding: 15px;
+    float: right;
+}
+
 /* Modal Pop Ups */
 
 .modal-container {
