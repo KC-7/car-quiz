@@ -50,13 +50,21 @@
     <section id="rules">
         <button type="button" class="collapsible">Find out more: 👇</button>
         <div class="content">
-        <p>
-            The quiz is design to test your car knowledge.<br>
-            You will be alerted to let you know if you have answered correctly.<br>
-            The correct answer will be displayed in green. The incorrect options will be displayed in red.<br>
-            The background colour will also change to reflect your answer. <br>
-            You can view how many correct answers, questions asked and total questions in the top right corner.<br>
-        </p>
+            <p>
+                The quiz is designed to test your car knowledge.<br>
+                You will be alerted to let you know if you have answered correctly.<br>
+                The correct answer will be displayed in green. The incorrect options will be displayed in red.<br>
+                The background colour will also change to reflect your answer. <br>
+                You can view how many correct answers, questions asked and total questions in the top right corner.<br>
+                You can view the developers GitHub page by clicking on the logo in the top left.<br>
+            </p>
+            <div id="qr-div">
+                <p id="qr-text">
+                    We detected you are playing the game on a device with a large screen <br>
+                    Try it on your mobile device by scanning the below QR code:
+                </p>
+                <img src="assets/images/qr-code.png" alt="Car Quiz QR Code" id="qr-code">
+            </div>
         </div>
     </section>
 
@@ -77,35 +85,36 @@
 
         <div id="modal-right" class="modal-container hide">
             <div class="modal-content">
-              <header id="modal-header-right" class="modal-header"> 
-                <p>Well done, you got it right &#10004;</p> <!-- The code is for a tick emoji -->
-              </header>
-              <div class="modal-body">
-                <p>Keep it up!</p>
-              </div>
+                <header id="modal-header-right" class="modal-header">
+                    <p>Well done, you got it right &#10004;</p> <!-- The code is for a tick emoji -->
+                </header>
+                <div class="modal-body">
+                    <p>Keep it up!</p>
+                </div>
             </div>
         </div>
-    
+
         <div id="modal-wrong" class="modal-container hide">
             <div class="modal-content">
-              <header id="modal-header-wrong" class="modal-header"> 
-                <p>Oh no, you got it wrong &#10006;</p> <!-- The code is for an "x" emoji -->
-              </header>
-              <div class="modal-body">
-                <p>Better luck next time</p>
-              </div>
+                <header id="modal-header-wrong" class="modal-header">
+                    <p>Oh no, you got it wrong &#10006;</p> <!-- The code is for an "x" emoji -->
+                </header>
+                <div class="modal-body">
+                    <p>Better luck next time</p>
+                </div>
             </div>
         </div>
-    
+
         <div id="modal-end" class="modal-container hide">
             <div class="modal-content">
-              <header id="modal-header-end" class="modal-header">
-                <p>You made it to the end of the quiz!</p>
-              </header>
-              <div class="modal-body">
-                <p id="end-result">Oh oh.. your score should have been displayed here, something went wrong, check the top right hand corner. </p>
-                <p>Share your score with your friends!</p>
-              </div>
+                <header id="modal-header-end" class="modal-header">
+                    <p>You made it to the end of the quiz!</p>
+                </header>
+                <div class="modal-body">
+                    <p id="end-result">Oh oh.. your score should have been displayed here, something went wrong, check
+                        the top right hand corner. </p>
+                    <p>Share your score with your friends!</p>
+                </div>
             </div>
         </div>
 

@@ -11,7 +11,7 @@
 body {
     background: #008080;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 100px; 
+    padding-top: 100px;
 }
 
 body.right {
@@ -208,7 +208,7 @@ body.wrong {
 .option-button:hover,
 #submit-button:hover,
 #next-question-button:hover {
-    font-size: 28px;
+    font-size: 26px;
 }
 
 #contact-heading {
@@ -232,15 +232,16 @@ body.wrong {
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
     background-color: #008080;
-  }
-  
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
@@ -249,7 +250,21 @@ body.wrong {
     padding: 25px;
     font-size: 18px;
     line-height: 1.5;
-  }
+}
+
+#qr-div {
+    text-align: center;
+}
+
+#qr-text {
+    margin: 15px 0;
+    font-weight: bold;
+    color: #f8e108;
+}
+
+#qr-code {
+    height: 200px;
+}
 
 /* Modal Pop Ups */
 
@@ -305,7 +320,8 @@ footer a {
 }
 
 footer div:hover {
-    transform: scale(1.25); /* Increases the size when hovering */
+    transform: scale(1.25);
+    /* Increases the size when hovering */
 }
 
 /* Media Queries for Responsive Layout */
@@ -314,7 +330,7 @@ footer div:hover {
 @media screen and (max-height: 750px) {
     footer {
         position: relative;
-}
+    }
 }
 
 /* When the screen is less than 1364px wide */
@@ -351,7 +367,7 @@ footer div:hover {
     #question {
         font-size: 28px;
     }
-    
+
     .modal-body {
         font-size: 25px;
     }
@@ -365,6 +381,10 @@ footer div:hover {
     #contact-section,
     #start-div {
         width: 600px;
+    }
+
+    #qr-div {
+        display: none;
     }
 
 }
@@ -409,7 +429,7 @@ footer div:hover {
 
     .option-button:hover,
     #next-question-button:hover {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #question,
