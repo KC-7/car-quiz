@@ -5,32 +5,24 @@ const optionButtons = document.getElementById('quiz-options'); // This is the Op
 const optionButton = document.getElementsByClassName('option-button'); // These are the individual Option Buttons
 const nextButton = document.getElementById('next-question-button'); // This is the Next Question Butto
 
-
-// The below variables are utilised in the startQuiz and nextButton Functions to randomize the order of the questions
+/** The below variables are utilised in the startQuiz and nextButton Functions to randomize the order of the questions */
 let shuffleQuestions, currentQuestionIndex;
 
-//Event Listeners
-startButton.addEventListener('click', startQuiz); // Initiates the Start Quiz Function when the Start Button is clicked
+/** Event Listener - Initiates the Start Quiz Function when the Start Button is clicked */
+startButton.addEventListener('click', startQuiz);
 
-nextButton.addEventListener('click', () => { // When the next button is clicked, the next question is displayed and one is added to the current question index
+/** Event Listener - When the next button is clicked, the options are enabled, the next question is displayed and one is added to the current question index */
+nextButton.addEventListener('click', () => {
   currentQuestionIndex++;
   nextQuestion();
   enableBtns();
 });
 
-/**
- * optionButtons.addEventListener('click', () => {
-  disableBtns()
-})
- */
-
-// Collapsible Window
-
+/** Collapsible Window - Displays the content when the collapsible area is selected by user */
 var coll = document.getElementsByClassName("collapsible");
 var i;
-
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
@@ -41,9 +33,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-/**
- * The startQuiz Function activates when user clicks start quiz button.
- */
+/** The startQuiz Function activates when user clicks start quiz button */
 function startQuiz() {
   console.log('The quiz has started, good luck!'); // Logs message to console
   startButton.classList.add('hide'); // Hides the Start Button
@@ -53,30 +43,27 @@ function startQuiz() {
   document.getElementById('total-questions').innerText = questions.length; // Displays the total number of questions in the quiz
   shuffleQuestions = questions.sort(() => Math.random() - .5); // Randomizes the order of the questions array
   currentQuestionIndex = 0; // Starts with the number of questions asked at 0
-
   document.getElementById("correct-answers").innerText = '0'; // Resets counter to 0 when starting / restarting game
   document.getElementById("questions-asked").innerText = '0'; // Resets counter to 0 when starting / restarting game
-  
   nextQuestion(); // Initiates the nextQuestion Function
-  enableBtns(); //////////////////////////////////////////////////
+  enableBtns(); // Enables the Quiz Option Buttons
 }
 
-// Activates when the startQuiz Function or the nextButton Event Listener has been called. 
+/** Activates when the startQuiz Function or the nextButton Event Listener has been called */
 function nextQuestion() {
   console.log('The computer is shuffling the questions.'); // Logs message to console
   resetOptions(); // Removes unnesecary buttons by calling the resetOptions Function
   displayQuestion(shuffleQuestions[currentQuestionIndex]); // Calls the Display Question Function and Shuffles the remaining questions
 }
-
-// Activates when the nextQuestion function has been called. 
+/** Activates when the nextQuestion function has been called */
 function displayQuestion(question) {
   console.log('The question and options have been displayed, please choose wisely.'); // Logs message to console
   questionElement.innerHTML = question.question; // The question area will be populated by the Question in the Q & A Section
-  questionCounter();
+  questionCounter(); // Adds one Question to the Counter using the Question Counter Function
   question.options.forEach(option => {
-    const button = document.createElement('button'); // Create a button for each of the possible answers provided in the Q & A Section
-    button.innerText = option.text; // Display the option text in the button
-    button.classList.add('option-button'); // Add the "Option Button" Class to the buttons
+    const button = document.createElement('button'); // Creates a button for each of the possible answers provided in the Q & A Section
+    button.innerText = option.text; // Displays the option's text inside each of the buttons
+    button.classList.add('option-button'); // Adds the "Option Button" Class to the buttons
     if (option.correct) {
       button.dataset.correct = option.correct;
     }
@@ -85,16 +72,16 @@ function displayQuestion(question) {
   });
 }
 
-// Activated when user clicks next
+/** Activated when user clicks next */
 function resetOptions() {
   clearScore(document.body); // Removes the right or wrong styling 
   document.getElementById('next-question-div').classList.add('hide'); // Removes the Next Question Div
   nextButton.classList.add('hide'); // Hides the next button
-  while (optionButtons.firstChild) { 
+  while (optionButtons.firstChild) {
     optionButtons.removeChild(optionButtons.firstChild); // Remove previous question options
   }
 }
-
+/** Initiates when the user selects an option */
 function selectOption(e) {
   console.log('You have made a selection.'); // Logs message to console
   disableBtns(); ///
@@ -123,29 +110,22 @@ function selectOption(e) {
   }
 }
 
-
-
-/////////////////////////////////////////////////////////////////////
-
+/** Disables the quiz option buttons after the user has answered the question */
 function disableBtns() {
-  for (i=0; i < optionButton.length; i++) {optionButton.item(i).disabled = true;}
+  for (i = 0; i < optionButton.length; i++) {
+    optionButton.item(i).disabled = true;
+  }
   optionButton[0].disabled = true;
-  // optionButtons.disabled = true;
-  // document.getElementsByClassName('option-button').disabled = true;
-  // document.getElementById('option-a').disabled = true;
   console.log('Attempting to disable buttons...');
 }
 
+/** Enables the quiz option buttons so the user can select an option */
 function enableBtns() {
   document.getElementsByClassName('option-button').disabled = false;
   console.log('Attempting to enable buttons...');
 }
 
-
-
-
-
-// Adds score styling - right or wrong
+/** Adds score styling class (right or wrong, green or red) to the body and quiz option buttons */
 function scoreSelection(element, correct) { // It needs the element and to know if it is correct
   clearScore(element);
   if (correct) {
@@ -155,13 +135,13 @@ function scoreSelection(element, correct) { // It needs the element and to know 
   }
 }
 
-// Clears the score styling
+/** Clears the score styling */
 function clearScore(element) {
   element.classList.remove('right'); // Removes right class & styling
   element.classList.remove('wrong'); // Removes wrong class & styling
 }
 
-// Score Pop Up Alert - right or wrong
+/** Score Pop Up Alert - right or wrong */
 function scoreAlert(correct) { // It needs the element and to know if it is correct
   if (correct) {
     console.log('Well done, you got it right!'); // Logs message to console
@@ -173,24 +153,21 @@ function scoreAlert(correct) { // It needs the element and to know if it is corr
   }
 }
 
-// Add one to the user score
+/** Add one to the user score */
 function addScore() {
   console.log('Updating Score');
   let correctAnswers = parseInt(document.getElementById("correct-answers").innerText);
   document.getElementById("correct-answers").innerText = ++correctAnswers;
 }
 
-// Update Questions Asked Counter
+/** Update Questions Asked Counter */
 function questionCounter() {
   console.log('Updating Questions Asked');
   let questionsAsked = parseInt(document.getElementById("questions-asked").innerText);
   document.getElementById("questions-asked").innerText = ++questionsAsked;
 }
 
-
-
-
-// Q&A - List of the Questions & Options / Correct Answers in the Quiz
+/** Q&A - List of the Questions & Options / Correct Answers in the Quiz */
 const questions = [{
     question: 'Which car company manufacturered the Countach?',
     options: [{
@@ -314,7 +291,3 @@ const questions = [{
 ];
 
 console.log('The page has loaded and the quiz is ready, press start!');
-
-/**
- * 
- */
