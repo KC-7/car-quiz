@@ -104,6 +104,7 @@ body.wrong {
     padding: 30px 15px 30px 15px;
     color: #f5f5f5;
     font-size: 35px;
+    font-weight: bold;
 }
 
 #quiz-options {
@@ -260,8 +261,9 @@ body.wrong {
 }
 
 .modal-header {
-    font-size: 35px;
+    font-size: 28px;
     padding-bottom: 15px;
+    font-weight: bold;
 }
 
 #modal-header-right {
@@ -277,12 +279,8 @@ body.wrong {
 }
 
 .modal-body {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 1.5;
-}
-
-.modal-container.hide {
-    display: none;
 }
 
 /* Footer */
@@ -416,6 +414,15 @@ footer div:hover {
         gap: 30px;
     }
 
+    #question,
+    .modal-header {
+        font-size: 25px;
+    }
+
+    .modal-body {
+        font-size: 22px;
+    }
+
 }
 
 /* When the screen is less than 430px wide */
@@ -447,10 +454,6 @@ footer div:hover {
     #contact-section,
     #start-div {
         width: 250px;
-    }
-
-    #question {
-        font-size: 24px;
     }
 
     #score-bar {

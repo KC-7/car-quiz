@@ -37,10 +37,10 @@
         <div class="header-grid">
             <div id="score-bar" class="hide">
                 <div>
-                    Correct: <span id="correct-answers">0</span>
+                    Correct: <span class="correct-answers">0</span>
                 </div>
                 <div>
-                    Question: <span id="questions-asked">0</span>/<span id="total-questions">X</span>
+                    Question: <span class="questions-asked">0</span>/<span class="total-questions">X</span>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
         <div id="modal-right" class="modal-container hide">
             <div class="modal-content">
               <header id="modal-header-right" class="modal-header"> 
-                <h2>Well Done! You got it right!</h2>
+                <p>Well Done! You got it right!</p>
               </header>
               <div class="modal-body">
                 <p>You were right, the answer was XXX</p>
@@ -90,7 +90,7 @@
         <div id="modal-wrong" class="modal-container hide">
             <div class="modal-content">
               <header id="modal-header-wrong" class="modal-header"> 
-                <h2>Oh no, you got it wrong!</h2>
+                <p>Oh no, you got it wrong!</p>
               </header>
               <div class="modal-body">
                 <p>You selected XXX, the correct answer was XXX</p>
@@ -102,10 +102,10 @@
         <div id="modal-end" class="modal-container hide">
             <div class="modal-content">
               <header id="modal-header-end" class="modal-header">
-                <h2>Well Done! You made it to the end of the quiz!</h2>
+                <p>You made it to the end of the quiz!</p>
               </header>
               <div class="modal-body">
-                <p>You answered XXX out of XXX questions correctly.</p>
+                <p id="end-result">Oh oh.. your score should have been here, something went wrong, check the top right hand corner. </p>
                 <p>Share your score with your friends!</p>
               </div>
             </div>

@@ -54,11 +54,11 @@ function startQuiz() {
   document.getElementById('start-div').classList.add('hide'); // Hides the Start Button Div
   quizQuestion.classList.remove('hide'); // Shows Quiz Question
   document.getElementById('score-bar').classList.remove('hide'); // Shows the Score Counter
-  document.getElementById('total-questions').innerText = questions.length; // Displays the total number of questions in the quiz
+  document.getElementsByClassName('total-questions')[0].innerText = questions.length; // Displays the total number of questions in the quiz
   shuffleQuestions = questions.sort(() => Math.random() - .5); // Randomizes the order of the questions array
   currentQuestionIndex = 0; // Starts with the number of questions asked at 0
-  document.getElementById("correct-answers").innerText = '0'; // Resets counter to 0 when starting / restarting game
-  document.getElementById("questions-asked").innerText = '0'; // Resets counter to 0 when starting / restarting game
+  document.getElementsByClassName("correct-answers")[0].innerText = '0'; // Resets counter to 0 when starting / restarting game
+  document.getElementsByClassName("questions-asked")[0].innerText = '0'; // Resets counter to 0 when starting / restarting game
   nextQuestion(); // Initiates the nextQuestion Function
   enableBtns(); // Enables the Quiz Option Buttons
 }
@@ -72,8 +72,8 @@ function nextQuestion() {
   removeModal();
 }
 
+/** Removes Modal Result before displaying next question */
 function removeModal() {
-
   for (i = 0; i < modalContainer.length; i++) {
     modalContainer.item(i).classList.add('hide');
   }
@@ -129,14 +129,17 @@ function selectOption(e) {
     startButton.classList.add('try-again'); // Adds the Try Again Styling Class to the Button
     document.getElementById('start-div').classList.remove('hide'); // Displays the Start Button Div
     document.getElementById('start-div').classList.add('retry'); // Adjusts the styling for the Start Button Div
-    document.getElementById('modal-header-end').classList.remove('hide') ////////////////////
+
+
+    document.getElementById('modal-end').classList.remove('hide') ////////////////////
     
     // quizQuestion.classList.add('hide') // Hides the Question & Options
 
 
-    var spanText1 = document.getElementById('correct-answers').innerText;
-    var spanText2 = document.getElementById('total-questions').innerText;
-    alert('Well done, you made it to the end of the quiz. You answered ' + spanText1 + ' out of ' + spanText2 + ' questions correctly!'); // Provides a window alert for user 
+    var correctAnswers = document.getElementsByClassName('correct-answers')[0].innerText;
+    var totalQuestions = document.getElementsByClassName('total-questions')[0].innerText;
+    document.getElementById('end-result').innerHTML = 'You answered ' + correctAnswers + ' out of ' + totalQuestions + ' questions correctly!'
+    alert('Well done, you made it to the end of the quiz. You answered ' + correctAnswers + ' out of ' + totalQuestions + ' questions correctly!'); // Provides a window alert for user 
   }
 }
 
@@ -188,15 +191,15 @@ function scoreAlert(correct) { // It needs the element and to know if it is corr
 /** Add one to the user score */
 function addScore() {
   console.log('Updating Score');
-  let correctAnswers = parseInt(document.getElementById("correct-answers").innerText);
-  document.getElementById("correct-answers").innerText = ++correctAnswers;
+  let correctAnswers = parseInt(document.getElementsByClassName("correct-answers")[0].innerText);
+  document.getElementsByClassName("correct-answers")[0].innerText = ++correctAnswers;
 }
 
 /** Update Questions Asked Counter */
 function questionCounter() {
   console.log('Updating Questions Asked');
-  let questionsAsked = parseInt(document.getElementById("questions-asked").innerText);
-  document.getElementById("questions-asked").innerText = ++questionsAsked;
+  let questionsAsked = parseInt(document.getElementsByClassName("questions-asked")[0].innerText);
+  document.getElementsByClassName("questions-asked")[0].innerText = ++questionsAsked;
 }
 
 /** Q&A - List of the Questions & Options / Correct Answers in the Quiz */
@@ -261,7 +264,7 @@ const questions = [{
     ]
   },
   {
-    question: '3 of the 4 cars are the same car excluding cosmetic changes, which option is not the same car as the others?',
+    question: 'Three of the below options are the same car. Which is the odd one out?',
     options: [{
         text: 'Lexus LFA',
         correct: true
