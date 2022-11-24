@@ -18,7 +18,7 @@ nextButton.addEventListener('click', () => {
   currentQuestionIndex++; // Updates the current question index
   nextQuestion(); // Goes to the next question
   enableBtns(); // Enables the quiz option buttons
-  questionElement.scrollIntoView(); // Scrolls back up to the top of the question
+  window.scrollTo(0, 0); // Scrolls back up to the top of the page
 });
 
 /** Event Listener - Auto Scroll and Focus on Next Button or Start Button */

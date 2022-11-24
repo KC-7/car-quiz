@@ -1,38 +1,147 @@
 # Kieran's Car Quiz - KCQ
 
+Kieran's Car Quiz is a fun, responsive car quiz that is designed to both engage and interact with the user. The site was designed to demonstrate a variety of different JavaScript functions.
+
+
 ## Live Site Link
 
 https://kc-7.github.io/car-quiz/
 
 
+## Features
+
+The user is greeted by a streamline quiz home page.
+
+There is a header bar located at the top of the page that displays a logo, header text and score bar. 
+
+The header text is not displayed on smaller devices and the logo is changed to an alternative design. 
+
+There is a collapsible window below the header bar.
+
+When the user expands the collabsible window, they are presented with text relating to the quiz and the CSS validation link. 
+
+If the user is on a device with a larger screen width, a QR code will be displayed to give them the option to try the quiz on a mobile device. 
+
+The collapsible window button text is adjusted when the div is opened / closed to prompt the user to utilize the function. 
+
+The user is able to start the quiz by pressing the "Engine Start" button. 
+
+The question is then displayed alongside the potential answers. The number of options and order of questions varies. 
+
+When the user selects an option, there score is updated and displayed in the right hand side of the header bar. 
+
+The site will scroll down to the next button if required so the user knows theirs is more content on the page, it srolls back up to the top of the page when going to the next question.
+
+The incorrect options are displayed in red and the correct answers in green. 
+
+The background colour of the body is changed to dark green or dark red depending on if the user answered correctly. 
+
+The user is alerted below the question options to wether they have answered correctly or not. 
+
+The text is set to change at random based on a preset array for both the correct and incorrect answers. 
+
+The next question button is displayed and when clicked it brings the user to the next question which is chosen at random. 
+
+When the user completes the array of questions, they will be alerted that they have made it to the end of the quiz after the section displaying their final result. 
+
+The start button is then displayed with the text "Try Again" and when selected will reset the score counters and the question index back to the start. 
+
+The footer is displayed at the end of the web page. It is static on larger devices but is set to stay in line with the web page instead of the broswer window on smaller devices. 
+
+Media queries were used for responsive design so that the site is aesthically pleasing on a variety of different device sizes.
+
+A favicon is utilized to display the site's alt logo in the broswer tab. 
+
+
+## Features Left to Implement
+
+A submit button could be displayed after the user selects their option, this would give then the option to change their option is they selected the wrong button by mistake before their choice is submitted. When they click submit, the button would then be replaced with the next button. This would give the user an oppurtunity to review their score before proceeding to the next question. 
+
+Additional difficulty levels could be set up asking the user an array of more difficult questions. 
+
+A timer feature could be implemented. 
+
+Sounds could be utilized for user feedback. 
+
+Add additional pages such as contact, 404, etc. 
+
+
+## Design
+
+The site was designed to demonstrate a variety of different JavaScript, CSS and HTML techniques. 
+
+The JavaScript is set to function in a set order. Certain elements are set to randomize to privide a unique user eqperience. 
+
+The site was designed using the below colour scheme: 
+
+PICTURE
+
+The site's main and alternative logos were created to enchance the sites appearance.
+
+PICTURES 1 & 2
+
+## Testing 
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+HTML - W3C Validator
+
+CSS - Jigsaw Validator
+
+JS - JSHint Validator
+
+Google Insect - Check HTML, CSS & JS. Utilzed console.logs when developing and testing. Lighthouse reports. 
+
+Responsive Design - Google Inspect & AmIResponsive
+
+### Fixed Bugs
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+### Unfixed Bugs
+
+I was not able to identify any further bugs during final testing. 
+
+
+## Deployment
+
+The site was deployed using GitHub pages.
+- In the GitHub repository, navigate to the Settings tab.
+- From the source section drop-down menu, select the Master Branch
+- Once the master/main branch has been selected, you will then see your link to your site. 
+- The live link can be found here - https://kc-7.github.io/car-quiz/ 
+
 ## Credits
 
-- The site logo was created using the <a href="https://express.adobe.com/express-apps/logo-maker/" target="_blank" rel="noopener" aria-label="Link to Adobe Express | Free Logo Maker (opens in new tab)">Adobe Express | Logo Maker</a>.
+### Content
 
 - Icons added using <a href="https://fontawesome.com/v5/search?o=r&m=free" target="_blank" rel="noopener" aria-label="Link to Font Awesome | Free V5 Icons (opens in new tab)">Font Awesome | Free V5 Icons</a>.
 
 - QR Code was created for free using https://www.qr-code-generator.com/
 
+### Media 
+
+- The site logo was created using the <a href="https://express.adobe.com/express-apps/logo-maker/" target="_blank" rel="noopener" aria-label="Link to Adobe Express | Free Logo Maker (opens in new tab)">Adobe Express | Logo Maker</a>.
 
 
 
-## Temp Notes: 
 
-### Next Steps
 
-- Media Queiries to style for mobile and tablet devices
 
-- Finish remaining comments
 
-- Add rules / contact 
 
-- Add 404
 
-- Update Readme
+_________________________________________________________________________________________________________________________________________________________________________________
 
-- Add score tracker
 
-- Add additional features such as a timer if time permits 
+
+
+
+
+
+
+
+
 
 # Readme Basics: 
 
