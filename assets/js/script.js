@@ -23,7 +23,7 @@ nextButton.addEventListener('click', () => {
 
 /** Event Listener - Auto Scroll and Focus on Next Button or Start Button */
 optionButtons.addEventListener("click", () => {
-  nextButton.focus(); 
+  nextButton.focus();
   startButton.focus();
 });
 

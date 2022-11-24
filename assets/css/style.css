@@ -260,7 +260,8 @@ body.wrong {
 #qr-div {
     text-align: center;
     border: 3px solid #f8e108;
-    width: max-content; /* The width of the div is equal to the widest element within it*/
+    width: max-content;
+    /* The width of the div is equal to the widest element within it*/
     padding: 5px;
     margin: auto;
     margin-top: 15px;
