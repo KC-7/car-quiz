@@ -6,7 +6,7 @@ The user is asked a series of questions and their score is calculated in the top
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/car-quiz.gif" alt="Animated Site Layout Example" width="40%" height="auto" title="Animated Site Layout Example">
 
-## Live Site Link 🚗
+## Live Site Link 🚗 🔰
 
 https://kc-7.github.io/car-quiz/
 
@@ -48,7 +48,7 @@ ________________________________________________________________________________
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-1.png" alt="Responsive View - Start Quiz" width="50%" height="auto" title="Responsive View - Start Quiz">
 
-### Collapsible Window ⏬ ⏫
+### Collapsible Window 🔽 🔼
 
 - There is a collapsible window below the header bar.
 
@@ -170,13 +170,13 @@ ________________________________________________________________________________
 
 ### Test Cases 🕵
 
-- [X] Page loads correctly 🌐 and displays Engine Start button and Quiz Container.
+- [X] Page loads correctly 🌐 and displays Engine Start button ⏯ and Quiz Container.
 - [x] Find out more collapbsible window ⏬ works as intended: 
   - [x] Changes colour when hovering. 
   - [x] Changes text when displaying content. 
   - [x] QR Code is displayed withiin the collasible window when over the specified screen width and is removed on devices with a smaller screen width.
-- [x] All links work and open in new tab: GitHub link in logo and social media links in footer.
-- [x] When Engine Start is clicked, the user is: shown the question and options, the score counter is displayed in the right hand side of the header bar and one question is added to the number of questions asked. 
+- [x] All links work and open in new tab: GitHub link in logo and social media links in footer. 🌐 
+- [x] When Engine Start ⏯ is clicked, the user is: shown the question and options, the score counter is displayed in the right hand side of the header bar and one question is added to the number of questions asked. 
 - [x] When a correct option ✅ is selected, the following will happen:
   - [x] The quiz options will be disabled.
   - [x] The options change green or red to show the correct answer. 
@@ -198,26 +198,26 @@ ________________________________________________________________________________
   - [x] The quiz options will be enabled. 
   - [x] The quiz options and the body styling will be returned to normal.
   - [x] The results from the previous question and the Next Question button will be hidden. 
-- [x] When an option is selected, it will repeat the above sequences until all questions have been asked.
-- [x] A message will be displayed when all questions have been completed by the user, it will include the users score and a button to start again. 
-- [x] The start button is restyled to display "Try again" and when selected it will do the following: 
+- [x] When an option is selected, it will repeat the above sequences until all questions have been asked. 🔀
+- [x] A message will be displayed when all questions have been completed by the user 🏁, it will include the users score and a button to start again. 
+- [x] The start button is restyled to display "Try again" 🔂 and when selected it will do the following: 
   - [x] The quiz will go back to the start and ask a question at random. 
   - [x] The score and total number of questions asked will be reset back to 0. 
   - [x] The styling, next button, try again button and the messages will be removed. 
-- [x] When the browser window is resized, the styling should adjust accoring to the CSS rules: 
+- [x] When the browser window is resized, the styling should adjust accoring to the CSS rules. 📱 💻
   - [x] The quiz section will reduce in width. 
   - [x] The buttons will be reduced in size and displayed in a single column.  
   - [x] The header text will be removed.  
   - [x] The header logo will change to the alt design. 
   - [x] The text size throughout the website will be reduced accordingly. 
 
-#### HTML - W3C Validator
+#### HTML - W3C Validator 🏸
 
 The website passed the <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkc-7.github.io%2Fcar-quiz%2F" target="_blank" rel="noopener" aria-label="Link to the W3C HTML Validator (opens in new tab)">W3C HTML validator</a> check with no issues. 
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/testing/html.png" alt="HTML Validation" width="40%" height="auto" title="HTML Validation">
 
-#### CSS - Jigsaw Validator
+#### CSS - Jigsaw Validator 🏸
 
 The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fkc-7.github.io%2Fcar-quiz%2F&usermedium=all&vextwarning=&warning=1" target="_blank" rel="noopener" aria-label="Link to the Jigsaw CSS Validator (opens in new tab)">Jigsaw CSS Validator</a> check with no issues. 
 
@@ -226,7 +226,7 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/testing/css.png" alt="CSS Validation" width="40%" height="auto" title="CSS Validation">
 
-#### JS - JSHint Validator
+#### JS - JSHint Validator 🏸
 
 <a href="https://jshint.com/" target="_blank" rel="noopener" aria-label="Link to JSHint (opens in new tab)">JSHint</a> was used to review the JavaScript code. 
 
@@ -234,7 +234,7 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 
 <img style="display: inline; margin: 25px 40%" src="readme-files/testing/jshint.png" alt="JavaScript JSHint Warnings" width="20%" height="auto" title="JavaScript JSHint Warnings">
 
-#### Google Inpsect - Check HTML, CSS & JS. Utilzed console.logs when developing and testing. Lighthouse reports. 
+#### Google Inpsect 🏸 - Check HTML, CSS, JS, Log & Lighthouse reports. 
 
 - I used console.log()'s during development and testing to ensure all functions were being called correctly. These were removed once testing was completed. Snip from testing below.   
 
@@ -244,7 +244,9 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/testing/lighthouse.png" alt="Google Lighthouse Report Results" width="50%" height="auto" title="Google Lighthouse Report Results">
 
-#### Responsive Design & Visual Testing - Google Inspect & AmIResponsive
+- I used the element inspect feature to assist with styling. 
+
+#### Responsive Design & Visual Testing - Google Inspect & AmIResponsive 📱 💻
 
 - Visual testing was mainly carried out using the Google Chrome Inspect tool. I tested all sections of the site on a combination of different screen sizes. 
 
@@ -301,15 +303,15 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 
 - [x] I was not able to disable the quiz option buttons initially, this is because I needed to target the elements inside of the array instead of the class group directly. 
 
-### Unfixed Bugs &#10006;
+#### Unfixed Bugs &#10006 🕷;
 
 I was not able to identify any further bugs during final testing. &#10004;
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
-## Deployment
+## Deployment 🌐
 
-### GitPod
+### GitPod 🔧
 
 - I developed the site using HTML and CSS in GitPod. 
 
@@ -321,7 +323,7 @@ ________________________________________________________________________________
     - *git commit -m "Update message here"*
     - *git push*
 
-### GitHub
+### GitHub 🌐
 
 The site was deployed using <a href="https://github.com/KC-7/car-quiz" target="_blank" rel="noopener" aria-label="Link to the GitHub Repo (opens in new tab)">GitHub</a> pages:
 - In the GitHub repository, navigate to the Settings tab.
@@ -331,7 +333,7 @@ The site was deployed using <a href="https://github.com/KC-7/car-quiz" target="_
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
-## Credits
+## Credits 🥂
 
 - This site was developed using information learned from the <a href="https://codeinstitute.net/" target="_blank" rel="noopener" aria-label="Link to the Code Institute (opens in new tab)">Code Institute</a> alongside other online resources such as <a href="https://www.w3schools.com/" target="_blank" rel="noopener" aria-label="Link to W3Schools (opens in new tab)">W3Schools</a> & <a href="https://stackoverflow.com/" target="_blank" rel="noopener" aria-label="Link to Stack Overflow (opens in new tab)">Stack Overflow</a>. 
 
