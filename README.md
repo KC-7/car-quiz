@@ -149,8 +149,10 @@ ________________________________________________________________________________
 ### Test Cases
 
 - [X] Page loads correctly and displays Engine Start button and Quiz Container.
-- [x] Find out more collapbsible window works as intended: changes colour when hovering & changes text when displaying content.
-- [x] QR Code is displayed withiin the collasible window when over the specified screen width and is removed on devices with a smaller screen width.
+- [x] Find out more collapbsible window works as intended: 
+  - [x] Changes colour when hovering. 
+  - [x] Changes text when displaying content. 
+  - [x] QR Code is displayed withiin the collasible window when over the specified screen width and is removed on devices with a smaller screen width.
 - [x] All links work and open in new tab: GitHub link in logo and social media links in footer.
 - [x] When Engine Start is clicked, the user is: shown the question and options, the score counter is displayed in the right hand side of the header bar and one question is added to the number of questions asked. 
 - [x] When a correct option is selected, the following will happen:
@@ -180,7 +182,12 @@ ________________________________________________________________________________
   - [x] The quiz will go back to the start and ask a question at random. 
   - [x] The score and total number of questions asked will be reset back to 0. 
   - [x] The styling, next button, try again button and the messages will be removed. 
-
+- [x] When the browser window is resized, the styling should adjust accoring to the CSS rules: 
+  - [x] The quiz section will reduce in width. 
+  - [x] The buttons will be reduced in size and displayed in a single column.  
+  - [x] The header text will be removed.  
+  - [x] The header logo will change to the alt design. 
+  - [x] The text size throughout the website will be reduced accordingly. 
 
 #### HTML - W3C Validator
 
