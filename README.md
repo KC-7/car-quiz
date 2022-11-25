@@ -2,8 +2,7 @@
 
 <a href="https://kc-7.github.io/car-quiz/" target="_blank" rel="noopener" aria-label="Link to Project Website, Kieran's Car Quiz (opens in new tab)">Kieran's Car Quiz</a> is a fun, responsive car quiz that is designed to both engage and interact with the user. The site was designed to demonstrate a variety of different JavaScript functions.
 
-![Animated Site Layout Example](readme-files/images/car-quiz.gif "Animated Site Layout Example")
-
+<img style="display: inline; margin: 25px 30%" src="readme-files/images/car-quiz.gif" alt="Animated Site Layout Example" width="40%" height="auto" title="Animated Site Layout Example">
 
 ## Live Site Link
 
@@ -34,11 +33,11 @@ The following technologies were used to develop this site:
 
 - There is a header bar located at the top of the page that displays a logo, header text and score bar. 
 
-![Header](readme-files/images/header.png "Header")
+<img style="display: inline; margin: 25px 0" src="readme-files/images/header.png" alt="Header" width="100%" height="auto" title="Header">
 
 - The header text is not displayed on smaller devices and the logo is changed to an alternative design. 
 
-![Responsive View - Start Quiz](readme-files/images/responsive-1.png "Responsive View - Start Quiz")
+<img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-1.png" alt="Responsive View - Start Quiz" width="50%" height="auto" title="Responsive View - Start Quiz">
 
 - There is a collapsible window below the header bar.
 
@@ -48,59 +47,61 @@ The following technologies were used to develop this site:
 
 - The collapsible window button text is adjusted when the div is opened / closed to prompt the user to utilize the function. 
 
-![Responsive View - Collapsible Area](readme-files/images/responsive-2.png "Responsive View - Collapsible Area")
+<img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-2.png" alt="Responsive View - Collapsible Area" width="50%" height="auto" title="Responsive View - Collapsible Area">
 
 - The user is able to start the quiz by pressing the "Engine Start" button. 
 
-![Start Button](readme-files/images/start.png "Start Button")
+<img style="display: inline; margin: 25px 40%" src="readme-files/images/start.png" alt="Start Button" width="20%" height="auto" title="Start Button">
 
 - The question is then displayed alongside the potential answers. The number of options and order of questions varies. 
 
-![Responsive View - Question](readme-files/images/responsive-3.png "Responsive View - Question")
+<img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-3.png" alt="Responsive View - Question" width="50%" height="auto" title="Responsive View - Question">
 
 - When the user selects an option, there score is updated and displayed in the right hand side of the header bar. 
 
 - The site will scroll down to the next button if required so the user knows theirs is more content on the page, it srolls back up to the top of the page when going to the next question.
 
-![Responsive View - Correct](readme-files/images/responsive-4.png "Responsive View - Correct")
+<img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-4.png" alt="Responsive View - Correct" width="50%" height="auto" title="Responsive View - Correct">
 
 - The incorrect options are displayed in red and the correct answers in green. 
 
-![Answers](readme-files/images/question-example.png "Answers")
+<img style="display: inline; margin: 25px 30%" src="readme-files/images/question-example.png" alt="Answers" width="40%" height="auto" title="Answers">
 
 - The background colour of the body is changed to dark green or dark red depending on if the user answered correctly. 
 
-![Background Colour Change](readme-files/images/2questions.png "Background Colour Change")
+<img style="display: inline; margin: 25px 25%" src="readme-files/images/2questions.png" alt="Background Colour Change" width="50%" height="auto" title="Background Colour Change">
 
 - The user is alerted below the question options to wether they have answered correctly or not. 
 
-![Responsive View - Incorrect](readme-files/images/responsive-5.png "Responsive View - Incorrect")
+<img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-5.png" alt="Responsive View - Incorrect" width="50%" height="auto" title="Responsive View - Incorrect">
 
 - The text is set to change at random based on a preset array for both the correct and incorrect answers. 
 
 - The next question button is displayed and when clicked it brings the user to the next question which is chosen at random. 
 
-![Correct Answer](readme-files/images/right.png "Correct Answer")
+<img style="display: inline; margin: 25px 30%" src="readme-files/images/right.png" alt="Correct Answer" width="40%" height="auto" title="Correct Answer">
 
-![Incorrect Answer](readme-files/images/wrong.png "Incorrect Answer")
+![Incorrect Answer]( "Incorrect Answer")
+
+<img style="display: inline; margin: 25px 30%" src="readme-files/images/wrong.png" alt="Incorrect Answer" width="40%" height="auto" title="Incorrect Answer">
 
 - When the user completes the array of questions, they will be alerted that they have made it to the end of the quiz after the section displaying their final result. 
 
-![Responsive View - End](readme-files/images/responsive-6.png "Responsive View - End")
+<img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-6.png" alt="Responsive View - End" width="50%" height="auto" title="Responsive View - End">
 
 - The start button is then displayed with the text "Try Again" and when selected will reset the score counters and the question index back to the start. 
 
-![End of Quiz](readme-files/images/end.png "End of Quiz")
+<img style="display: inline; margin: 25px 25%" src="readme-files/images/end.png" alt="End of Quiz" width="50%" height="auto" title="End of Quiz">
 
 - The footer is displayed at the end of the web page. It is static on larger devices but is set to stay in line with the web page instead of the broswer window on smaller devices. 
 
-![Footer](readme-files/images/footer.png "Footer")
+<img style="display: inline; margin: 25px 0" src="readme-files/images/footer.png" alt="Footer" width="100%" height="auto" title="Footer">
 
 - Media queries were used for responsive design so that the site is aesthically pleasing on a variety of different device sizes.
 
 - A favicon is utilized to display the site's alt logo in the broswer tab. 
 
-![Favicon in Broswer Tab](readme-files/images/tab.png "Favicon in Broswer Tab")
+<img style="display: inline; margin: 25px 40%" src="readme-files/images/tab.png" alt="Favicon in Broswer Tab" width="20%" height="auto" title="Favicon in Broswer Tab">
 
 ### Features Left to Implement
 
@@ -125,13 +126,13 @@ The following technologies were used to develop this site:
 
 - The site was designed using the below colour scheme: 
 
-![Colour Scheme](readme-files/images/car-quiz-colours.png "Colour Scheme")
+<img style="display: inline; margin: 25px 30%" src="readme-files/images/car-quiz-colours.png" alt="Colour Scheme" width="40%" height="auto" title="Colour Scheme">
 
 - The site's main and alternative logos were created to enchance the sites appearance and create a professional UI. 
 
-![Main Logo](assets/images/logo-a.png "Main Logo")
+<img style="display: inline; margin: 25px 25%" src="assets/images/logo-b.png" alt="Main Logo" width="50%" height="auto" title="Main Logo">
 
-![Alt Logo](assets/images/logo-d.png "Alt Logo")
+<img style="display: inline; margin: 25px 25%" src="assets/images/logo-d.png" alt="Alt Logo" width="50%" height="auto" title="Alt Logo">
 
 ## Testing 
 
@@ -141,36 +142,35 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 The website passed the HTML validator check with no issues. 
 
-![HTML Validation](readme-files/testing/html.png "HTML Validation")
+<img style="display: inline; margin: 25px 30%" src="readme-files/testing/html.png" alt="HTML Validation" width="40%" height="auto" title="HTML Validation">
 
 #### CSS - Jigsaw Validator
 
 The webesite passed the CSS Validator check with no issues. 
 
-![CSS Validation](readme-files/testing/css.png "CSS Validation")
+<img style="display: inline; margin: 25px 30%" src="readme-files/testing/css.png" alt="CSS Validation" width="40%" height="auto" title="CSS Validation">
 
 #### JS - JSHint Validator
 
 JSHint was used to review the JavaScript code. It flagged issues such as missing colons that were removed. 
 
-![JavaScript Validation](readme-files/testing/jshint-1.png "JavaScript Validation")
+<img style="display: inline; margin: 25px 30%" src="readme-files/testing/jshint-1.png" alt="JavaScript Validation Issues" width="40%" height="auto" title="JavaScript Validation Issues">
 
 Final testing results below: 
 
-![JavaScript Validation](readme-files/testing/js.png "JavaScript Validation")
+<img style="display: inline; margin: 25px 40%" src="readme-files/testing/js.png" alt="JavaScript Validation" width="30%" height="auto" title="JavaScript Validation">
 
-![JavaScript Validation Warnings](readme-files/testing/jshint.png "JavaScript Validation Warnings")
+<img style="display: inline; margin: 25px 40%" src="readme-files/testing/jshint.png" alt="JavaScript Validation Warnings" width="20%" height="auto" title="JavaScript Validation Warnings">
 
 #### Google Inpsect - Check HTML, CSS & JS. Utilzed console.logs when developing and testing. Lighthouse reports. 
 
 - I used console.log()'s during development and testing to ensure all functions were being called correctly. These were removed once testing was completed.  
 
-![Console Log Example](readme-files/testing/log-ex.png "Console Log Example")
+<img style="display: inline; margin: 25px 25%" src="readme-files/testing/log-ex.png" alt="Console Log Example" width="50%" height="auto" title="Console Log Example">
 
 - I analyzed the page load on both mobile and desktop devices using the Google Inspect Lighthouse Report Feature and received full marks for all criteria; Performance, Accessibility, Best Practices and SEO. 
 
-![Google Lighthouse Report Results](readme-files/testing/lighthouse.png "Google Lighthouse Report Results")
-
+<img style="display: inline; margin: 25px 25%" src="readme-files/testing/lighthouse.png" alt="Google Lighthouse Report Results" width="50%" height="auto" title="Google Lighthouse Report Results">
 
 #### Responsive Design & Visual Testing - Google Inspect & AmIResponsive
 
@@ -196,7 +196,7 @@ Final testing results below:
     - Tablet: 768 x 1024 px - scaled down to scale (0.219)
     - Mobile: 320 x 480 px - scaled down to scale (0.219)
 
-![Animated Site Layout Example](readme-files/images/car-quiz.gif "Animated Site Layout Example")
+<img style="display: inline; margin: 25px 30%" src="readme-files/images/car-quiz.gif" alt="Animated Site Layout Example" width="40%" height="auto" title="Animated Site Layout Example">
 
 - I physically tested the site on the following devices: 
     - Dell Monitor - 24": 1920 x 1200 px
@@ -206,6 +206,12 @@ Final testing results below:
 #### Fixed Bugs
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+<img style="display: inline; margin: 25px 25%" src="x" alt="x" width="50%" height="auto" title="x">
+
+<img style="display: inline; margin: 25px 25%" src="x" alt="x" width="50%" height="auto" title="x">
+
+<img style="display: inline; margin: 25px 25%" src="x" alt="x" width="50%" height="auto" title="x">
 
 ### Unfixed Bugs
 
