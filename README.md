@@ -2,6 +2,8 @@
 
 Kieran's Car Quiz is a fun, responsive car quiz that is designed to both engage and interact with the user. The site was designed to demonstrate a variety of different JavaScript functions.
 
+![Animated Site Layout Example](readme-files/images/car-quiz.gif "Animated Site Layout Example")
+
 
 ## Live Site Link
 
@@ -18,7 +20,11 @@ https://kc-7.github.io/car-quiz/
 
 - There is a header bar located at the top of the page that displays a logo, header text and score bar. 
 
+![Header](readme-files/images/header.png "Header")
+
 - The header text is not displayed on smaller devices and the logo is changed to an alternative design. 
+
+![Responsive View - Start Quiz](readme-files/images/responsive-1.png "Responsive View - Start Quiz")
 
 - There is a collapsible window below the header bar.
 
@@ -28,34 +34,57 @@ https://kc-7.github.io/car-quiz/
 
 - The collapsible window button text is adjusted when the div is opened / closed to prompt the user to utilize the function. 
 
+![Responsive View - Collapsible Area](readme-files/images/responsive-2.png "Responsive View - Collapsible Area")
+
 - The user is able to start the quiz by pressing the "Engine Start" button. 
 
+![Start Button](readme-files/images/start.png "Start Button")
+
 - The question is then displayed alongside the potential answers. The number of options and order of questions varies. 
+
+![Responsive View - Question](readme-files/images/responsive-3.png "Responsive View - Question")
 
 - When the user selects an option, there score is updated and displayed in the right hand side of the header bar. 
 
 - The site will scroll down to the next button if required so the user knows theirs is more content on the page, it srolls back up to the top of the page when going to the next question.
 
+![Responsive View - Correct](readme-files/images/responsive-4.png "Responsive View - Correct")
+
 - The incorrect options are displayed in red and the correct answers in green. 
+
+![Answers](readme-files/images/question-example.png "Answers")
 
 - The background colour of the body is changed to dark green or dark red depending on if the user answered correctly. 
 
+![Background Colour Change](readme-files/images/2questions.png "Background Colour Change")
+
 - The user is alerted below the question options to wether they have answered correctly or not. 
+
+![Responsive View - Incorrect](readme-files/images/responsive-5.png "Responsive View - Incorrect")
 
 - The text is set to change at random based on a preset array for both the correct and incorrect answers. 
 
 - The next question button is displayed and when clicked it brings the user to the next question which is chosen at random. 
 
+![text](readme-files/images/n "Title")
+
 - When the user completes the array of questions, they will be alerted that they have made it to the end of the quiz after the section displaying their final result. 
+
+![Responsive View - End](readme-files/images/responsive-6.png "Responsive View - End")
 
 - The start button is then displayed with the text "Try Again" and when selected will reset the score counters and the question index back to the start. 
 
+![End of Quiz](readme-files/images/end.png "End of Quiz")
+
 - The footer is displayed at the end of the web page. It is static on larger devices but is set to stay in line with the web page instead of the broswer window on smaller devices. 
+
+![Footer](readme-files/images/footer.png "Footer")
 
 - Media queries were used for responsive design so that the site is aesthically pleasing on a variety of different device sizes.
 
 - A favicon is utilized to display the site's alt logo in the broswer tab. 
 
+![Favicon in Broswer Tab](readme-files/images/tab.png "Favicon in Broswer Tab")
 
 ### Features Left to Implement
 
