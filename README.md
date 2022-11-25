@@ -12,7 +12,21 @@ https://kc-7.github.io/car-quiz/
 
 ## Technologies
 
+The following technologies were used to develop this site: 
 
+- **HTML** - is used to structure the website. 
+
+- **CSS** - is used to style the website. 
+
+- **JavaScript** - is used to make the website interactive. 
+
+- **Google Fonts** - is used to import additional fonts. 
+
+- **Font Awesome V5 Icons** - is used to import icons. 
+
+- **GitPod** - is the platform used to develop the site. 
+
+- **GitHub** - is used to host the website. 
 
 ## Features
 
@@ -66,7 +80,9 @@ https://kc-7.github.io/car-quiz/
 
 - The next question button is displayed and when clicked it brings the user to the next question which is chosen at random. 
 
-![text](readme-files/images/n "Title")
+![Correct Answer](readme-files/images/right.png "Correct Answer")
+
+![Incorrect Answer](readme-files/images/wrong.png "Incorrect Answer")
 
 - When the user completes the array of questions, they will be alerted that they have made it to the end of the quiz after the section displaying their final result. 
 
@@ -109,13 +125,13 @@ https://kc-7.github.io/car-quiz/
 
 - The site was designed using the below colour scheme: 
 
-PICTURE
+![Colour Scheme](readme-files/images/car-quiz-colours.png "Colour Scheme")
 
 - The site's main and alternative logos were created to enchance the sites appearance and create a professional UI. 
 
-PICTURES 1 & 2
+![Main Logo](assets/images/logo-a.png "Main Logo")
 
-
+![Alt Logo](assets/images/logo-d.png "Alt Logo")
 
 ## Testing 
 
@@ -123,13 +139,25 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 #### HTML - W3C Validator
 
+
+
 #### CSS - Jigsaw Validator
 
 #### JS - JSHint Validator
 
 #### Google Inpsect - Check HTML, CSS & JS. Utilzed console.logs when developing and testing. Lighthouse reports. 
 
-#### Responsive Design - Google Inspect & AmIResponsive
+- I used console.log()'s during development and testing to ensure all functions were being called correctly. These were removed once testing was completed.  
+
+![Console Log Example](readme-files/testing/log-ex.png "Console Log Example")
+
+- I analyzed the page load on both mobile and desktop devices using the Google Inspect Lighthouse Report Feature and received full marks for all criteria; Performance, Accessibility, Best Practices and SEO. 
+
+
+![Google Lighthouse Report Results](readme-files/testing/lighthouse.png "Google Lighthouse Report Results")
+
+
+#### Responsive Design & Visual Testing - Google Inspect & AmIResponsive
 
 - Visual testing was mainly carried out using the Google Chrome Inspect tool. I tested all sections of the site on a combination of different screen sizes. 
 
@@ -152,6 +180,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     - Laptop: 1280 x 802 px - scaled down to scale (0.277)
     - Tablet: 768 x 1024 px - scaled down to scale (0.219)
     - Mobile: 320 x 480 px - scaled down to scale (0.219)
+
+![Animated Site Layout Example](readme-files/images/car-quiz.gif "Animated Site Layout Example")
 
 - I physically tested the site on the following devices: 
     - Dell Monitor - 24": 1920 x 1200 px
@@ -192,7 +222,7 @@ The site was deployed using <a href="https://github.com/KC-7/car-quiz" target="_
 
 ### Content
 
-- This site was developed using information learned from the <a href="https://codeinstitute.net/" target="_blank" rel="noopener" aria-label="Link to the Code Institute (opens in new tab)">Code Institute</a> alongside other online resources such as <a href="https://www.w3schools.com/html/html_favicon.asp" target="_blank" rel="noopener" aria-label="Link to W3Schools (opens in new tab)">W3Schools</a>. 
+- This site was developed using information learned from the <a href="https://codeinstitute.net/" target="_blank" rel="noopener" aria-label="Link to the Code Institute (opens in new tab)">Code Institute</a> alongside other online resources such as <a href="https://www.w3schools.com/" target="_blank" rel="noopener" aria-label="Link to W3Schools (opens in new tab)">W3Schools</a> & <a href="https://stackoverflow.com/" target="_blank" rel="noopener" aria-label="Link to Stack Overflow (opens in new tab)">Stack Overflow</a>. 
 
 - The Code Institute's Gitpod Full Template was used as the initial template for the project. The repository is available on their <a href="https://github.com/Code-Institute-Org/gitpod-full-template" target="_blank" rel="noopener" aria-label="Link to The Code Institute Gitpod Full Template (opens in new tab)">GitHub Account</a>. 
 
@@ -227,6 +257,7 @@ The site was deployed using <a href="https://github.com/KC-7/car-quiz" target="_
 
 
 
+Thanks For reading! 😃
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
@@ -236,144 +267,4 @@ ________________________________________________________________________________
 
 
 
-
-
-
-
-# Readme Basics: 
-
--:Basics:-
-1. Headings
-To create a heading in a Readme we need to use #. The size of headings can be changed by adding multiple # Together. The greater the number of # is the smaller the heading is.
-
-Symbol    Tag       Example
-`#`       <h1>      # h1 heading
-`##`      <h1>      # h2 heading
-`###`     <h3>      # h3 heading
-`####`    <h4>      # h4 heading
-`#####`   <h5>      # h5 heading
-`######`  <h6>      # h6 heading
-There is also one similar way using <h1> — — <h6> tags of html.
-
-<h1> h1 heading</h1>
-<h4> h4 heading</h4>
-2. Bold and Italic Text
-We need to Use * Symbol.
-
-Actions Syntax                        Example
-Bold - **Text**                       Bold Text
-Italic - *Text*                       Italic Text
-Bold+Italic - ***Text***              Bold+Italic Text
-3. Lists
-To Create a Unorderedlist we can use * or - for each list point.
-
-Example:
-
-Action               Result
-*                     Bullet Point 1 Using *
--                     Bullet Point 2 Using -
-To Create an Ordered list we can simply use 1. and so on 2. , 3. , etc.
-
-4. Adding Links To Text
-Syntax: [Text](Link)
-
-
-5. Adding Images
-Steps:
-1. Put Your Image In The Same Repo.
-2. Open Image And Copy The Path
-3. Syntax:
-
-![Alt Text](Path_to_image)
-
-OR
-
-![alt text][logo]
-[logo]: path_to_image
-6. BlockQuotes
-BlockQuotes Can be inserted Using > .
-
-> This is a sample BlockQuote
-
-7. Inline Code
-To add Inline Code You Need to use the Grave Accent symbol.
-Example: This is an example of inline code Github Readme.
-
-8. Syntax highlighting
-```python
-for i in range(0,100):
-  if i>50:
-      print(i)
-  elif i<50:
-      print(i*i)
-```
-
-9. Tables
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-10. StrikeThrew
-~~content~~
-
-11. Line Break
-<br>
-or
-<br/>
-12. Horizontal Rule
-To add a Horizontal Rule In Readme we can use --- or *** or <hr>.
-
-***
-
--:Advance:-
-1. Custom Width and Height Images
-To add Height and Width To our Images We can Use Tags From HTML.
-
-<a href="LINK_TO_REPO">
-    <img src="IMAGE_PATH_INSIDE_REPO" alt="Logo" width="80" height="80">
-  </a>
-2. Adding a GIF
-Step 1: Download a GIF From Giphy or Create Your Own GIF
-
-Step 2: Upload GIF to Your Repo
-
-Step 3: Use Custom Width Code and Insert GIF
-
-<a href="LINK_TO_REPO">
-  <img src="LINK_TO_GIF.gif" alt="Gif" width="150" height="150">
-</a>
-3. Adding Link To Images
-[<img align="left" alt="Instagram" width="30px" src="IMG_PATH"/>][link]
-[link](ACTUAL_LINK)
-4. Adding hyperlinks or Tabs
-[Basics](#basics)    
-
-# Basics 
-...
-...
-..
-The Link Will Redirect and Scroll Till the basics section in the readme.
-
-5. Markdown Badges
-Single Badge
-
-<img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
-
-Multiple Badges
-
-<p>
-<img src="https://img.shields.io/badge/<handle>%20-%23E4405F.svg?&style=for-the-badge&logo=Instagram&logoColor=white"/>
-<img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/>
-<img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
-</p>
-
-Check Out All Markdown Badges
-See All Shield Badges
-6. Emojis
-Check Out The List Of Emojies here
-
-Find The README.md file For The Cheatsheet here :point_right: https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md :point_left:
-
-Thanks For Reading 😃
 
