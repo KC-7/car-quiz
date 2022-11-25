@@ -9,7 +9,7 @@
 https://kc-7.github.io/car-quiz/
 
 _________________________________________________________________________________________________________________________________________________________________________________
-
+ 
 ## Technologies
 
 The following technologies were used to develop this site: 
@@ -282,7 +282,6 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 I was not able to identify any further bugs during final testing. &#10004;
 
 _________________________________________________________________________________________________________________________________________________________________________________
-
 
 ## Deployment
 
