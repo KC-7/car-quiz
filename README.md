@@ -1,16 +1,18 @@
-# Kieran's Car Quiz - KCQ
+# Kieran's Car Quiz - KCQ 🚘
 
 <a href="https://kc-7.github.io/car-quiz/" target="_blank" rel="noopener" aria-label="Link to Project Website, Kieran's Car Quiz (opens in new tab)">Kieran's Car Quiz</a> is a fun, responsive car quiz that is designed to both engage and interact with the user. The site was designed to demonstrate a variety of different JavaScript functions.
 
+The user is asked a series of questions and their score is calculated in the top right hand corner. The website interacts with the user and changes the colours of the body and the options to show if the answer was correct or not. A randomized message is displayed to the user after each answer alongside their result. The user is showen their total score at the end of the game and given the option to try again.  
+
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/car-quiz.gif" alt="Animated Site Layout Example" width="40%" height="auto" title="Animated Site Layout Example">
 
-## Live Site Link
+## Live Site Link 🚗
 
 https://kc-7.github.io/car-quiz/
 
 _________________________________________________________________________________________________________________________________________________________________________________
  
-## Technologies
+## Technologies 🌐 🛠 
 
 The following technologies were used to develop this site: 
 
@@ -28,19 +30,25 @@ The following technologies were used to develop this site:
 
 - **GitHub** - is used to host the website. 
 
+- **Markdown** - is used to format the readme file. 
+
 _________________________________________________________________________________________________________________________________________________________________________________
 
-## Features
+## Features 🎲 🎮
 
-- The user is greeted by a streamline quiz home page.
+### Header Bar 👦
 
 - There is a header bar located at the top of the page that displays a logo, header text and score bar. 
 
+- The score is only displayed once the quize has sorted. It displays the total number of correct answers, total number of questions asked and total number of questions in the quiz.
+
 <img style="display: inline; margin: 25px 0" src="readme-files/images/header.png" alt="Header" width="100%" height="auto" title="Header">
 
-- The header text is not displayed on smaller devices and the logo is changed to an alternative design. 
+- The header text is not displayed on smaller devices and the logo is changed to an alternative design that is better suited to smaller devices. 
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-1.png" alt="Responsive View - Start Quiz" width="50%" height="auto" title="Responsive View - Start Quiz">
+
+### Collapsible Window ⏬ ⏫
 
 - There is a collapsible window below the header bar.
 
@@ -48,25 +56,33 @@ ________________________________________________________________________________
 
 - If the user is on a device with a larger screen width, a QR code will be displayed to give them the option to try the quiz on a mobile device. 
 
-- The collapsible window button text is adjusted when the div is opened / closed to prompt the user to utilize the function. 
+- The collapsible window button text is adjusted when the div is opened & closed to prompt the user to interact with it.  
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-2.png" alt="Responsive View - Collapsible Area" width="50%" height="auto" title="Responsive View - Collapsible Area">
+
+### Welcome Screen 👋 ⏯
+
+- The user is greeted by a streamline quiz home page below the collabsible window. 
 
 - The user is able to start the quiz by pressing the "Engine Start" button. 
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/start.png" alt="Start Button" width="40%" height="auto" title="Start Button">
 
-- The question is then displayed alongside the potential answers. The number of options and order of questions varies. 
+### Question Screen ❓
+
+- The question is then displayed alongside the potential answers. The number of options and order of questions varies. The Start Game button is hidden. 
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-3.png" alt="Responsive View - Question" width="50%" height="auto" title="Responsive View - Question">
 
+### Result Screen 🎰 ✅ ❌
+
 - When the user selects an option, there score is updated and displayed in the right hand side of the header bar. 
 
-- The site will scroll down to the next button if required so the user knows theirs is more content on the page, it srolls back up to the top of the page when going to the next question.
+- The site will scroll down to the next button if required so the user knows that there is more content on the page, it srolls back up to the top of the page when the next question button is selected. 
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-4.png" alt="Responsive View - Correct" width="50%" height="auto" title="Responsive View - Correct">
 
-- The incorrect options are displayed in red and the correct answers in green. 
+- The incorrect options ❌ are displayed in red and the correct answer ✅ is in green. 
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/question-example.png" alt="Answers" width="40%" height="auto" title="Answers">
 
@@ -74,7 +90,7 @@ ________________________________________________________________________________
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/2questions.png" alt="Background Colour Change" width="50%" height="auto" title="Background Colour Change">
 
-- The user is alerted below the question options to wether they have answered correctly or not. 
+- The user is alerted below the question options to whether they have answered correctly or not. 
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-5.png" alt="Responsive View - Incorrect" width="50%" height="auto" title="Responsive View - Incorrect">
 
@@ -84,21 +100,25 @@ ________________________________________________________________________________
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/right.png" alt="Correct Answer" width="40%" height="auto" title="Correct Answer">
 
-![Incorrect Answer]( "Incorrect Answer")
-
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/wrong.png" alt="Incorrect Answer" width="40%" height="auto" title="Incorrect Answer">
+
+### End Screen ⏹ 🔄
 
 - When the user completes the array of questions, they will be alerted that they have made it to the end of the quiz after the section displaying their final result. 
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-6.png" alt="Responsive View - End" width="50%" height="auto" title="Responsive View - End">
 
-- The start button is then displayed with the text "Try Again" and when selected will reset the score counters and the question index back to the start. 
+- The start button is then displayed with the text "Try Again" and when selected it will reset the score counters and the question index back to the start. 
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/end.png" alt="End of Quiz" width="50%" height="auto" title="End of Quiz">
+
+### Footer 👟
 
 - The footer is displayed at the end of the web page. It is static on larger devices but is set to stay in line with the web page instead of the broswer window on smaller devices. 
 
 <img style="display: inline; margin: 25px 0" src="readme-files/images/footer.png" alt="Footer" width="100%" height="auto" title="Footer">
+
+### Responsive Design 📱 💻 
 
 - Media queries were used for responsive design so that the site is aesthically pleasing on a variety of different device sizes.
 
@@ -106,23 +126,25 @@ ________________________________________________________________________________
 
 <img style="display: inline; margin: 25px 40%" src="readme-files/images/tab.png" alt="Favicon in Broswer Tab" width="20%" height="auto" title="Favicon in Broswer Tab">
 
-### Features Left to Implement
+### Features Left to Implement 🆕
 
-- A submit button could be displayed after the user selects their option, this would give then the option to change their option is they selected the wrong button by mistake before their choice is submitted. When they click submit, the button would then be replaced with the next button. This would give the user an oppurtunity to review their score before proceeding to the next question. 
+- A submit button could be displayed after the user selects their chosen option, this would give then the option to change their mind if they selected the wrong button by mistake before their choice is submitted. When they click submit, the button would then be replaced with the next button. This would give the user an oppurtunity to review their score before proceeding to the next question. 💪
 
-- Additional difficulty levels could be set up asking the user an array of more difficult questions. 
+- Additional difficulty levels could be set up asking the user an array of more difficult questions. 💬
 
-- A timer feature could be implemented. 
+- A timer feature could be implemented. ⏱ ⏳
 
-- Sounds could be utilized for user feedback. 
+- Sounds could be utilized for user feedback. 🔊
 
-- Add additional pages such as contact, 404, etc. 
+- Add additional pages such as contact, 404, etc. 📝
 
-- Consider restyling the website so all content is always displayed on any screen size and remove auto scroll / focus features. 
+- Consider restyling the website so all content is displayed within all screen sizes and remove auto scroll / focus features. This could be achieved by getting the result to pop up in front of the current options instead of below them and by utilizing media queries. 📱 💻
+
+- Add option for user to enter their name and save all scores. 🔤
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
-## Design
+## Design ✍ 🆒
 
 - The site was designed to demonstrate a variety of different JavaScript, CSS and HTML techniques. 
 
@@ -130,7 +152,7 @@ ________________________________________________________________________________
 
 - The JavaScript is set to function in a set order. Certain elements are set to randomize to provide a unique user eqperience. 
 
-- The site was designed using the below colour scheme that I created on <a href="https://coolors.co/" target="_blank" rel="noopener" aria-label="Link to Coolors Website (opens in new tab)">Coolers</a>. 
+- The site was styled using the below colour scheme that I created on <a href="https://coolors.co/" target="_blank" rel="noopener" aria-label="Link to Coolors Website (opens in new tab)">Coolers</a>. 
 
 <img style="display: inline; margin: 25px 35%" src="readme-files/images/car-quiz-colours.png" alt="Colour Scheme" width="30%" height="auto" title="Colour Scheme">
 
@@ -144,32 +166,32 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
-## Testing 
+## Testing 🔧 
 
-### Test Cases
+### Test Cases 🕵
 
-- [X] Page loads correctly and displays Engine Start button and Quiz Container.
-- [x] Find out more collapbsible window works as intended: 
+- [X] Page loads correctly 🌐 and displays Engine Start button and Quiz Container.
+- [x] Find out more collapbsible window ⏬ works as intended: 
   - [x] Changes colour when hovering. 
   - [x] Changes text when displaying content. 
   - [x] QR Code is displayed withiin the collasible window when over the specified screen width and is removed on devices with a smaller screen width.
 - [x] All links work and open in new tab: GitHub link in logo and social media links in footer.
 - [x] When Engine Start is clicked, the user is: shown the question and options, the score counter is displayed in the right hand side of the header bar and one question is added to the number of questions asked. 
-- [x] When a correct option is selected, the following will happen:
+- [x] When a correct option ✅ is selected, the following will happen:
   - [x] The quiz options will be disabled.
   - [x] The options change green or red to show the correct answer. 
   - [x] The body will turn dark green. 
   - [x] The fixed and randomized correct answer messages are displayed below the quiz results.
   - [x] The next button appears below the results, the browser will scroll down if this button appears out of view.
   - [x] The score is updated by 1 as the answer was correct. 
-- [x] When an incorrect option is selected, the following will happen:
+- [x] When an incorrect option ❌ is selected, the following will happen:
   - [x] The quiz options will be disabled.
   - [x] The options change green or red to show the correct answer. 
   - [x] The body will turn dark red. 
   - [x] The fixed and randomized incorrect answer messages are displayed below the quiz results.
   - [x] The next button appears below the results, the browser will scroll down if this button appears out of view.
   - [x] The score is not updated by as the answer was incorrect. 
-- [x] When the Next Question button is selected, the following will happen: 
+- [x] When the Next Question button ⏭ is selected, the following will happen: 
   - [x] The next question will be displayed in random order. 
   - [x] The quiz will scroll back up to the top so the user can see the question if it was out of view when selecting next. 
   - [x] The total number of questions asked will be increased by 1. 
@@ -253,7 +275,7 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
     - Lenovo Yoga 910 - 14" (4k): 3840 x 2160 px
     - Samsung Galaxy S10 - 5.8": 360 x 760 px
 
-#### Fixed Bugs &#10004;
+#### Fixed Bugs &#10004; 🕵 🕷
 
 - [x] JSHint flagged issues such as missing semicolons which were then removed. 
 
@@ -321,6 +343,8 @@ ________________________________________________________________________________
 
 - I learned how to implement the smooth scroll function, the effect that scrolls down to the area being navigated to instead of jumping to it, from using <a href="https://www.w3schools.com/howto/howto_css_smooth_scroll.asp" target="_blank" rel="noopener" aria-label="Link to W3Schools' Smooth Scroll Guide (opens in new tab)">W3Schools</a> guide on implementing this feature.
 
+- I learned how to implenet the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus" target="_blank" rel="noopener" aria-label="Link to Developer.Mozilla.Org's JS Focus Guide (opens in new tab)">Focus</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo" target="_blank" rel="noopener" aria-label="Link to Developer.Mozilla.Org's JS Window Scroll Guide (opens in new tab)">Scroll</a> featues in JavaScript using Developer.Mozilla.Org .
+
 - The social links, app download sections and the CSS validator logo all contain links to third party websites. 
 
 - Fonts added using <a href="https://fonts.google.com/" target="_blank" rel="noopener" aria-label="Link to Google Fonts (opens in new tab)">Google Fonts</a>.
@@ -335,15 +359,7 @@ ________________________________________________________________________________
 
 - The colour platte was generated using <a href="https://coolors.co/" target="_blank" rel="noopener" aria-label="Link to Coolors Website (opens in new tab)">Coolers</a>.
 
-- The site logo was created using the <a href="https://express.adobe.com/express-apps/logo-maker/" target="_blank" rel="noopener" aria-label="Link to Adobe Express | Free Logo Maker (opens in new tab)">Adobe Express | Logo Maker</a>.
-
-
-
-To add: 
-
-Collapsible Window 
-
-java script links....
+- The site logo was created using the <a href="https://express.adobe.com/express-apps/logo-maker/" target="_blank" rel="noopener" aria-label="Link to Adobe Express | Free Logo Maker (opens in new tab)">Adobe Express | Free Logo Maker</a>.
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
