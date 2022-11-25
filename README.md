@@ -118,6 +118,8 @@ ________________________________________________________________________________
 
 - Add additional pages such as contact, 404, etc. 
 
+- Consider restyling the website so all content is always displayed on any screen size and remove auto scroll / focus features. 
+
 _________________________________________________________________________________________________________________________________________________________________________________
 
 ## Design
@@ -144,33 +146,39 @@ ________________________________________________________________________________
 
 ### Test Cases
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
-
-
-- [X] Page load and displays Engine Start.
+- [X] Page loads correctly and displays Engine Start button and Quiz Container.
 - [x] Find out more collapbsible window works as intended: changes colour when hovering & changes text when displaying content.
 - [x] QR Code is displayed withiin the collasible window when over the specified screen width and is removed on devices with a smaller screen width.
 - [x] All links work and open in new tab: GitHub link in logo and social media links in footer.
 - [x] When Engine Start is clicked, the user is: shown the question and options, the score counter is displayed in the right hand side of the header bar and one question is added to the number of questions asked. 
-- [x] When a correct option is selected: 
-- the options will be disabled
-- the options change colour to show if they are correct, the body will turn dark green, the fixed and randomized correct answer messages are displayed, the next button appears and the score is updated. 
-- [x] When an incorrect option is selected: the options will be disabled, the fixed and randomized incorrect answer messages are displayed, the next button appears and the score is updated. 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
+- [x] When a correct option is selected, the following will happen:
+  - [x] The quiz options will be disabled.
+  - [x] The options change green or red to show the correct answer. 
+  - [x] The body will turn dark green. 
+  - [x] The fixed and randomized correct answer messages are displayed below the quiz results.
+  - [x] The next button appears below the results, the browser will scroll down if this button appears out of view.
+  - [x] The score is updated by 1 as the answer was correct. 
+- [x] When an incorrect option is selected, the following will happen:
+  - [x] The quiz options will be disabled.
+  - [x] The options change green or red to show the correct answer. 
+  - [x] The body will turn dark red. 
+  - [x] The fixed and randomized incorrect answer messages are displayed below the quiz results.
+  - [x] The next button appears below the results, the browser will scroll down if this button appears out of view.
+  - [x] The score is not updated by as the answer was incorrect. 
+- [x] When the Next Question button is selected, the following will happen: 
+  - [x] The next question will be displayed in random order. 
+  - [x] The quiz will scroll back up to the top so the user can see the question if it was out of view when selecting next. 
+  - [x] The total number of questions asked will be increased by 1. 
+  - [x] The quiz options will be enabled. 
+  - [x] The quiz options and the body styling will be returned to normal.
+  - [x] The results from the previous question and the Next Question button will be hidden. 
+- [x] When an option is selected, it will repeat the above sequences until all questions have been asked.
+- [x] A message will be displayed when all questions have been completed by the user, it will include the users score and a button to start again. 
+- [x] The start button is restyled to display "Try again" and when selected it will do the following: 
+  - [x] The quiz will go back to the start and ask a question at random. 
+  - [x] The score and total number of questions asked will be reset back to 0. 
+  - [x] The styling, next button, try again button and the messages will be removed. 
+
 
 #### HTML - W3C Validator
 
@@ -283,6 +291,8 @@ ________________________________________________________________________________
 - This site was developed using information learned from the <a href="https://codeinstitute.net/" target="_blank" rel="noopener" aria-label="Link to the Code Institute (opens in new tab)">Code Institute</a> alongside other online resources such as <a href="https://www.w3schools.com/" target="_blank" rel="noopener" aria-label="Link to W3Schools (opens in new tab)">W3Schools</a> & <a href="https://stackoverflow.com/" target="_blank" rel="noopener" aria-label="Link to Stack Overflow (opens in new tab)">Stack Overflow</a>. 
 
 - The Code Institute's Gitpod Full Template was used as the initial template for the project. The repository is available on their <a href="https://github.com/Code-Institute-Org/gitpod-full-template" target="_blank" rel="noopener" aria-label="Link to The Code Institute Gitpod Full Template (opens in new tab)">GitHub Account</a>. 
+
+- I watched JavaScript tutorials on YouTube and found <a href="https://www.youtube.com/@WebDevSimplified" target="_blank" rel="noopener" aria-label="Link to Wed Dev Simplified's YouTube Channel (opens in new tab)">Web Dev Simplified</a>'s channel very helpful when learning new skills. 
 
 - I learned how to implement the Favicon, the picture in the browser tab, from using <a href="https://www.w3schools.com/html/html_favicon.asp" target="_blank" rel="noopener" aria-label="Link to W3Schools' Favicon Guide (opens in new tab)">W3Schools</a> guide on implementing this feature.
 
