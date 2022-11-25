@@ -180,6 +180,7 @@ function questionCounter() {
   document.getElementsByClassName("questions-asked")[0].innerText = ++questionsAsked;
 }
 
+/** Right Answer Messages */
 const rightAnswer = [
   'You are doing great, keep it up!',
   'You are on a roll!',
@@ -188,6 +189,7 @@ const rightAnswer = [
   'Awesome, great work!'
 ];
 
+/** Wrong Answer Messages */
 const wrongAnswer = [
   'Better luck next time!',
   'I thought you said you like cars?',

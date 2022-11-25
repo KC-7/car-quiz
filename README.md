@@ -132,7 +132,9 @@ ________________________________________________________________________________
 
 - The site was designed using the below colour scheme that I created on <a href="https://coolors.co/" target="_blank" rel="noopener" aria-label="Link to Coolors Website (opens in new tab)">Coolers</a>. 
 
-<img style="display: inline; margin: 25px 30%" src="readme-files/images/car-quiz-colours.png" alt="Colour Scheme" width="40%" height="auto" title="Colour Scheme">
+<img style="display: inline; margin: 25px 35%" src="readme-files/images/car-quiz-colours.png" alt="Colour Scheme" width="30%" height="auto" title="Colour Scheme">
+
+<img style="display: inline; margin: 25px 35%" src="readme-files/images/colours-gradient.png" alt="Colour Scheme Gradient" width="30%" height="auto" title="Colour Scheme Gradient">
 
 - The site's main and alternative logos were created to enchance the sites appearance and create a professional UI. 
 
@@ -182,35 +184,34 @@ ________________________________________________________________________________
 
 #### HTML - W3C Validator
 
-The website passed the HTML validator check with no issues. 
+The website passed the <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkc-7.github.io%2Fcar-quiz%2F" target="_blank" rel="noopener" aria-label="Link to the W3C HTML Validator (opens in new tab)">W3C HTML validator</a> check with no issues. 
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/testing/html.png" alt="HTML Validation" width="40%" height="auto" title="HTML Validation">
 
 #### CSS - Jigsaw Validator
 
-The webesite passed the CSS Validator check with no issues. 
+The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fkc-7.github.io%2Fcar-quiz%2F&usermedium=all&vextwarning=&warning=1" target="_blank" rel="noopener" aria-label="Link to the Jigsaw CSS Validator (opens in new tab)">Jigsaw CSS Validator</a> check with no issues. 
+
+<a href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fkc-7.github.io%2Fcar-quiz%2F&usermedium=all&vextwarning=&warning=1" target="_blank" rel="noopener" aria-label="Link to Jigsaw CSS Validator (opens in new tab)">
+<img style="display: inline; margin: 25px 50%" src="assets/images/valid-css.gif" alt="CSS Validation Logo" width="10%" height="auto"></a>
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/testing/css.png" alt="CSS Validation" width="40%" height="auto" title="CSS Validation">
 
 #### JS - JSHint Validator
 
-JSHint was used to review the JavaScript code. It flagged issues such as missing semicolons which were then removed. 
+<a href="https://jshint.com/" target="_blank" rel="noopener" aria-label="Link to JSHint (opens in new tab)">JSHint</a> was used to review the JavaScript code. 
 
-<img style="display: inline; margin: 25px 40%" src="readme-files/testing/jshint-1.png" alt="JavaScript Validation Issues" width="30%" height="auto" title="JavaScript Validation Issues">
+<img style="display: inline; margin: 25px 40%" src="readme-files/testing/js.png" alt="JavaScript JSHint" width="30%" height="auto" title="JavaScript JSHint">
 
-Final testing results below: 
-
-<img style="display: inline; margin: 25px 40%" src="readme-files/testing/js.png" alt="JavaScript Validation" width="30%" height="auto" title="JavaScript Validation">
-
-<img style="display: inline; margin: 25px 40%" src="readme-files/testing/jshint.png" alt="JavaScript Validation Warnings" width="20%" height="auto" title="JavaScript Validation Warnings">
+<img style="display: inline; margin: 25px 40%" src="readme-files/testing/jshint.png" alt="JavaScript JSHint Warnings" width="20%" height="auto" title="JavaScript JSHint Warnings">
 
 #### Google Inpsect - Check HTML, CSS & JS. Utilzed console.logs when developing and testing. Lighthouse reports. 
 
-- I used console.log()'s during development and testing to ensure all functions were being called correctly. These were removed once testing was completed.  
+- I used console.log()'s during development and testing to ensure all functions were being called correctly. These were removed once testing was completed. Snip from testing below.   
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/testing/log-ex.png" alt="Console Log Example" width="50%" height="auto" title="Console Log Example">
 
-- I analyzed the page load on both mobile and desktop devices using the Google Inspect Lighthouse Report Feature and received full marks for all criteria; Performance, Accessibility, Best Practices and SEO. 
+- I analyzed the page load on both mobile and desktop devices using the Google Inspect Lighthouse Report Feature and received full 100% marks for all criteria; Performance, Accessibility, Best Practices and SEO. 
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/testing/lighthouse.png" alt="Google Lighthouse Report Results" width="50%" height="auto" title="Google Lighthouse Report Results">
 
@@ -245,19 +246,33 @@ Final testing results below:
     - Lenovo Yoga 910 - 14" (4k): 3840 x 2160 px
     - Samsung Galaxy S10 - 5.8": 360 x 760 px
 
-#### Fixed Bugs
+#### Fixed Bugs &#10004;
 
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+- [x] JSHint flagged issues such as missing semicolons which were then removed. 
 
-<img style="display: inline; margin: 25px 25%" src="x" alt="x" width="50%" height="auto" title="x">
+<img style="display: inline; margin: 25px 40%" src="readme-files/testing/jshint-1.png" alt="JavaScript Validation Issues" width="20%" height="auto" title="JavaScript Validation Issues">
 
-<img style="display: inline; margin: 25px 25%" src="x" alt="x" width="50%" height="auto" title="x">
+- [x] Minor HTML Issues were highleted during the intial test and addressed as required. 
 
-<img style="display: inline; margin: 25px 25%" src="x" alt="x" width="50%" height="auto" title="x">
+<img style="display: inline; margin: 25px 35%" src="readme-files/testing/initial-issues.png" alt="HTML Validation Issues" width="30%" height="auto" title="HTML Validation Issues">
 
-### Unfixed Bugs
+- [x] I had an issue where the next button was being displayed below the start again button, I resolved this by correcting the JS Funtction. 
 
-I was not able to identify any further bugs during final testing. 
+<img style="display: inline; margin: 25px 35%" src="readme-files/testing/next-btn-issue.png" alt="Next Button Issue" width="30%" height="auto" title="Next Button Issue">
+
+- [x] I initially used alerts to display the answer and end of quiz results. I changed these alerts to show inside the quiz in case the user has a pop up blocker installed on their browser, in which case, the alerts would not work and be seen as a bug. 
+
+<img style="display: inline; margin: 25px 35%" src="readme-files/testing/alert1.png" alt="Window Alert Correct Answer" width="30%" height="auto" title="Window Alert Correct Answer">
+<img style="display: inline; margin: 25px 35%" src="readme-files/testing/alert2.png" alt="Window Alert Wrong Answer" width="30%" height="auto" title="Window Alert Wrong Answer">
+<img style="display: inline; margin: 25px 35%" src="readme-files/testing/alert3.png" alt="Window Alert End of Quiz" width="30%" height="auto" title="Window Alert End of Quiz">
+
+- [x] I shared the quiz for testing and was informed that it was not obvious that the next button was displayed lower than what was being displayed on the browser after selecting an option. I addressed this by implementing a Focus Function to send the user to the next button and a Scroll To Function to get the user back to the top of the page. 
+
+- [x] I also received feedback that when the user clicked on the collapsible window, it was not obvious how to close it. To address this issue, I set the inner text to change when the collapsible area is opened or closed to prompt the user to interact with it. 
+
+### Unfixed Bugs &#10006;
+
+I was not able to identify any further bugs during final testing. &#10004;
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
