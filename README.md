@@ -277,6 +277,8 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 
 - [x] I also received feedback that when the user clicked on the collapsible window, it was not obvious how to close it. To address this issue, I set the inner text to change when the collapsible area is opened or closed to prompt the user to interact with it. 
 
+- [x] I was not able to disable the quiz option buttons initially, this is because I needed to target the elements inside of the array instead of the class group directly. 
+
 ### Unfixed Bugs &#10006;
 
 I was not able to identify any further bugs during final testing. &#10004;
@@ -334,6 +336,14 @@ ________________________________________________________________________________
 - The colour platte was generated using <a href="https://coolors.co/" target="_blank" rel="noopener" aria-label="Link to Coolors Website (opens in new tab)">Coolers</a>.
 
 - The site logo was created using the <a href="https://express.adobe.com/express-apps/logo-maker/" target="_blank" rel="noopener" aria-label="Link to Adobe Express | Free Logo Maker (opens in new tab)">Adobe Express | Logo Maker</a>.
+
+
+
+To add: 
+
+Collapsible Window 
+
+java script links....
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
