@@ -1,6 +1,6 @@
 # Kieran's Car Quiz - KCQ
 
-Kieran's Car Quiz is a fun, responsive car quiz that is designed to both engage and interact with the user. The site was designed to demonstrate a variety of different JavaScript functions.
+<a href="https://kc-7.github.io/car-quiz/" target="_blank" rel="noopener" aria-label="Link to Project Website, Kieran's Car Quiz (opens in new tab)">Kieran's Car Quiz</a> is a fun, responsive car quiz that is designed to both engage and interact with the user. The site was designed to demonstrate a variety of different JavaScript functions.
 
 ![Animated Site Layout Example](readme-files/images/car-quiz.gif "Animated Site Layout Example")
 
@@ -139,11 +139,27 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 #### HTML - W3C Validator
 
+The website passed the HTML validator check with no issues. 
 
+![HTML Validation](readme-files/testing/html.png "HTML Validation")
 
 #### CSS - Jigsaw Validator
 
+The webesite passed the CSS Validator check with no issues. 
+
+![CSS Validation](readme-files/testing/css.png "CSS Validation")
+
 #### JS - JSHint Validator
+
+JSHint was used to review the JavaScript code. It flagged issues such as missing colons that were removed. 
+
+![JavaScript Validation](readme-files/testing/jshint-1.png "JavaScript Validation")
+
+Final testing results below: 
+
+![JavaScript Validation](readme-files/testing/js.png "JavaScript Validation")
+
+![JavaScript Validation Warnings](readme-files/testing/jshint.png "JavaScript Validation Warnings")
 
 #### Google Inpsect - Check HTML, CSS & JS. Utilzed console.logs when developing and testing. Lighthouse reports. 
 
@@ -152,7 +168,6 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ![Console Log Example](readme-files/testing/log-ex.png "Console Log Example")
 
 - I analyzed the page load on both mobile and desktop devices using the Google Inspect Lighthouse Report Feature and received full marks for all criteria; Performance, Accessibility, Best Practices and SEO. 
-
 
 ![Google Lighthouse Report Results](readme-files/testing/lighthouse.png "Google Lighthouse Report Results")
 
@@ -220,8 +235,6 @@ The site was deployed using <a href="https://github.com/KC-7/car-quiz" target="_
 
 ## Credits
 
-### Content
-
 - This site was developed using information learned from the <a href="https://codeinstitute.net/" target="_blank" rel="noopener" aria-label="Link to the Code Institute (opens in new tab)">Code Institute</a> alongside other online resources such as <a href="https://www.w3schools.com/" target="_blank" rel="noopener" aria-label="Link to W3Schools (opens in new tab)">W3Schools</a> & <a href="https://stackoverflow.com/" target="_blank" rel="noopener" aria-label="Link to Stack Overflow (opens in new tab)">Stack Overflow</a>. 
 
 - The Code Institute's Gitpod Full Template was used as the initial template for the project. The repository is available on their <a href="https://github.com/Code-Institute-Org/gitpod-full-template" target="_blank" rel="noopener" aria-label="Link to The Code Institute Gitpod Full Template (opens in new tab)">GitHub Account</a>. 
@@ -237,16 +250,14 @@ The site was deployed using <a href="https://github.com/KC-7/car-quiz" target="_
 
 - Icons added using <a href="https://fonts.google.com/" target="_blank" rel="noopener" aria-label="Link to Font Awesome | Free V5 Icons (opens in new tab)">Font Awesome | Free V5 Icons</a>.
 
-- The resposive images in the README file above were taken from <a href="https://ui.dev/amiresponsive" target="_blank" rel="noopener" aria-label="Link to Am I Responsive Website (opens in new tab)">Am I Responsive</a>.
+- The resposive images in the readme were taken using <a href="https://ui.dev/amiresponsive" target="_blank" rel="noopener" aria-label="Link to Am I Responsive Website (opens in new tab)">Am I Responsive</a>.
+
+- The animated gif in the readme was created using <a href="https://imgflip.com/gif-maker" target="_blank" rel="noopener" aria-label="Link to Imgflip's free gif maker (opens in new tab)">Imgflip's free gif maker</a>
 
 
-- The QR Code was created for free using https://www.qr-code-generator.com/
+- The QR Code was created for free using <a href="https://www.qr-code-generator.com/" target="_blank" rel="noopener" aria-label="Link to QR Code Generator Website (opens in new tab)">QR Code Generator .com</a>.
 
-- The colour platte was generated using https://coolors.co/ . 
-
-
-
-### Media 
+- The colour platte was generated using <a href="https://coolors.co/" target="_blank" rel="noopener" aria-label="Link to Coolors Website (opens in new tab)">Coolers</a>.
 
 - The site logo was created using the <a href="https://express.adobe.com/express-apps/logo-maker/" target="_blank" rel="noopener" aria-label="Link to Adobe Express | Free Logo Maker (opens in new tab)">Adobe Express | Logo Maker</a>.
 

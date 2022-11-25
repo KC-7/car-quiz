@@ -4,7 +4,6 @@ const questionElement = document.getElementById('question'); // This is the Ques
 const optionButtons = document.getElementById('quiz-options'); // This is the Option Buttons Area
 const optionButton = document.getElementsByClassName('option-button'); // These are the individual Option Buttons
 const nextButton = document.getElementById('next-question-button'); // This is the Next Question Button
-const modalClose = document.getElementsByClassName('modal-close'); // This is the Modal Close Button
 const modalContainer = document.getElementsByClassName('modal-container'); // This is the Modal Container
 
 /** The below variables are utilised in the startQuiz and nextButton Functions to randomize the order of the questions */
@@ -36,10 +35,10 @@ for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
-      document.getElementById('drop-down').innerText = "Find out more 👇" // Changes the text back to Find Out More
+      document.getElementById('drop-down').innerText = "Find out more 👇"; // Changes the text back to Find Out More
     } else {
       content.style.display = "block";
-      document.getElementById('drop-down').innerText = "Read Less 👆" // Changes the text to Read Less to prompt the user to close the window
+      document.getElementById('drop-down').innerText = "Read Less 👆"; // Changes the text to Read Less to prompt the user to close the window
     }
   });
 }
@@ -187,7 +186,7 @@ const rightAnswer = [
   'Nice work, you know your stuff!',
   'Maybe you should be writing the questions?',
   'Awesome, great work!'
-]
+];
 
 const wrongAnswer = [
   'Better luck next time!',
@@ -195,7 +194,7 @@ const wrongAnswer = [
   'Are you even trying?',
   'At least you learned something new!',
   'Dont worry, you will do better next time!'
-]
+];
 
 /** Q&A - List of the Questions & Options / Correct Answers in the Quiz */
 const questions = [{
