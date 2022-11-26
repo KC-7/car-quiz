@@ -88,7 +88,8 @@ body.wrong {
 
 /* Quiz Page Styling */
 
-#quiz-section { /* Styles the container for the quiz */
+#quiz-section {
+    /* Styles the container for the quiz */
     background-color: #003333;
     opacity: 0.9;
     height: 100%;
@@ -110,7 +111,8 @@ body.wrong {
     font-weight: bold;
 }
 
-#quiz-options { /* The quiz buttons are displayed with two options on each row */
+#quiz-options {
+    /* The quiz buttons are displayed with two options on each row */
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 75px;
@@ -154,7 +156,8 @@ body.wrong {
 }
 
 
-#start-button { /* The start button is styled to be displayed as a circle centered in the div */
+#start-button {
+    /* The start button is styled to be displayed as a circle centered in the div */
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -217,7 +220,8 @@ body.wrong {
 
 /* Collapsible Window */
 
-.collapsible { /* Styles the button that is used to open and close the collapsible content */
+.collapsible {
+    /* Styles the button that is used to open and close the collapsible content */
     background-color: #f8e108;
     color: #003333;
     cursor: pointer;
@@ -230,12 +234,14 @@ body.wrong {
     text-align: center;
 }
 
-.active, 
-.collapsible:hover { /* Adds a background colour to the button if it is clicked on and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    /* Adds a background colour to the button if it is clicked on and when you move the mouse over it (hover) */
     background-color: #008080;
 }
 
-.content { /* Styles the collapsible content. Note, this is hidden by default */
+.content {
+    /* Styles the collapsible content. Note, this is hidden by default */
     padding: 0 18px;
     display: none;
     overflow: hidden;
@@ -246,7 +252,8 @@ body.wrong {
     line-height: 1.5;
 }
 
-#qr-div { /* The container for the QR code */
+#qr-div {
+    /* The container for the QR code */
     text-align: center;
     border: 3px solid #f8e108;
     width: max-content;
@@ -279,7 +286,8 @@ body.wrong {
 
 /* Modal Pop Ups */
 
-.modal-container { /* This styles where the result is displayed */
+.modal-container {
+    /* This styles where the result is displayed */
     width: 100%;
     text-align: center;
     color: #f5f5f5;
@@ -311,7 +319,8 @@ body.wrong {
 
 /* Footer */
 
-footer { /* This styles the footer and keeps the social links on one row */
+footer {
+    /* This styles the footer and keeps the social links on one row */
     position: fixed;
     left: 0;
     bottom: 0;
@@ -330,8 +339,9 @@ footer a {
     color: #f8e108;
 }
 
-footer div:hover { /* Increases the size of footer links when hovering */
-    transform: scale(1.25); 
+footer div:hover {
+    /* Increases the size of footer links when hovering */
+    transform: scale(1.25);
 }
 
 /* Media Queries for Responsive Layout */
@@ -471,11 +481,13 @@ footer div:hover { /* Increases the size of footer links when hovering */
         padding: 0 15px;
     }
 
-    #header-logo { /* This hides the main header logo */
+    #header-logo {
+        /* This hides the main header logo */
         display: none;
     }
 
-    #header-logo-alt { /* This displays and stlyes the alternative header logo */
+    #header-logo-alt {
+        /* This displays and stlyes the alternative header logo */
         float: left;
         height: 80px;
         margin-left: 30px;
