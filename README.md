@@ -68,7 +68,7 @@ ________________________________________________________________________________
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/start.png" alt="Start Button" width="40%" height="auto" title="Start Button">
 
-### Question Screen ❓
+### Question Screen ❓ 🖱
 
 - The question is then displayed alongside the potential answers. The number of options and order of questions varies. The Start Game button is hidden. 
 
@@ -112,7 +112,7 @@ ________________________________________________________________________________
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/end.png" alt="End of Quiz" width="50%" height="auto" title="End of Quiz">
 
-### Footer 👟
+### Footer 👟 
 
 - The footer is displayed at the end of the web page. It is static on larger devices but is set to stay in line with the web page instead of the broswer window on smaller devices. 
 
@@ -222,7 +222,7 @@ The website passed the <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fk
 The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fkc-7.github.io%2Fcar-quiz%2F&usermedium=all&vextwarning=&warning=1" target="_blank" rel="noopener" aria-label="Link to the Jigsaw CSS Validator (opens in new tab)">Jigsaw CSS Validator</a> check with no issues. 
 
 <a href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fkc-7.github.io%2Fcar-quiz%2F&usermedium=all&vextwarning=&warning=1" target="_blank" rel="noopener" aria-label="Link to Jigsaw CSS Validator (opens in new tab)">
-<img style="display: inline; margin: 25px 50%" src="assets/images/valid-css.gif" alt="CSS Validation Logo" width="10%" height="auto"></a>
+<img style="display: inline; margin: 25px 45%" src="assets/images/valid-css.gif" alt="CSS Validation Logo" width="10%" height="auto"></a>
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/testing/css.png" alt="CSS Validation" width="40%" height="auto" title="CSS Validation">
 
@@ -230,11 +230,11 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 
 <a href="https://jshint.com/" target="_blank" rel="noopener" aria-label="Link to JSHint (opens in new tab)">JSHint</a> was used to review the JavaScript code. 
 
-<img style="display: inline; margin: 25px 40%" src="readme-files/testing/js.png" alt="JavaScript JSHint" width="30%" height="auto" title="JavaScript JSHint">
+<img style="display: inline; margin: 25px 35%" src="readme-files/testing/js.png" alt="JavaScript JSHint" width="30%" height="auto" title="JavaScript JSHint">
 
 <img style="display: inline; margin: 25px 40%" src="readme-files/testing/jshint.png" alt="JavaScript JSHint Warnings" width="20%" height="auto" title="JavaScript JSHint Warnings">
 
-#### Google Inpsect 🏸 - Check HTML, CSS, JS, Log & Lighthouse reports. 
+#### Google Inpsect 🏸 - Check HTML, CSS, JS, Log & Lighthouse reports. 🖱 💡
 
 - I used console.log()'s during development and testing to ensure all functions were being called correctly. These were removed once testing was completed. Snip from testing below.   
 
@@ -246,7 +246,7 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 
 - I used the element inspect feature to assist with styling. 
 
-#### Responsive Design & Visual Testing - Google Inspect & AmIResponsive 📱 💻
+#### Responsive Design & Visual Testing - Google Inspect & AmIResponsive 📱 💻 🖥
 
 - Visual testing was mainly carried out using the Google Chrome Inspect tool. I tested all sections of the site on a combination of different screen sizes. 
 
@@ -264,7 +264,7 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
     - Nest Hub: 1024 x 600 px
     - Nest Hub Max: 1280 x 800 px
 
-- Visual testing was also carried out using <a href="https://ui.dev/amiresponsive" target="_blank" rel="noopener" aria-label="Link to Am I Responsive Website (opens in new tab)">Am I Responsive</a>. The responsive image examples shown above were taken from this website. This site provides simulations in the following sizes: 
+- Visual testing was also carried out using <a href="https://ui.dev/amiresponsive" target="_blank" rel="noopener" aria-label="Link to Am I Responsive Website (opens in new tab)">Am I Responsive</a>. The responsive image examples shown above were taken from this website. 📱 💻 This site provides simulations in the following sizes: 
     - Desktop: 1600 x 992 px - scaled down to scale (0.3181)
     - Laptop: 1280 x 802 px - scaled down to scale (0.277)
     - Tablet: 768 x 1024 px - scaled down to scale (0.219)
@@ -273,9 +273,9 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/car-quiz.gif" alt="Animated Site Layout Example" width="40%" height="auto" title="Animated Site Layout Example">
 
 - I physically tested the site on the following devices: 
-    - Dell Monitor - 24": 1920 x 1200 px
-    - Lenovo Yoga 910 - 14" (4k): 3840 x 2160 px
-    - Samsung Galaxy S10 - 5.8": 360 x 760 px
+    - Dell Monitor - 24": 1920 x 1200 px 🖥
+    - Lenovo Yoga 910 - 14" (4k): 3840 x 2160 px 💻 
+    - Samsung Galaxy S10 - 5.8": 360 x 760 px 📱
 
 #### Fixed Bugs &#10004; 🕵 🕷
 
@@ -303,15 +303,15 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 
 - [x] I was not able to disable the quiz option buttons initially, this is because I needed to target the elements inside of the array instead of the class group directly. 
 
-#### Unfixed Bugs &#10006 🕷;
+#### Unfixed Bugs &#10006; 🕵 🕷
 
-I was not able to identify any further bugs during final testing. &#10004;
+I was not able to identify any further bugs during final testing. &#10004; 🐛 🐞 🦗
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
 ## Deployment 🌐
 
-### GitPod 🔧
+### GitPod 🔧 ⌨
 
 - I developed the site using HTML and CSS in GitPod. 
 
@@ -323,7 +323,7 @@ ________________________________________________________________________________
     - *git commit -m "Update message here"*
     - *git push*
 
-### GitHub 🌐
+### GitHub 🌐 🖱
 
 The site was deployed using <a href="https://github.com/KC-7/car-quiz" target="_blank" rel="noopener" aria-label="Link to the GitHub Repo (opens in new tab)">GitHub</a> pages:
 - In the GitHub repository, navigate to the Settings tab.
@@ -333,7 +333,7 @@ The site was deployed using <a href="https://github.com/KC-7/car-quiz" target="_
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
-## Credits 🥂
+## Credits 🥂 🙏
 
 - This site was developed using information learned from the <a href="https://codeinstitute.net/" target="_blank" rel="noopener" aria-label="Link to the Code Institute (opens in new tab)">Code Institute</a> alongside other online resources such as <a href="https://www.w3schools.com/" target="_blank" rel="noopener" aria-label="Link to W3Schools (opens in new tab)">W3Schools</a> & <a href="https://stackoverflow.com/" target="_blank" rel="noopener" aria-label="Link to Stack Overflow (opens in new tab)">Stack Overflow</a>. 
 
@@ -352,6 +352,8 @@ ________________________________________________________________________________
 - Fonts added using <a href="https://fonts.google.com/" target="_blank" rel="noopener" aria-label="Link to Google Fonts (opens in new tab)">Google Fonts</a>.
 
 - Icons added using <a href="https://fonts.google.com/" target="_blank" rel="noopener" aria-label="Link to Font Awesome | Free V5 Icons (opens in new tab)">Font Awesome | Free V5 Icons</a>.
+
+- 
 
 - The resposive images in the readme were taken using <a href="https://ui.dev/amiresponsive" target="_blank" rel="noopener" aria-label="Link to Am I Responsive Website (opens in new tab)">Am I Responsive</a>.
 
