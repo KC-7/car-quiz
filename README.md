@@ -2,7 +2,7 @@
 
 <a href="https://kc-7.github.io/car-quiz/" target="_blank" rel="noopener" aria-label="Link to Project Website, Kieran's Car Quiz (opens in new tab)">Kieran's Car Quiz</a> is a fun, responsive car quiz that is designed to both engage and interact with the user. The site was designed to demonstrate a variety of different JavaScript functions.
 
-The user is asked a series of questions and their score is calculated in the top right hand corner. The website interacts with the user and changes the colours of the body and the options to show if the answer was correct or not. A randomized message is displayed to the user after each answer alongside their result. The user is shown their total score at the end of the game and given the option to try again.  
+The user is asked a series of questions and their score is calculated in the top right hand corner. The website interacts with the user and changes the colours of the body and the options to show if the answer was correct or not. A randomized message is displayed to the user after each answer alongside their result. The user is shown their total score at the end of the game and given the option to try again. The sites aim is to get a positive response from the user. 
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/car-quiz.gif" alt="Animated Site Layout Example" width="40%" height="auto" title="Animated Site Layout Example">
 
@@ -351,7 +351,7 @@ ________________________________________________________________________________
 
 - I learned how to implement the smooth scroll function, the effect that scrolls down to the area being navigated to instead of jumping to it, from using <a href="https://www.w3schools.com/howto/howto_css_smooth_scroll.asp" target="_blank" rel="noopener" aria-label="Link to W3Schools' Smooth Scroll Guide (opens in new tab)">W3Schools</a> guide on implementing this feature.
 
-- I learned how to implenet the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus" target="_blank" rel="noopener" aria-label="Link to Developer.Mozilla.Org's JS Focus Guide (opens in new tab)">Focus</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo" target="_blank" rel="noopener" aria-label="Link to Developer.Mozilla.Org's JS Window Scroll Guide (opens in new tab)">Scroll</a> featues in JavaScript using Developer.Mozilla.Org .
+- I learned how to implement the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus" target="_blank" rel="noopener" aria-label="Link to Developer.Mozilla.Org's JS Focus Guide (opens in new tab)">Focus</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo" target="_blank" rel="noopener" aria-label="Link to Developer.Mozilla.Org's JS Window Scroll Guide (opens in new tab)">Scroll</a> featues in JavaScript using Developer.Mozilla.Org .
 
 - Fonts added using <a href="https://fonts.google.com/" target="_blank" rel="noopener" aria-label="Link to Google Fonts (opens in new tab)">Google Fonts</a>.
 
