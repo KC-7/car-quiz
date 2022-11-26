@@ -18,6 +18,7 @@
 <body>
 
     <header id="nav-bar">
+        <!-- This is the header bar -->
 
         <div id="logo-div" class="header-grid">
             <a href="https://github.com/KC-7" target="_blank" rel="noopener"
@@ -48,9 +49,11 @@
     </header>
 
     <div id="rules">
+        <!-- This is the collapsible window section -->
         <button type="button" id="drop-down" class="collapsible">Find out more: 👇</button>
         <div class="content">
             <p id="content-text">
+                <!-- This is the content in the collapsible window, its only displayed when the above button is selected -->
                 The quiz is designed to test your car knowledge.<br>
                 You will be alerted to let you know if you have answered correctly.<br>
                 The correct answer will be displayed in green. The incorrect options will be displayed in red.<br>
@@ -59,6 +62,7 @@
                 You can view the developers GitHub page by clicking on the logo in the top left.<br>
             </p>
             <div id="qr-div">
+                <!-- This QR section is only displayed on devices with larger screen widths -->
                 <p id="qr-text">
                     The site has detected you are playing the quiz on a device with a large screen.<br>
                     Try it on your mobile device by scanning the below QR code:
@@ -75,11 +79,13 @@
     </div>
 
     <div id="quiz-section">
+        <!-- This is the container for the quiz -->
 
         <div id="question-div" class="hide">
+            <!-- The question & options are displayed when the quiz has started  -->
 
             <div id="question">Uh oh.. something went wrong.<br>A question was supposed to be here, please try again!
-            </div>
+            </div> <!-- The question is populated by JavaScript -->
 
             <div id="quiz-options">
                 <button aria-label="Option A Button" id="option-a" class="option-button" value="A">Option A </button>
@@ -89,42 +95,50 @@
             </div>
         </div>
 
+        <!-- The following divs are displayed after each question -->
+
         <div id="modal-right" class="modal-container hide">
+            <!-- Correct Answer -->
             <div class="modal-content">
                 <header id="modal-header-right" class="modal-header">
                     <p>Well done, you got it right &#10004;</p> <!-- The code is for a tick emoji -->
                 </header>
                 <div class="modal-body">
                     <p id="modal-body-right-text">Keep it up!</p>
+                    <!-- This text is replaced by JavaScript and assigned a random value for correct answers -->
                 </div>
             </div>
         </div>
 
         <div id="modal-wrong" class="modal-container hide">
+            <!-- Incorrect Answer -->
             <div class="modal-content">
                 <header id="modal-header-wrong" class="modal-header">
                     <p>Oh no, you got it wrong &#10006;</p> <!-- The code is for an "x" emoji -->
                 </header>
                 <div id="modal-body-wrong" class="modal-body">
-                    <p id="modal-body-wrong-text">Better luck next time</p>
+                    <p id="modal-body-wrong-text">Better luck next time!</p>
+                    <!-- This text is replaced by JavaScript and assigned a random value for wrong answers -->
                 </div>
             </div>
         </div>
 
         <div id="modal-end" class="modal-container hide">
+            <!-- End of Quiz Update -->
             <div class="modal-content">
                 <header id="modal-header-end" class="modal-header">
                     <p>You made it to the end of the quiz!</p>
                 </header>
                 <div class="modal-body">
                     <p id="end-result">Oh oh.. your score should have been displayed here, something went wrong, check
-                        the top right hand corner. </p>
+                        the top right hand corner. </p> <!-- This text is replaced by JavaScript -->
                     <p>Share your score with your friends!</p>
                 </div>
             </div>
         </div>
 
         <div>
+            <!-- This section contains the interactive controls for the game, the Start Button and the Next Question Button -->
             <div id="start-div">
                 <button aria-label="Start Quiz Button" id="start-button">Engine<br>Start</button>
             </div>
@@ -138,7 +152,7 @@
 
 
 
-    <footer>
+    <footer> <!-- The footer is displayed as a bar at the end of the document and contains the sites social links -->
 
         <div>
             <a href="https://youtube.com" target="_blank" rel="noopener"
