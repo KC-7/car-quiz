@@ -242,7 +242,7 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 
 - I analyzed the page load on both mobile and desktop devices using the Google Inspect Lighthouse Report Feature and received full 100% marks for all criteria; Performance, Accessibility, Best Practices and SEO. 
 
-<img style="display: inline; margin: 25px 25%" src="readme-files/testing/lighthouse.png" alt="Google Lighthouse Report Results" width="50%" height="auto" title="Google Lighthouse Report Results">
+<img style="display: inline; margin: 25px 10%" src="readme-files/testing/lighthouse.png" alt="Google Lighthouse Report Results" width="80%" height="auto" title="Google Lighthouse Report Results">
 
 - I used the element inspect feature to assist with styling. 
 
