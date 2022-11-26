@@ -85,7 +85,7 @@ function displayQuestion(question) {
       button.dataset.correct = option.correct;
     }
     button.addEventListener('click', selectOption); // If the button is clicked, intiate "Select Option"
-    optionButtons.appendChild(button);
+    optionButtons.appendChild(button); // Displays option buttons for each of the options
   });
 }
 
@@ -193,7 +193,7 @@ const rightAnswer = [
 const wrongAnswer = [
   'Better luck next time!',
   'I thought you said you like cars?',
-  'Are you even trying?',
+  'I honestly thought you would get that one correct.',
   'At least you learned something new!',
   'Dont worry, you will do better next time!'
 ];

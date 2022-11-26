@@ -2,7 +2,7 @@
 
 <a href="https://kc-7.github.io/car-quiz/" target="_blank" rel="noopener" aria-label="Link to Project Website, Kieran's Car Quiz (opens in new tab)">Kieran's Car Quiz</a> is a fun, responsive car quiz that is designed to both engage and interact with the user. The site was designed to demonstrate a variety of different JavaScript functions.
 
-The user is asked a series of questions and their score is calculated in the top right hand corner. The website interacts with the user and changes the colours of the body and the options to show if the answer was correct or not. A randomized message is displayed to the user after each answer alongside their result. The user is showen their total score at the end of the game and given the option to try again.  
+The user is asked a series of questions and their score is calculated in the top right hand corner. The website interacts with the user and changes the colours of the body and the options to show if the answer was correct or not. A randomized message is displayed to the user after each answer alongside their result. The user is shown their total score at the end of the game and given the option to try again.  
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/car-quiz.gif" alt="Animated Site Layout Example" width="40%" height="auto" title="Animated Site Layout Example">
 
@@ -40,7 +40,7 @@ ________________________________________________________________________________
 
 - There is a header bar located at the top of the page that displays a logo, header text and score bar. 
 
-- The score is only displayed once the quize has sorted. It displays the total number of correct answers, total number of questions asked and total number of questions in the quiz.
+- The score is only displayed once the quiz has sorted. It displays the total number of correct answers, total number of questions asked and total number of questions in the quiz.
 
 <img style="display: inline; margin: 25px 0" src="readme-files/images/header.png" alt="Header" width="100%" height="auto" title="Header">
 
@@ -52,7 +52,7 @@ ________________________________________________________________________________
 
 - There is a collapsible window below the header bar.
 
-- When the user expands the collabsible window, they are presented with text relating to the quiz and the CSS validation link. 
+- When the user expands the collapsible window, they are presented with text relating to the quiz and the CSS validation link. 
 
 - If the user is on a device with a larger screen width, a QR code will be displayed to give them the option to try the quiz on a mobile device. 
 
@@ -62,7 +62,7 @@ ________________________________________________________________________________
 
 ### Welcome Screen 👋 ⏯
 
-- The user is greeted by a streamline quiz home page below the collabsible window. 
+- The user is greeted by a streamline quiz home page below the collapsible window. 
 
 - The user is able to start the quiz by pressing the "Engine Start" button. 
 
@@ -78,7 +78,7 @@ ________________________________________________________________________________
 
 - When the user selects an option, there score is updated and displayed in the right hand side of the header bar. 
 
-- The site will scroll down to the next button if required so the user knows that there is more content on the page, it srolls back up to the top of the page when the next question button is selected. 
+- The site will scroll down to the next button if required so the user knows that there is more content on the page, it scrolls back up to the top of the page when the next question button is selected. 
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-4.png" alt="Responsive View - Correct" width="50%" height="auto" title="Responsive View - Correct">
 
@@ -94,7 +94,7 @@ ________________________________________________________________________________
 
 <img style="display: inline; margin: 25px 25%" src="readme-files/images/responsive-5.png" alt="Responsive View - Incorrect" width="50%" height="auto" title="Responsive View - Incorrect">
 
-- The text is set to change at random based on a preset array for both the correct and incorrect answers. 
+- The text is set to change at random based on a pre-set array for both the correct and incorrect answers. 
 
 - The next question button is displayed and when clicked it brings the user to the next question which is chosen at random. 
 
@@ -114,33 +114,35 @@ ________________________________________________________________________________
 
 ### Footer 👟 
 
-- The footer is displayed at the end of the web page. It is static on larger devices but is set to stay in line with the web page instead of the broswer window on smaller devices. 
+- The footer is displayed at the end of the web page. It is static on larger devices but is set to stay in line with the web page instead of the browser window on smaller devices. 
 
 <img style="display: inline; margin: 25px 0" src="readme-files/images/footer.png" alt="Footer" width="100%" height="auto" title="Footer">
 
 ### Responsive Design 📱 💻 
 
-- Media queries were used for responsive design so that the site is aesthically pleasing on a variety of different device sizes.
+- Media queries were used for responsive design so that the site is aesthetically pleasing on a variety of different device sizes.
 
-- A favicon is utilized to display the site's alt logo in the broswer tab. 
+### Favicon
 
-<img style="display: inline; margin: 25px 40%" src="readme-files/images/tab.png" alt="Favicon in Broswer Tab" width="20%" height="auto" title="Favicon in Broswer Tab">
+- A favicon is utilized to display the site's alt logo in the browser tab. 
 
-### Features Left to Implement 🆕
+<img style="display: inline; margin: 25px 40%" src="readme-files/images/tab.png" alt="Favicon in Broswer Tab" width="20%" height="auto" title="Favicon in Browser Tab">
 
-- A submit button could be displayed after the user selects their chosen option, this would give then the option to change their mind if they selected the wrong button by mistake before their choice is submitted. When they click submit, the button would then be replaced with the next button. This would give the user an oppurtunity to review their score before proceeding to the next question. 💪
+## Features Left to Implement 🆕
 
-- Additional difficulty levels could be set up asking the user an array of more difficult questions. 💬
+- A **submit button** could be displayed after the user selects their chosen option, this would give then the option to change their mind if they selected the wrong button by mistake before their choice is submitted. When they click submit, the button would then be replaced with the next button. This would give the user an opportunity to review their score before proceeding to the next question. 💪
 
-- A timer feature could be implemented. ⏱ ⏳
+- **Additional difficulty levels** could be set up asking the user an array of more difficult questions. 💬
 
-- Sounds could be utilized for user feedback. 🔊
+- A **timer** feature could be implemented. ⏱ ⏳
 
-- Add additional pages such as contact, 404, etc. 📝
+- **Sounds** could be utilized for user feedback. 🔊
 
-- Consider restyling the website so all content is displayed within all screen sizes and remove auto scroll / focus features. This could be achieved by getting the result to pop up in front of the current options instead of below them and by utilizing media queries. 📱 💻
+- Add **additional pages** such as contact, 404, etc. 📝
 
-- Add option for user to enter their name and save all scores. 🔤
+- Consider **restyling the website** so all content is displayed within all screen sizes and remove auto scroll / focus features. This could be achieved by getting the result to pop up in front of the current options instead of below them and by utilizing media queries.  📱 💻
+
+- Add option for users to enter a **username** and save all scores. 🔤
 
 _________________________________________________________________________________________________________________________________________________________________________________
 
@@ -150,7 +152,7 @@ ________________________________________________________________________________
 
 - Basic sketches and flow charts were created prior to coding. 
 
-- The JavaScript is set to function in a set order. Certain elements are set to randomize to provide a unique user eqperience. 
+- The JavaScript is set to function in a set order. Certain elements are set to randomize to provide a unique user experience. 
 
 - The site was styled using the below colour scheme that I created on <a href="https://coolors.co/" target="_blank" rel="noopener" aria-label="Link to Coolors Website (opens in new tab)">Coolers</a>. 
 
@@ -158,7 +160,7 @@ ________________________________________________________________________________
 
 <img style="display: inline; margin: 25px 35%" src="readme-files/images/colours-gradient.png" alt="Colour Scheme Gradient" width="30%" height="auto" title="Colour Scheme Gradient">
 
-- The site's main and alternative logos were created to enchance the sites appearance and create a professional UI. 
+- The site's main and alternative logos were created to enhance the sites appearance and create a professional UI. 
 
 <img style="display: inline; margin: 25px 40%" src="assets/images/logo-b.png" alt="Main Logo" width="20%" height="auto" title="Main Logo">
 
@@ -171,10 +173,10 @@ ________________________________________________________________________________
 ### Test Cases 🕵
 
 - [X] Page loads correctly 🌐 and displays Engine Start button ⏯ and Quiz Container.
-- [x] Find out more collapbsible window ⏬ works as intended: 
+- [x] Find out more collapsible window ⏬ works as intended: 
   - [x] Changes colour when hovering. 
   - [x] Changes text when displaying content. 
-  - [x] QR Code is displayed withiin the collasible window when over the specified screen width and is removed on devices with a smaller screen width.
+  - [x] QR Code is displayed within the collapsible window when over the specified screen width and is removed on devices with a smaller screen width.
 - [x] All links work and open in new tab: GitHub link in logo and social media links in footer. 🌐 
 - [x] When Engine Start ⏯ is clicked, the user is: shown the question and options, the score counter is displayed in the right hand side of the header bar and one question is added to the number of questions asked. 
 - [x] When a correct option ✅ is selected, the following will happen:
@@ -204,7 +206,7 @@ ________________________________________________________________________________
   - [x] The quiz will go back to the start and ask a question at random. 
   - [x] The score and total number of questions asked will be reset back to 0. 
   - [x] The styling, next button, try again button and the messages will be removed. 
-- [x] When the browser window is resized, the styling should adjust accoring to the CSS rules. 📱 💻
+- [x] When the browser window is resized, the styling should adjust according to the CSS rules. 📱 💻
   - [x] The quiz section will reduce in width. 
   - [x] The buttons will be reduced in size and displayed in a single column.  
   - [x] The header text will be removed.  
@@ -283,11 +285,11 @@ The webesite passed the <a href="http://jigsaw.w3.org/css-validator/validator?la
 
 <img style="display: inline; margin: 25px 40%" src="readme-files/testing/jshint-1.png" alt="JavaScript Validation Issues" width="20%" height="auto" title="JavaScript Validation Issues">
 
-- [x] Minor HTML Issues were highleted during the intial test and addressed as required. 
+- [x] Minor HTML Issues were highlighted during the initial test and addressed as required. 
 
 <img style="display: inline; margin: 25px 35%" src="readme-files/testing/initial-issues.png" alt="HTML Validation Issues" width="30%" height="auto" title="HTML Validation Issues">
 
-- [x] I had an issue where the next button was being displayed below the start again button, I resolved this by correcting the JS Funtction. 
+- [x] I had an issue where the next button was being displayed below the start again button, I resolved this by correcting the JS function. 
 
 <img style="display: inline; margin: 25px 35%" src="readme-files/testing/next-btn-issue.png" alt="Next Button Issue" width="30%" height="auto" title="Next Button Issue">
 
@@ -337,23 +339,23 @@ ________________________________________________________________________________
 
 - This site was developed using information learned from the <a href="https://codeinstitute.net/" target="_blank" rel="noopener" aria-label="Link to the Code Institute (opens in new tab)">Code Institute</a> alongside other online resources such as <a href="https://www.w3schools.com/" target="_blank" rel="noopener" aria-label="Link to W3Schools (opens in new tab)">W3Schools</a> & <a href="https://stackoverflow.com/" target="_blank" rel="noopener" aria-label="Link to Stack Overflow (opens in new tab)">Stack Overflow</a>. 
 
-- The Code Institute's Gitpod Full Template was used as the initial template for the project. The repository is available on their <a href="https://github.com/Code-Institute-Org/gitpod-full-template" target="_blank" rel="noopener" aria-label="Link to The Code Institute Gitpod Full Template (opens in new tab)">GitHub Account</a>. 
+- The Code Institute's Gitpod Full Template was used as the initial template for the project. The repository is available on their <a href="https://github.com/Code-Institute-Org/gitpod-full-template" target="_blank" rel="noopener" aria-label="Link to The Code Institute Gitpod Full Template (opens in new tab)">GitHub Account</a>.
 
-- I watched JavaScript tutorials on YouTube and found <a href="https://www.youtube.com/@WebDevSimplified" target="_blank" rel="noopener" aria-label="Link to Wed Dev Simplified's YouTube Channel (opens in new tab)">Web Dev Simplified</a>'s channel very helpful when learning new skills. 
+- The walk through project I completed with the Code Insitute, <a href="https://github.com/KC-7/love-maths" target="_blank" rel="noopener" aria-label="Link to The Code Institute Walkthrough Project, Love Maths (opens in new tab)">Love Maths</a>, was a good source to reference for information such as updating scores. 
 
-- I learned how to implement the Favicon, the picture in the browser tab, from using <a href="https://www.w3schools.com/html/html_favicon.asp" target="_blank" rel="noopener" aria-label="Link to W3Schools' Favicon Guide (opens in new tab)">W3Schools</a> guide on implementing this feature.
+- I watched JavaScript tutorials on YouTube and found <a href="https://www.youtube.com/@WebDevSimplified" target="_blank" rel="noopener" aria-label="Link to Wed Dev Simplified's YouTube Channel (opens in new tab)">Web Dev Simplified</a>'s channel very helpful when learning new skills, particularly his video on building a quiz.
+
+- I learned how to implement the <a href="https://www.w3schools.com/html/html_favicon.asp" target="_blank" rel="noopener" aria-label="Link to W3Schools' Favicon Guide (opens in new tab)">Favicon</a>, the picture in the browser tab, from using W3Schools' guide on implementing this feature.
+
+- I learned how to implement the <a href="https://www.w3schools.com/howto/howto_js_collapsible.asp" target="_blank" rel="noopener" aria-label="Link to W3Schools' Collapsible Area Guide (opens in new tab)">collapsible area</a> from using W3Schools' guide on implementing this feature.
 
 - I learned how to implement the smooth scroll function, the effect that scrolls down to the area being navigated to instead of jumping to it, from using <a href="https://www.w3schools.com/howto/howto_css_smooth_scroll.asp" target="_blank" rel="noopener" aria-label="Link to W3Schools' Smooth Scroll Guide (opens in new tab)">W3Schools</a> guide on implementing this feature.
 
 - I learned how to implenet the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus" target="_blank" rel="noopener" aria-label="Link to Developer.Mozilla.Org's JS Focus Guide (opens in new tab)">Focus</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo" target="_blank" rel="noopener" aria-label="Link to Developer.Mozilla.Org's JS Window Scroll Guide (opens in new tab)">Scroll</a> featues in JavaScript using Developer.Mozilla.Org .
 
-- The social links, app download sections and the CSS validator logo all contain links to third party websites. 
-
 - Fonts added using <a href="https://fonts.google.com/" target="_blank" rel="noopener" aria-label="Link to Google Fonts (opens in new tab)">Google Fonts</a>.
 
 - Icons added using <a href="https://fonts.google.com/" target="_blank" rel="noopener" aria-label="Link to Font Awesome | Free V5 Icons (opens in new tab)">Font Awesome | Free V5 Icons</a>.
-
-- 
 
 - The resposive images in the readme were taken using <a href="https://ui.dev/amiresponsive" target="_blank" rel="noopener" aria-label="Link to Am I Responsive Website (opens in new tab)">Am I Responsive</a>.
 
@@ -365,6 +367,8 @@ ________________________________________________________________________________
 
 - The site logo was created using the <a href="https://express.adobe.com/express-apps/logo-maker/" target="_blank" rel="noopener" aria-label="Link to Adobe Express | Free Logo Maker (opens in new tab)">Adobe Express | Free Logo Maker</a>.
 
+- The social links in the footer and the CSS validator logo all contain links to third party websites. 
+
 _________________________________________________________________________________________________________________________________________________________________________________
 
-Thanks for reading! 😃
+Thanks for reading! 😃 
