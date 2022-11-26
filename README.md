@@ -1,8 +1,10 @@
 # Kieran's Car Quiz - KCQ 🚘
 
+<img style="display: inline; margin: 25px 40%" src="assets/images/logo-d.png" alt="Main Logo" width="20%" height="auto" title="Main Logo">
+
 <a href="https://kc-7.github.io/car-quiz/" target="_blank" rel="noopener" aria-label="Link to Project Website, Kieran's Car Quiz (opens in new tab)">Kieran's Car Quiz</a> is a fun, responsive car quiz that is designed to both engage and interact with the user. The site was designed to demonstrate a variety of different JavaScript functions.
 
-The user is asked a series of questions and their score is calculated in the top right hand corner. The website interacts with the user and changes the colours of the body and the options to show if the answer was correct or not. A randomized message is displayed to the user after each answer alongside their result. The user is shown their total score at the end of the game and given the option to try again. The sites aim is to get a positive response from the user. 
+The user is asked a series of questions and their score is calculated in the top right hand corner. The website interacts with the user and changes the colours of the body and the options to show if the answer was correct or not. A randomized message is displayed to the user after each answer alongside their result. The user is shown their total score at the end of the game and given the option to try again. 
 
 <img style="display: inline; margin: 25px 30%" src="readme-files/images/car-quiz.gif" alt="Animated Site Layout Example" width="40%" height="auto" title="Animated Site Layout Example">
 
@@ -149,6 +151,8 @@ ________________________________________________________________________________
 ## Design ✍ 🆒
 
 - The site was designed to demonstrate a variety of different JavaScript, CSS and HTML techniques. 
+
+- The sites aim is to get a positive response from the user. The site targets male and female users aged between 16 and 66.
 
 - Basic sketches and flow charts were created prior to coding. 
 
